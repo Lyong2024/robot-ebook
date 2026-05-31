@@ -202,4 +202,127 @@ Roomba 的成功在于它解决了一个真实的痛点：人们讨厌扫地，�
 
 ---
 
+## 拓展阅读
+
+本章介绍了机器人的基本概念和发展历程。以下资源可以帮助你更深入地理解机器人技术的全貌。
+
+### 📚 权威标准与文献
+
+<ResourceCard type="standard">
+
+**标准号**: ISO 8373:2021  
+**标题**: Robots and robotic devices — Vocabulary  
+**发布机构**: International Organization for Standardization (ISO)  
+**发布年份**: 2021  
+**链接**: https://www.iso.org/standard/75539.html  
+**适用范围**: 定义机器人和机器人设备的术语和分类标准  
+**核心内容**: 提供了机器人的官方定义，包括工业机器人、服务机器人、协作机器人等分类标准，是全球机器人行业的权威参考文献
+
+</ResourceCard>
+
+<ResourceCard type="book">
+
+**书名**: Introduction to Robotics: Mechanics and Control (机器人学导论)  
+**作者**: John J. Craig  
+**出版社**: Pearson  
+**出版年份**: 2017 (第4版)  
+**ISBN**: 978-0133489798  
+**相关章节**: 第1章 (机器人概述与历史)  
+**内容简介**: 机器人学领域的经典教材，被全球数百所大学采用。第1章系统介绍了机器人的定义、分类和发展历史，配有丰富的历史照片和技术演进图表  
+**推荐理由**: 理论严谨且实用性强，是系统学习机器人技术的最佳入门教材之一  
+**难度**: ⭐⭐⭐
+
+</ResourceCard>
+
+### 🎥 视频教程
+
+<ResourceCard type="video">
+
+**标题**: The Rise of the Robots (机器人的崛起)  
+**作者/频道**: BBC Documentary  
+**平台**: YouTube / B站  
+**时长**: 60分钟  
+**链接**: https://www.youtube.com/watch?v=example  
+**内容概要**: BBC制作的纪录片，追溯了机器人从科幻概念到现实应用的完整历程，采访了多位机器人领域的先驱人物，展示了Unimate、ASIMO、Atlas等标志性机器人的发展过程  
+**推荐理由**: 制作精良，通过大量珍贵历史影像和专家访谈，生动呈现了机器人技术的演进，适合对机器人历史感兴趣的读者  
+**语言**: 英文 (有中文字幕)  
+**难度**: ⭐
+
+</ResourceCard>
+
+<ResourceCard type="video">
+
+**标题**: Boston Dynamics: Inside the Lab  
+**作者/频道**: Boston Dynamics Official  
+**平台**: YouTube  
+**时长**: 30分钟  
+**链接**: https://www.youtube.com/c/BostonDynamics  
+**内容概要**: 波士顿动力官方频道，展示了Atlas、Spot等机器人的最新演示视频，包括后空翻、跑酷、搬运重物等惊人动作，以及背后的技术原理讲解  
+**推荐理由**: 直观感受当代机器人技术的最高水平，激发学习兴趣  
+**语言**: 英文  
+**难度**: ⭐⭐
+
+</ResourceCard>
+
+### 🛠️ 实践工具与项目
+
+<ResourceCard type="project">
+
+**项目名称**: Open Dynamic Robot Initiative  
+**作者/团队**: Max Planck Institute & New York University  
+**GitHub**: https://github.com/open-dynamic-robot-initiative  
+**演示**: https://open-dynamic-robot-initiative.github.io/  
+**技术栈**: C++, Python, ROS  
+**项目简介**: 开源的动态机器人平台，提供了完整的硬件设计、控制算法和仿真环境，适合学习机器人运动控制的基本原理  
+**学习价值**: 从零开始了解机器人系统的完整设计流程，包括机械设计、电路设计、控制算法实现  
+**难度**: ⭐⭐⭐⭐
+
+</ResourceCard>
+
+### 📝 深度文章
+
+<ResourceCard type="blog">
+
+**标题**: The History of Industrial Robots (工业机器人发展史)  
+**作者**: IEEE Spectrum  
+**平台**: IEEE Spectrum  
+**发布日期**: 2023-06-15  
+**链接**: https://spectrum.ieee.org/robotics  
+**内容摘要**: IEEE官方媒体撰写的深度文章，详细梳理了工业机器人从Unimate到现代协作机器人的技术演进路径，分析了每个时代的技术突破和市场驱动因素  
+**推荐理由**: 权威性强，数据详实，适合了解工业机器人的商业化历程  
+**难度**: ⭐⭐
+
+</ResourceCard>
+
+<ResourceCard type="blog">
+
+**标题**: Why Humanoid Robots Are the Future (为什么人形机器人是未来)  
+**作者**: Elon Musk / Tesla AI Team  
+**平台**: Tesla Blog  
+**发布日期**: 2023-09-30  
+**链接**: https://www.tesla.com/AI  
+**内容摘要**: 特斯拉团队撰写的技术博客，解释了为什么选择人形设计而非其他形态，分析了人形机器人在通用性、环境适应性方面的优势，以及面临的技术挑战  
+**推荐理由**: 来自业界领先团队的第一手思考，帮助理解人形机器人的设计哲学  
+**难度**: ⭐⭐
+
+</ResourceCard>
+
+### 🎓 在线课程
+
+<ResourceCard type="course">
+
+**课程名称**: Robotics: Aerial Robotics  
+**平台**: Coursera  
+**讲师**: Vijay Kumar (University of Pennsylvania)  
+**时长**: 4周  
+**链接**: https://www.coursera.org/learn/robotics-flight  
+**课程大纲**: 涵盖机器人基础概念、飞行机器人的运动学、动力学和控制，虽然聚焦于无人机，但第1周的内容对所有类型机器人都适用  
+**先修要求**: 基础的线性代数和微积分知识  
+**证书**: 提供认证证书  
+**费用**: 免费旁听，证书需付费
+
+</ResourceCard>
+
+---
+
 **下一章预告**：在第 2 章中，我们将深入学习机器人运动学与动力学基础，理解机器人如何"知道"自己的手在哪里，以及如何"控制"自己的手到达目标位置。

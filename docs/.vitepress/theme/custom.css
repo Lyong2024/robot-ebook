@@ -1,0 +1,79 @@
+/* 自定义全局样式 */
+
+/* 优化代码块样式 */
+.vp-doc div[class*='language-'] {
+  margin: 1.5rem 0;
+  border-radius: 8px;
+}
+
+/* 优化表格样式 */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+/* 优化引用块样式 */
+.vp-doc blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border-left: 4px solid var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg-soft);
+  border-radius: 4px;
+}
+
+/* 优化列表样式 */
+.vp-doc ul, .vp-doc ol {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.vp-doc li {
+  margin: 0.5rem 0;
+}
+
+/* 优化标题锚点 */
+.vp-doc h2, .vp-doc h3, .vp-doc h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* 优化链接样式 */
+.vp-doc a {
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+/* 优化图片样式 */
+.vp-doc img {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .vp-doc {
+    padding: 1rem;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.75rem;
+  }
+
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 打印样式优化 */
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPFooter {
+    display: none;
+  }
+
+  .vp-doc {
+    max-width: 100%;
+  }
+}

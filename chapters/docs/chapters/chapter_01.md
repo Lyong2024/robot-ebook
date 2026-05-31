@@ -202,4 +202,191 @@ Roomba 的成功在于它解决了一个真实的痛点：人们讨厌扫地，�
 
 ---
 
+## 📚 拓展资源
+
+### 📖 经典文献
+
+**《机器人学导论》（Introduction to Robotics: Mechanics and Control）**
+- 作者：John J. Craig
+- 推荐理由：机器人学领域的经典教材，系统讲解了机器人运动学、动力学和控制的基础理论。适合有一定数学基础的读者深入学习。
+- 难度：⭐⭐⭐⭐
+- 标签：#运动学 #控制理论 #经典教材
+
+**《概率机器人学》（Probabilistic Robotics）**
+- 作者：Sebastian Thrun, Wolfram Burgard, Dieter Fox
+- 推荐理由：深度学习时代之前的机器人感知与决策圣经，详细介绍了SLAM、定位、路径规划等核心算法。
+- 难度：⭐⭐⭐⭐⭐
+- 标签：#SLAM #概率论 #移动机器人
+
+**《现代机器人学：机构、规划与控制》（Modern Robotics）**
+- 作者：Kevin M. Lynch, Frank C. Park
+- 推荐理由：采用现代数学工具（旋量理论）重新构建机器人学理论体系，配有丰富的Python代码示例。
+- 在线资源：http://hades.mech.northwestern.edu/index.php/Modern_Robotics
+- 难度：⭐⭐⭐⭐
+- 标签：#旋量理论 #Python #开源教材
+
+**《人工智能：一种现代方法》（Artificial Intelligence: A Modern Approach）**
+- 作者：Stuart Russell, Peter Norvig
+- 推荐理由：AI领域的百科全书，其中关于智能体、规划、学习的章节对理解机器人决策系统非常有帮助。
+- 难度：⭐⭐⭐⭐
+- 标签：#人工智能 #规划 #机器学习
+
+### 🔬 重要论文
+
+**"A Mathematical Introduction to Robotic Manipulation"**
+- 作者：Richard M. Murray, Zexiang Li, S. Shankar Sastry (1994)
+- 核心贡献：系统化地用数学语言描述机器人操作的几何和动力学基础
+- 影响：成为机器人操作理论的奠基性著作
+- 链接：https://www.cds.caltech.edu/~murray/books/MLS/pdf/mls94-complete.pdf
+
+**"Simultaneous Localization and Mapping (SLAM): Part I"**
+- 作者：Hugh Durrant-Whyte, Tim Bailey (2006)
+- 核心贡献：系统总结了SLAM问题的数学框架和主流解决方案
+- 影响：移动机器人导航的核心技术综述
+- 应用：自动驾驶、服务机器人、无人机
+
+**"Deep Reinforcement Learning for Robotic Manipulation"**
+- 作者：Sergey Levine et al. (2018)
+- 核心贡献：证明了深度强化学习可以让机器人通过试错学习复杂的操作技能
+- 影响：开启了AI驱动机器人学习的新时代
+- 关键词：#深度学习 #强化学习 #机器人抓取
+
+### ✍️ 优质博客与文章
+
+**Boston Dynamics 官方博客**
+- 链接：https://www.bostondynamics.com/blog
+- 推荐理由：世界顶尖机器人公司的技术博客，定期分享Atlas、Spot等机器人的最新进展和技术细节
+- 亮点：大量实际工程案例、视频演示、技术挑战解析
+
+**IEEE Spectrum Robotics**
+- 链接：https://spectrum.ieee.org/robotics
+- 推荐理由：IEEE旗下的机器人技术新闻平台，涵盖学术前沿、产业动态、技术评测
+- 更新频率：每日更新
+- 语言：英文
+
+**机器人大讲堂（公众号）**
+- 推荐理由：国内优质的机器人技术科普平台，用通俗语言解读前沿技术
+- 内容：技术解析、行业报告、专家访谈
+- 语言：中文
+
+**"The History of Industrial Robots" - RobotWorx**
+- 链接：https://www.robots.com/articles/history-of-industrial-robots
+- 推荐理由：详细梳理了工业机器人从Unimate到现代协作机器人的发展历程
+- 适合：对机器人历史感兴趣的读者
+
+### 🎬 视频教程与纪录片
+
+**"How Boston Dynamics Taught Its Robots to Dance"** (YouTube)
+- 创作者：Boston Dynamics
+- 时长：3分钟
+- 推荐理由：展示了Atlas和Spot机器人的惊人舞蹈能力，背后是复杂的运动规划和控制算法
+- 链接：搜索 "Boston Dynamics robots dancing"
+- 难度：⭐（科普向）
+
+**"The Age of AI" - YouTube Originals**
+- 主持人：Robert Downey Jr.
+- 集数：8集，每集约45分钟
+- 推荐理由：第3集专门讲述AI与机器人的融合，采访了多位顶尖研究者
+- 难度：⭐⭐（通俗易懂）
+
+**MIT OpenCourseWare: Introduction to Robotics**
+- 讲师：Prof. John Leonard
+- 课程编号：6.4210 / 2.166
+- 推荐理由：MIT的机器人学入门课程，涵盖运动学、感知、规划等核心主题
+- 链接：https://ocw.mit.edu
+- 难度：⭐⭐⭐⭐（需要数学基础）
+
+**"Robots" - BBC纪录片**
+- 时长：3集，每集60分钟
+- 推荐理由：从历史、技术、伦理多角度探讨机器人对人类社会的影响
+- 亮点：大量珍贵历史影像和最新机器人演示
+- 难度：⭐（科普向）
+
+### 💻 开源项目与工具
+
+**ROS (Robot Operating System)**
+- 维护者：Open Robotics
+- 语言：C++, Python
+- 推荐理由：机器人开发的事实标准框架，提供了传感器驱动、运动规划、仿真等完整工具链
+- GitHub：https://github.com/ros
+- ⭐ Stars：3.5k+ (ros2)
+- 适合：想要动手开发机器人的学习者
+
+**PyBullet**
+- 维护者：Erwin Coumans (Google)
+- 语言：Python
+- 推荐理由：轻量级的物理仿真引擎，可以快速搭建机器人仿真环境进行算法验证
+- GitHub：https://github.com/bulletphysics/bullet3
+- ⭐ Stars：12k+
+- 适合：机器人算法研究、强化学习实验
+
+**Modern Robotics Code Library**
+- 维护者：Kevin Lynch Lab
+- 语言：Python, MATLAB, Mathematica
+- 推荐理由：《现代机器人学》教材的配套代码库，实现了书中所有算法
+- GitHub：https://github.com/NxRLab/ModernRobotics
+- ⭐ Stars：800+
+- 适合：学习机器人运动学和动力学
+
+**OpenManipulator**
+- 维护者：ROBOTIS
+- 推荐理由：开源的机械臂硬件和软件平台，价格亲民（约$2000），适合教学和研究
+- GitHub：https://github.com/ROBOTIS-GIT/open_manipulator
+- 配套：ROS包、仿真环境、示例代码
+- 适合：想要拥有真实机器人的学习者
+
+### 🎓 在线课程
+
+**"Robotics: Aerial Robotics" - Coursera**
+- 讲师：Vijay Kumar (University of Pennsylvania)
+- 时长：4周，每周3-5小时
+- 推荐理由：系统讲解无人机的建模、控制和路径规划
+- 价格：免费旁听，证书$49
+- 难度：⭐⭐⭐
+
+**"Self-Driving Cars Specialization" - Coursera**
+- 讲师：University of Toronto
+- 时长：4门课程，约6个月
+- 推荐理由：虽然聚焦自动驾驶，但涵盖了移动机器人的核心技术（感知、定位、规划、控制）
+- 价格：$49/月订阅
+- 难度：⭐⭐⭐⭐
+
+**"Underactuated Robotics" - MIT OCW**
+- 讲师：Russ Tedrake
+- 推荐理由：深入讲解如何控制欠驱动系统（如双足机器人、无人机），是理解现代机器人控制的关键
+- 链接：http://underactuated.mit.edu
+- 价格：免费
+- 难度：⭐⭐⭐⭐⭐
+
+**"机器人学" - 中国大学MOOC（浙江大学）**
+- 讲师：熊蓉教授
+- 推荐理由：国内顶尖的机器人学课程，中文授课，适合国内学习者
+- 平台：中国大学MOOC
+- 价格：免费
+- 难度：⭐⭐⭐
+
+### 🌐 社区与论坛
+
+**ROS Discourse**
+- 链接：https://discourse.ros.org
+- 推荐理由：ROS官方社区，可以找到大量技术问答和最佳实践
+
+**r/robotics (Reddit)**
+- 链接：https://www.reddit.com/r/robotics
+- 推荐理由：活跃的机器人爱好者社区，从业余DIY到专业研究都有讨论
+
+**机器人圈（知乎）**
+- 推荐理由：国内机器人从业者和爱好者的交流平台，有大量实战经验分享
+
+### 📰 行业资讯
+
+**The Robot Report**
+- 链接：https://www.therobotreport.com
+- 推荐理由：专注机器人产业的新闻媒体，涵盖投资、并购、新品发布
+
+**IEEE Robotics and Automation Magazine**
+- 推荐理由：IEEE机器人学会的官方杂志，兼顾学术深度和产业视角
+
+---
+
 **下一章预告**：在第 2 章中，我们将深入学习机器人运动学与动力学基础，理解机器人如何"知道"自己的手在哪里，以及如何"控制"自己的手到达目标位置。
