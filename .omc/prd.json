@@ -25,7 +25,8 @@
       ],
       "estimatedHours": 1,
       "dependencies": [],
-      "passes": false
+      "passes": true,
+      "completedDate": "2026-05-31"
     },
     {
       "id": "US-002",
