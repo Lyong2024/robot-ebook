@@ -1,0 +1,136 @@
+{
+  "projectName": "电子书站点明暗主题系统",
+  "version": "1.0.0",
+  "created": "2026-05-30",
+  "objective": "为电子书HTML站点添加Claude官网风格的明暗主题，确保配色和谐、细节完善、用户体验优秀",
+  "targetAudience": "电子书读者",
+  "deliverables": [
+    "完整的明暗主题CSS变量系统",
+    "主题切换功能（带持久化）",
+    "Claude风格的配色方案",
+    "平滑的主题过渡动画",
+    "响应式的主题适配"
+  ],
+  "stories": [
+    {
+      "id": "THEME-001",
+      "title": "设计Claude风格的配色系统",
+      "priority": 1,
+      "description": "基于Claude品牌的橙铜色调，设计完整的明暗主题配色变量系统",
+      "acceptanceCriteria": [
+        "定义完整的CSS变量系统，包含主色、背景色、文字色、边框色、阴影等",
+        "亮色主题使用温暖的米白色背景 + 深色文字 + 橙铜色强调",
+        "暗色主题使用深色背景 + 浅色文字 + 柔和的橙铜色强调",
+        "确保所有颜色对比度符合WCAG AA标准（文字对比度 >= 4.5:1）",
+        "配色和谐，无刺眼或不协调的颜色组合",
+        "创建color-palette.css文件，包含所有主题变量"
+      ],
+      "estimatedEffort": "2 hours",
+      "dependencies": [],
+      "passes": false
+    },
+    {
+      "id": "THEME-002",
+      "title": "实现主题切换功能",
+      "priority": 2,
+      "description": "创建主题切换按钮和逻辑，支持localStorage持久化",
+      "acceptanceCriteria": [
+        "在导航栏添加主题切换按钮（太阳/月亮图标）",
+        "点击按钮可在明暗主题间切换",
+        "主题选择保存到localStorage，刷新页面后保持",
+        "首次访问时根据系统偏好自动选择主题（prefers-color-scheme）",
+        "切换时有平滑的过渡动画（0.3s transition）",
+        "创建theme-toggle.ts文件实现切换逻辑"
+      ],
+      "estimatedEffort": "2 hours",
+      "dependencies": ["THEME-001"],
+      "passes": false
+    },
+    {
+      "id": "THEME-003",
+      "title": "应用主题到VitePress组件",
+      "priority": 3,
+      "description": "将主题变量应用到所有VitePress组件和自定义样式",
+      "acceptanceCriteria": [
+        "导航栏、侧边栏、内容区域都正确应用主题变量",
+        "代码块在暗色主题下使用合适的语法高亮配色",
+        "链接、按钮、表格等所有UI元素都适配主题",
+        "搜索框、目录等交互组件在两种主题下都清晰可用",
+        "创建custom-theme.css覆盖VitePress默认样式",
+        "在.vitepress/theme/index.ts中导入所有主题样式"
+      ],
+      "estimatedEffort": "3 hours",
+      "dependencies": ["THEME-002"],
+      "passes": false
+    },
+    {
+      "id": "THEME-004",
+      "title": "优化细节和边缘情况",
+      "priority": 4,
+      "description": "处理各种边缘情况，确保主题在所有场景下都完美工作",
+      "acceptanceCriteria": [
+        "图片在暗色主题下不会过亮（添加适当的滤镜或边框）",
+        "引用块、提示框等特殊元素在两种主题下都清晰",
+        "打印样式优化（打印时使用亮色主题）",
+        "移动端主题切换按钮位置合理",
+        "主题切换时避免闪烁（FOUC）",
+        "所有交互状态（hover、active、focus）都有合适的视觉反馈"
+      ],
+      "estimatedEffort": "2 hours",
+      "dependencies": ["THEME-003"],
+      "passes": false
+    },
+    {
+      "id": "THEME-005",
+      "title": "测试和验证",
+      "priority": 5,
+      "description": "全面测试主题功能，确保在各种设备和浏览器上都正常工作",
+      "acceptanceCriteria": [
+        "在Chrome、Firefox、Safari、Edge上测试主题切换",
+        "在桌面、平板、手机上测试响应式表现",
+        "验证所有页面（首页、章节页、附录页）的主题应用",
+        "检查颜色对比度，确保可访问性",
+        "验证localStorage持久化功能",
+        "确认系统主题偏好检测正常工作",
+        "启动dev server并手动测试所有功能"
+      ],
+      "estimatedEffort": "2 hours",
+      "dependencies": ["THEME-004"],
+      "passes": false
+    }
+  ],
+  "technicalStack": {
+    "framework": "VitePress",
+    "styling": "CSS Variables + Custom CSS",
+    "scripting": "TypeScript",
+    "storage": "localStorage",
+    "icons": "SVG icons"
+  },
+  "colorPalette": {
+    "light": {
+      "primary": "#CC6633 (Claude橙铜色)",
+      "background": "#FAF9F6 (温暖米白)",
+      "surface": "#FFFFFF",
+      "text": "#1A1A1A",
+      "textSecondary": "#666666",
+      "border": "#E5E5E5",
+      "shadow": "rgba(0,0,0,0.1)"
+    },
+    "dark": {
+      "primary": "#E8956F (柔和橙铜)",
+      "background": "#1A1A1A",
+      "surface": "#2A2A2A",
+      "text": "#E5E5E5",
+      "textSecondary": "#A0A0A0",
+      "border": "#3A3A3A",
+      "shadow": "rgba(0,0,0,0.3)"
+    }
+  },
+  "successMetrics": [
+    "主题切换功能完全正常",
+    "所有颜色对比度符合WCAG AA标准",
+    "无配色不和谐的情况",
+    "在所有主流浏览器上测试通过",
+    "用户体验流畅，无闪烁或卡顿"
+  ]
+}

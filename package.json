@@ -1,0 +1,29 @@
+{
+  "name": "robot-ebook",
+  "version": "1.0.0",
+  "description": "机器人开发：从零基础到动手创造 - 交互式电子书",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "robotics",
+    "robot",
+    "ros2",
+    "arduino",
+    "embedded",
+    "tutorial",
+    "ebook"
+  ],
+  "author": "Robot Ebook Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0"
+  },
+  "dependencies": {
+    "markdown-it-mathjax3": "^4.3.2"
+  }
+}

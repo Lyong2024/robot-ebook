@@ -1,0 +1,364 @@
+/* 主题增强 - 优化细节和边缘情况 */
+
+/* ==================== 打印样式 ==================== */
+@media print {
+  /* 打印时强制使用浅色主题 */
+  :root {
+    color-scheme: light;
+  }
+
+  /* 隐藏不需要打印的元素 */
+  .VPNav,
+  .VPSidebar,
+  .VPFooter,
+  .theme-toggle,
+  .VPNavBar,
+  .VPLocalNav {
+    display: none !important;
+  }
+
+  /* 优化打印时的颜色 */
+  .vp-doc {
+    color: #000 !important;
+    background: #fff !important;
+  }
+
+  /* 确保代码块可读 */
+  .vp-code-group,
+  div[class*='language-'] {
+    border: 1px solid #ddd !important;
+    background: #f8f8f8 !important;
+  }
+
+  code {
+    color: #000 !important;
+    background: #f0f0f0 !important;
+  }
+
+  /* 优化链接显示 */
+  a {
+    color: #000 !important;
+    text-decoration: underline !important;
+  }
+
+  /* 显示链接URL */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+
+/* ==================== 动画偏好 ==================== */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* 主题切换时不使用动画 */
+  .dark,
+  .dark * {
+    transition: none !important;
+  }
+}
+
+/* ==================== 高对比度模式 ==================== */
+@media (prefers-contrast: high) {
+  :root {
+    --vp-c-text-1: #000;
+    --vp-c-text-2: #1a1a1a;
+    --vp-c-bg: #fff;
+    --vp-c-bg-soft: #f5f5f5;
+  }
+
+  .dark {
+    --vp-c-text-1: #fff;
+    --vp-c-text-2: #e6e6e6;
+    --vp-c-bg: #000;
+    --vp-c-bg-soft: #1a1a1a;
+  }
+
+  /* 增强边框对比度 */
+  .vp-doc,
+  .vp-code-group,
+  div[class*='language-'] {
+    border-width: 2px !important;
+  }
+
+  /* 增强按钮对比度 */
+  .VPButton {
+    border: 2px solid currentColor !important;
+  }
+}
+
+/* ==================== 焦点可见性优化 ==================== */
+/* 键盘导航时显示清晰的焦点指示器 */
+:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* 主题切换按钮的焦点样式 */
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 4px;
+}
+
+/* 链接的焦点样式 */
+a:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+  text-decoration: underline;
+}
+
+/* 代码块的焦点样式 */
+pre:focus-visible,
+code:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+/* ==================== 移动端优化 ==================== */
+@media (max-width: 768px) {
+  /* 优化触摸目标大小 */
+  .theme-toggle {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 12px;
+  }
+
+  /* 优化移动端的代码块 */
+  div[class*='language-'] {
+    margin: 16px -24px;
+    border-radius: 0;
+  }
+
+  /* 优化移动端的表格 */
+  .vp-doc table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* 优化移动端的图片 */
+  .vp-doc img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 触摸设备的悬停效果优化 */
+@media (hover: none) {
+  /* 移除仅悬停的效果 */
+  .VPNavBarMenuLink:hover,
+  .VPSidebarLink:hover {
+    background-color: transparent;
+  }
+
+  /* 使用点击激活状态 */
+  .VPNavBarMenuLink:active,
+  .VPSidebarLink:active {
+    background-color: var(--vp-c-bg-soft);
+  }
+}
+
+/* ==================== 长文本处理 ==================== */
+/* 防止长单词破坏布局 */
+.vp-doc {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* 代码块中的长行处理 */
+.vp-doc pre code {
+  word-wrap: normal;
+  overflow-wrap: normal;
+  white-space: pre;
+  hyphens: none;
+}
+
+/* 表格单元格中的长文本 */
+.vp-doc td,
+.vp-doc th {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 300px;
+}
+
+/* ==================== 特殊字符和表情符号 ==================== */
+/* 确保表情符号正确显示 */
+.vp-doc {
+  font-variant-emoji: emoji;
+}
+
+/* 优化表情符号的行高 */
+.vp-doc p,
+.vp-doc li {
+  line-height: 1.7;
+}
+
+/* ==================== 滚动行为优化 ==================== */
+/* 平滑滚动（除非用户偏好减少动画） */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 滚动边距，避免内容被固定头部遮挡 */
+:target {
+  scroll-margin-top: 80px;
+}
+
+/* ==================== 选择文本样式 ==================== */
+::selection {
+  background-color: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+}
+
+.dark ::selection {
+  background-color: var(--vp-c-brand-2);
+  color: var(--vp-c-text-1);
+}
+
+/* ==================== 加载状态优化 ==================== */
+/* 防止主题切换时的闪烁 */
+html {
+  background-color: var(--vp-c-bg);
+  transition: background-color 0.5s;
+}
+
+/* 图片加载时的占位符 */
+img {
+  background-color: var(--vp-c-bg-soft);
+}
+
+img[src=""],
+img:not([src]) {
+  opacity: 0;
+}
+
+/* ==================== 辅助功能增强 ==================== */
+/* 屏幕阅读器专用文本 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 跳过导航链接 */
+.skip-to-content {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--vp-c-brand-1);
+  color: var(--vp-c-bg);
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-to-content:focus {
+  top: 0;
+}
+
+/* ==================== 边缘情况处理 ==================== */
+/* 空内容处理 */
+.vp-doc :empty {
+  display: none;
+}
+
+/* 防止空链接 */
+a:empty {
+  display: none;
+}
+
+/* 处理非常小的屏幕 */
+@media (max-width: 360px) {
+  .vp-doc {
+    font-size: 14px;
+  }
+
+  .vp-doc h1 {
+    font-size: 1.75rem;
+  }
+
+  .vp-doc h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* 处理非常大的屏幕 */
+@media (min-width: 1920px) {
+  .VPDoc.has-sidebar .content-container {
+    max-width: 1200px;
+  }
+}
+
+/* ==================== 性能优化 ==================== */
+/* 使用 GPU 加速的属性 */
+.theme-toggle,
+.VPNavBar,
+.VPSidebar {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* 优化重绘性能 */
+.vp-doc img,
+.vp-doc video {
+  content-visibility: auto;
+}
+
+/* ==================== 暗色模式特定优化 ==================== */
+.dark {
+  /* 减少暗色模式下的眼睛疲劳 */
+  color-scheme: dark;
+}
+
+/* 暗色模式下的图片优化 */
+.dark img {
+  opacity: 0.9;
+}
+
+.dark img:hover {
+  opacity: 1;
+}
+
+/* ==================== 浏览器兼容性修复 ==================== */
+/* Safari 的平滑滚动修复 */
+@supports (-webkit-overflow-scrolling: touch) {
+  html {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Firefox 的滚动条样式 */
+@-moz-document url-prefix() {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--vp-c-divider) transparent;
+  }
+}
+
+/* ==================== 主题切换过渡优化 ==================== */
+/* 只在主题切换时应用过渡 */
+.theme-transitioning * {
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s !important;
+}
+
+/* 防止过渡期间的布局偏移 */
+.theme-transitioning {
+  pointer-events: none;
+}

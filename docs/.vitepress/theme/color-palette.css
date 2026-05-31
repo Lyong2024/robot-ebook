@@ -1,0 +1,130 @@
+/**
+ * Claude风格主题配色系统
+ * 基于温暖的橙铜色调，提供明暗两种主题
+ */
+
+:root {
+  /* 主色调 - Claude橙铜色 */
+  --color-primary: #CC6633;
+  --color-primary-light: #E8956F;
+  --color-primary-dark: #A85229;
+  --color-primary-alpha: rgba(204, 102, 51, 0.1);
+
+  /* 背景色 - 温暖米白 */
+  --color-bg-base: #FAF9F6;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-elevated: #FFFFFF;
+  --color-bg-overlay: rgba(255, 255, 255, 0.95);
+
+  /* 文字色 */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #666666;
+  --color-text-tertiary: #999999;
+  --color-text-inverse: #FFFFFF;
+
+  /* 边框色 */
+  --color-border-light: #F0F0F0;
+  --color-border-medium: #E5E5E5;
+  --color-border-dark: #CCCCCC;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+
+  /* 交互状态 */
+  --color-hover-bg: rgba(204, 102, 51, 0.08);
+  --color-active-bg: rgba(204, 102, 51, 0.15);
+  --color-focus-ring: rgba(204, 102, 51, 0.3);
+
+  /* 语义色 */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* 代码块 */
+  --color-code-bg: #F5F5F5;
+  --color-code-text: #1A1A1A;
+  --color-code-border: #E5E5E5;
+
+  /* 链接 */
+  --color-link: #CC6633;
+  --color-link-hover: #A85229;
+  --color-link-visited: #8B4513;
+
+  /* 过渡动画 */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* 暗色主题 */
+.dark {
+  /* 主色调 - 柔和橙铜 */
+  --color-primary: #E8956F;
+  --color-primary-light: #F5B89A;
+  --color-primary-dark: #CC6633;
+  --color-primary-alpha: rgba(232, 149, 111, 0.15);
+
+  /* 背景色 - 深色系 */
+  --color-bg-base: #1A1A1A;
+  --color-bg-surface: #2A2A2A;
+  --color-bg-elevated: #333333;
+  --color-bg-overlay: rgba(42, 42, 42, 0.95);
+
+  /* 文字色 */
+  --color-text-primary: #E5E5E5;
+  --color-text-secondary: #A0A0A0;
+  --color-text-tertiary: #707070;
+  --color-text-inverse: #1A1A1A;
+
+  /* 边框色 */
+  --color-border-light: #2A2A2A;
+  --color-border-medium: #3A3A3A;
+  --color-border-dark: #4A4A4A;
+
+  /* 阴影 */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.5);
+
+  /* 交互状态 */
+  --color-hover-bg: rgba(232, 149, 111, 0.12);
+  --color-active-bg: rgba(232, 149, 111, 0.2);
+  --color-focus-ring: rgba(232, 149, 111, 0.4);
+
+  /* 语义色 - 暗色主题调整 */
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-error: #F87171;
+  --color-info: #60A5FA;
+
+  /* 代码块 */
+  --color-code-bg: #2A2A2A;
+  --color-code-text: #E5E5E5;
+  --color-code-border: #3A3A3A;
+
+  /* 链接 */
+  --color-link: #E8956F;
+  --color-link-hover: #F5B89A;
+  --color-link-visited: #D4A574;
+}
+
+/* 平滑过渡 */
+html {
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+body {
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+}
+
+/* 防止主题切换时的闪烁 */
+html.theme-transitioning,
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition: none !important;
+}

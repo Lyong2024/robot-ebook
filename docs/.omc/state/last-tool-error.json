@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"Test-Path \\\"C:\\\\dev\\\\robot_ebook\\\\docs\\\\.vitepress\\\\theme\\\"\",\"description\":\"检查theme目录是否存在\"}",
+  "error": "Exit code 127\n/usr/bin/bash: line 1: Test-Path: command not found",
+  "timestamp": "2026-05-31T03:14:39.548Z",
+  "retry_count": 1
+}

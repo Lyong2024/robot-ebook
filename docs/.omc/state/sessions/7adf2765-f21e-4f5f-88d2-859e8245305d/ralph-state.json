@@ -1,0 +1,11 @@
+{
+  "active": true,
+  "iteration": 1,
+  "max_iterations": 100,
+  "started_at": "2026-05-31T03:13:06.728Z",
+  "prompt": "需要增加 明暗主题，整个电子书 HTML站点使用 Claude官方网站同样风格的  明暗主题颜色，要注意细节，避免不和谐的配色，必要的时候搜索获取必要的信息，开启 Ralph模式，反复迭代，直到完美",
+  "session_id": "7adf2765-f21e-4f5f-88d2-859e8245305d",
+  "project_path": "C:\\dev\\robot_ebook\\docs",
+  "linked_ultrawork": true,
+  "last_checked_at": "2026-05-31T03:13:06.728Z"
+}
