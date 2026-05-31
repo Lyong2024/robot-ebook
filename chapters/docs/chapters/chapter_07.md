@@ -744,3 +744,20 @@ robot_project/
 - [ ] 你能使用包管理器（apt）安装、更新和卸载软件包吗？你知道如何搜索可用的软件包？
 
 - [ ] 你能编写简单的 Shell 脚本来自动化常见任务吗？例如：批量处理文件、定时执行命令、启动多个 ROS 节点？
+
+---
+
+## 📚 拓展资源
+
+想要深入学习Linux和命令行技术？查看我们精心整理的[第7章拓展资源](../resources/chapter_07_resources.md)，包括：
+
+- 📖 **推荐教材**：《鸟哥的Linux私房菜》、《Linux命令行与Shell脚本编程大全》等经典书籍
+- 📄 **技术文档**：Linux man pages、GNU Coreutils文档、Bash参考手册
+- 🌐 **优质博客**：Linux Journey、The Linux Documentation Project
+- 🎥 **视频教程**：Linux基础、Shell脚本编程、系统管理
+- 💻 **开源项目**：Oh My Zsh、tmux、vim配置
+- 🎓 **在线课程**：Linux Foundation培训、edX Linux课程
+- 🛠️ **实用工具**：tldr命令速查、explainshell命令解释器
+- 💬 **活跃社区**：r/linux、Unix & Linux Stack Exchange
+
+[→ 查看完整资源列表](../resources/chapter_07_resources.md)

@@ -898,3 +898,20 @@ A：
 启动多个机器人模拟器节点（使用不同的命名空间），用一个控制节点分别控制它们。
 
 提示：使用 `--ros-args -r __ns:=/robot1` 设置命名空间。
+
+---
+
+## 📚 拓展资源
+
+想要深入学习ROS 2和机器人操作系统？查看我们精心整理的[第9章拓展资源](../resources/chapter_09_resources.md)，包括：
+
+- 📖 **推荐教材**：《ROS 2机器人编程实战》、《Programming Robots with ROS》
+- 📄 **技术文档**：ROS 2官方文档、DDS规范、rclpy API参考
+- 🌐 **优质博客**：ROS Discourse、The Construct博客、Robotics Backend
+- 🎥 **视频教程**：ROS 2基础、节点通信、launch文件配置
+- 💻 **开源项目**：Navigation2、MoveIt2、ros2_control
+- 🎓 **在线课程**：ROS 2 for Beginners、The Construct Academy
+- 🛠️ **实用工具**：Gazebo仿真器、RViz2可视化、rqt工具集
+- 💬 **活跃社区**：ROS Discourse、r/ROS、ROS Developers Slack
+
+[→ 查看完整资源列表](../resources/chapter_09_resources.md)

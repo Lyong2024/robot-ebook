@@ -898,3 +898,20 @@ class PIDController:
 - 用 `np.random.normal()` 生成噪声
 - 实现简单的 1D 卡尔曼滤波
 - 绘制原始数据和融合结果
+
+---
+
+## 📚 拓展资源
+
+想要深入学习Python编程和机器人应用？查看我们精心整理的[第8章拓展资源](../resources/chapter_08_resources.md)，包括：
+
+- 📖 **推荐教材**：《Python编程：从入门到实践》、《流畅的Python》、《Python数据科学手册》
+- 📄 **技术文档**：Python官方文档、NumPy用户指南、SciPy参考手册
+- 🌐 **优质博客**：Real Python、Python Weekly、PyImageSearch
+- 🎥 **视频教程**：Python基础、NumPy科学计算、机器人算法实现
+- 💻 **开源项目**：scikit-learn、OpenCV-Python、PyRobot
+- 🎓 **在线课程**：MIT Python课程、Coursera Python专项课程
+- 🛠️ **实用工具**：Jupyter Notebook、IPython、pytest测试框架
+- 💬 **活跃社区**：r/Python、Python Discord、Stack Overflow
+
+[→ 查看完整资源列表](../resources/chapter_08_resources.md)

@@ -737,4 +737,17 @@ int value = Serial.parseInt(); // 读取整数
 
 ---
 
-## API Error: Request rejected (429) · Concurrency limit exceeded for user, please retry later
+## 📚 拓展资源
+
+想要深入学习Arduino和ESP32开发？查看我们精心整理的[第4章拓展资源](../resources/chapter_04_resources.md)，包括：
+
+- 📖 **推荐教材**：《Arduino Cookbook》、《ESP32 Technical Reference Manual》等经典书籍
+- 📄 **技术文档**：官方数据手册、应用笔记、最佳实践指南
+- 🌐 **优质博客**：Random Nerd Tutorials、Last Minute Engineers等实战教程站
+- 🎥 **视频教程**：Paul McWhorter系统课程、Andreas Spiess深度评测
+- 💻 **开源项目**：Arduino Core for ESP32、PlatformIO、ESPHome等
+- 🎓 **在线课程**：Coursera、Udemy、edX平台的认证课程
+- 🛠️ **实用工具**：在线仿真器、引脚参考、代码示例库
+- 💬 **活跃社区**：Arduino Forum、ESP32 Forum、Reddit社区
+
+[→ 查看完整资源列表](../resources/chapter_04_resources.md)

@@ -598,3 +598,19 @@ A：粗略估算：
 - 4 个超声波传感器
 
 画出布局图，说明每个传感器的位置和朝向。
+
+---
+
+## 📚 拓展资源
+
+想要深入学习机器人硬件设计？查看我们精心整理的[第3章拓展资源](../resources/chapter_03_resources.md)，包括：
+
+- 📚 **推荐教材**：《Make: Electronics》、《Practical Electronics for Inventors》等经典硬件书籍
+- 📄 **重要论文**：机器人硬件平台综述、电源管理、传感器融合等前沿研究
+- 🌐 **优质博客**：Adafruit、SparkFun、Hackaday等创客社区教程
+- 🎥 **视频教程**：Arduino、ESP32、机器人制作等系列课程
+- 💻 **开源项目**：Arduino Core、ESP-IDF、Donkey Car等实战项目
+- 🎓 **在线课程**：Coursera、edX上的电子学和嵌入式系统课程
+- 🛠️ **实用工具**：电路设计软件、仿真工具、元件选型平台
+
+[→ 查看完整资源列表](../resources/chapter_03_resources.md)
