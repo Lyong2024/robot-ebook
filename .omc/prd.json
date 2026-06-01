@@ -43,7 +43,8 @@
       ],
       "estimatedHours": 4,
       "dependencies": ["US-001"],
-      "passes": false
+      "passes": true,
+      "completedDate": "2024-06-01"
     },
     {
       "id": "US-003",
