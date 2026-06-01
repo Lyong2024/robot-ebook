@@ -6,10 +6,56 @@
 ## 当前状态
 - 项目阶段：第1轮迭代进行中
 - 当前版本：v0.1.0-baseline
-- 已完成用户故事：7/20 (US-001至US-007)
-- 总体进度：35%
+- 已完成用户故事：8/20 (US-001至US-008)
+- 总体进度：40%
 
 ## 最新进展
+
+### 2026-06-01 完成US-008
+**任务**: 为第16-17章（前沿趋势）添加深度拓展资源
+
+**完成内容**:
+
+#### 第16章：具身智能与大模型
+- ✅ 添加12篇经典论文（RT-1、RT-2、PaLM-E、SayCan、π0、Octo、OpenVLA等）
+- ✅ 添加7个开源项目（LeRobot、Octo Model、OpenVLA、Mobile ALOHA等）
+- ✅ 添加3个在线课程（Michigan、UC Berkeley、清华大学）
+- ✅ 添加视频教程（Hugging Face、B站）
+- ✅ 添加6个前沿研究实验室（Google DeepMind、Physical Intelligence、UC Berkeley、Stanford、MIT、CMU）
+- ✅ 添加3个数据集（Open X-Embodiment、RoboNet、MIME）
+- ✅ 添加顶级会议和期刊（CoRL、RSS、ICRA、IROS、Science Robotics）
+- ✅ 添加3份行业报告（McKinsey、Goldman Sachs、ARK Invest）
+- ✅ 添加中文资源
+
+#### 第17章：人形机器人技术路线对比
+- ✅ 添加20+篇论文和白皮书（Tesla Optimus、Figure AI、Boston Dynamics、Unitree等）
+- ✅ 添加7个开源项目（Stanford Pupper、Open Dynamic Robot Initiative等）
+- ✅ 添加4个在线课程（MIT、ETH Zurich、Georgia Tech、上海交大）
+- ✅ 添加视频教程（Boston Dynamics、Tesla AI Day、B站）
+- ✅ 添加13个前沿公司和实验室
+- ✅ 添加5份行业报告和市场分析
+- ✅ 添加3本技术书籍
+- ✅ 添加顶级会议和期刊
+- ✅ 添加中文资源
+
+**验收标准验证**:
+- ✅ 为具身智能添加最新论文（33处提及RT-1、RT-2、PaLM-E等）
+- ✅ 为人形机器人添加公司白皮书（53处提及Tesla、Figure AI、Boston Dynamics等）
+- ✅ 为大模型+机器人添加研究综述
+- ✅ 添加至少5个前沿研究实验室（实际添加13个）
+- ✅ 添加机器人领域顶级会议和期刊（16处提及）
+- ✅ 添加行业报告和市场分析（7份报告）
+
+**统计数据**:
+- 第16章新增内容：约421行
+- 第17章新增内容：约507行
+- 总计新增：约928行拓展资源
+
+**关键发现**:
+1. 具身智能是当前机器人领域最前沿的研究方向
+2. 大模型与机器人的结合是未来趋势
+3. 人形机器人商业化进程加速，多家公司竞争激烈
+4. 开源数据集（Open X-Embodiment）对推动领域发展至关重要
 
 ### 2026-06-01 完成US-007
 **任务**: 为第13-15章（高级主题）添加深度拓展资源

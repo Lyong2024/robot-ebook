@@ -817,4 +817,425 @@ A：
 
 ---
 
+## 拓展阅读
+
+### 📚 经典论文
+
+#### 具身智能基础理论
+
+**RT-1: Robotics Transformer for Real-World Control at Scale**
+- **作者**: Anthony Brohan et al. (Google Research)
+- **年份**: 2022
+- **会议**: arXiv
+- **核心价值**: 第一个将Transformer架构应用于机器人控制的大规模模型
+- **论文链接**: https://arxiv.org/abs/2212.06817
+- **项目主页**: https://robotics-transformer.github.io/
+- **为什么重要**: 证明了Transformer在机器人领域的可行性，开启了具身智能的新时代
+
+**RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control**
+- **作者**: Anthony Brohan et al. (Google DeepMind)
+- **年份**: 2023
+- **会议**: CoRL 2023
+- **核心价值**: 将视觉-语言模型的知识迁移到机器人控制，实现零样本泛化
+- **论文链接**: https://arxiv.org/abs/2307.15818
+- **项目主页**: https://robotics-transformer2.github.io/
+- **为什么重要**: 展示了预训练大模型在机器人领域的强大能力
+
+**PaLM-E: An Embodied Multimodal Language Model**
+- **作者**: Danny Driess et al. (Google Research)
+- **年份**: 2023
+- **会议**: ICML 2023
+- **核心价值**: 将语言模型与机器人感知和控制深度融合
+- **论文链接**: https://arxiv.org/abs/2303.03378
+- **项目主页**: https://palm-e.github.io/
+- **为什么重要**: 562B参数的多模态模型，展示了大规模预训练的潜力
+
+**SayCan: Do As I Can, Not As I Say: Grounding Language in Robotic Affordances**
+- **作者**: Michael Ahn et al. (Google Research)
+- **年份**: 2022
+- **会议**: CoRL 2022
+- **核心价值**: 将大语言模型的高层规划与机器人的实际能力结合
+- **论文链接**: https://arxiv.org/abs/2204.01691
+- **项目主页**: https://say-can.github.io/
+- **为什么重要**: 解决了语言模型"纸上谈兵"的问题，让机器人能做力所能及的事
+
+#### 机器人基础模型
+
+**π0: A Vision-Language-Action Flow Model for General Robot Control**
+- **作者**: Physical Intelligence Team
+- **年份**: 2024
+- **核心价值**: 第一个真正意义上的机器人基础模型，跨平台、多任务
+- **论文链接**: https://www.physicalintelligence.company/blog/pi0
+- **为什么重要**: 机器人领域的"GPT时刻"，证明了基础模型的可行性
+
+**Octo: An Open-Source Generalist Robot Policy**
+- **作者**: Octo Model Team (UC Berkeley, Stanford)
+- **年份**: 2024
+- **会议**: RSS 2024
+- **核心价值**: 第一个开源的通用机器人策略模型
+- **论文链接**: https://arxiv.org/abs/2405.12213
+- **项目主页**: https://octo-models.github.io/
+- **开源代码**: https://github.com/octo-models/octo
+- **为什么重要**: 让研究者和开发者能够使用和改进通用机器人模型
+
+**OpenVLA: An Open-Source Vision-Language-Action Model**
+- **作者**: Moo Jin Kim et al. (MIT, UC Berkeley)
+- **年份**: 2024
+- **核心价值**: 完全开源的VLA模型，基于LLaMA 2构建
+- **论文链接**: https://arxiv.org/abs/2406.09246
+- **项目主页**: https://openvla.github.io/
+- **开源代码**: https://github.com/openvla/openvla
+- **为什么重要**: 降低了VLA模型的使用门槛，可在单GPU上微调
+
+#### 模仿学习与数据驱动方法
+
+**Learning Dexterous Manipulation from Human Demonstrations**
+- **作者**: Ilija Radosavovic et al. (UC Berkeley)
+- **年份**: 2023
+- **会议**: CoRL 2023
+- **核心价值**: 从人类示范中学习灵巧操作
+- **论文链接**: https://arxiv.org/abs/2303.03724
+- **为什么重要**: 展示了模仿学习在复杂操作任务中的潜力
+
+**Open X-Embodiment: Robotic Learning Datasets and RT-X Models**
+- **作者**: Open X-Embodiment Collaboration
+- **年份**: 2023
+- **核心价值**: 大规模跨平台机器人数据集（100万+示范）
+- **论文链接**: https://arxiv.org/abs/2310.08864
+- **项目主页**: https://robotics-transformer-x.github.io/
+- **数据集**: https://github.com/google-deepmind/open_x_embodiment
+- **为什么重要**: 机器人领域的"ImageNet"，推动数据驱动方法的发展
+
+**Diffusion Policy: Visuomotor Policy Learning via Action Diffusion**
+- **作者**: Cheng Chi et al. (Columbia University)
+- **年份**: 2023
+- **会议**: RSS 2023
+- **核心价值**: 使用扩散模型进行机器人策略学习
+- **论文链接**: https://arxiv.org/abs/2303.04137
+- **项目主页**: https://diffusion-policy.cs.columbia.edu/
+- **开源代码**: https://github.com/real-stanford/diffusion_policy
+- **为什么重要**: 能够处理多模态动作分布，提高策略的鲁棒性
+
+#### 移动操作
+
+**Mobile ALOHA: Learning Bimanual Mobile Manipulation with Low-Cost Whole-Body Teleoperation**
+- **作者**: Zipeng Fu et al. (Stanford University)
+- **年份**: 2024
+- **会议**: ICRA 2024
+- **核心价值**: 低成本移动双臂操作机器人，通过遥操作学习复杂任务
+- **论文链接**: https://arxiv.org/abs/2401.02117
+- **项目主页**: https://mobile-aloha.github.io/
+- **开源代码**: https://github.com/MarkFzp/mobile-aloha
+- **为什么重要**: 展示了移动操作的巨大潜力，硬件成本仅3.2万美元
+
+**ALOHA: A System for Teleoperation and Learning of Bimanual Manipulation**
+- **作者**: Tony Z. Zhao et al. (Stanford University)
+- **年份**: 2023
+- **核心价值**: 双臂遥操作系统，用于收集高质量示范数据
+- **论文链接**: https://arxiv.org/abs/2304.13705
+- **项目主页**: https://tonyzhaozh.github.io/aloha/
+- **为什么重要**: 提供了低成本的数据收集方案
+
+### 🚀 开源项目
+
+#### LeRobot (Hugging Face推荐)
+- **链接**: https://github.com/huggingface/lerobot
+- **开发者**: Hugging Face
+- **Star数**: 超过6k
+- **核心功能**:
+  - 预训练模型库（类似Hugging Face Model Hub）
+  - 标准化的机器人接口
+  - 数据收集和处理工具
+  - 一键训练和部署
+- **支持的机器人**: Aloha, Koch, Xarm, SO-100等
+- **文档**: https://huggingface.co/lerobot
+- **为什么推荐**: 让机器人学习像训练语言模型一样简单
+
+#### Octo Model
+- **链接**: https://github.com/octo-models/octo
+- **开发者**: UC Berkeley, Stanford
+- **Star数**: 超过1k
+- **核心功能**:
+  - 预训练的通用机器人策略
+  - 支持多种机器人平台
+  - 少样本微调（10-50个示范）
+  - 迁移学习
+- **文档**: https://octo-models.github.io/
+- **为什么推荐**: 第一个开源的通用机器人策略模型
+
+#### OpenVLA
+- **链接**: https://github.com/openvla/openvla
+- **开发者**: MIT, UC Berkeley
+- **Star数**: 超过800
+- **核心功能**:
+  - 基于LLaMA 2的VLA模型
+  - 完全开源（代码、模型、数据）
+  - 可在单GPU上微调
+  - 支持自然语言控制
+- **文档**: https://openvla.github.io/
+- **为什么推荐**: 最易用的开源VLA模型
+
+#### Mobile ALOHA
+- **链接**: https://github.com/MarkFzp/mobile-aloha
+- **开发者**: Stanford University
+- **Star数**: 超过1.5k
+- **核心功能**:
+  - 移动双臂操作机器人
+  - 遥操作数据收集
+  - 模仿学习训练
+  - 完整的硬件设计
+- **文档**: https://mobile-aloha.github.io/
+- **为什么推荐**: 低成本（3.2万美元）的移动操作平台
+
+#### ALOHA
+- **链接**: https://github.com/tonyzhaozh/aloha
+- **开发者**: Stanford University
+- **Star数**: 超过2k
+- **核心功能**:
+  - 双臂遥操作系统
+  - 高质量数据收集
+  - 行为克隆训练
+  - 硬件设计和BOM
+- **文档**: https://tonyzhaozh.github.io/aloha/
+- **为什么推荐**: 最流行的低成本双臂操作平台
+
+#### Diffusion Policy
+- **链接**: https://github.com/real-stanford/diffusion_policy
+- **开发者**: Columbia University
+- **Star数**: 超过1k
+- **核心功能**:
+  - 基于扩散模型的策略学习
+  - 处理多模态动作分布
+  - 支持多种机器人任务
+- **文档**: https://diffusion-policy.cs.columbia.edu/
+- **为什么推荐**: 最先进的策略学习方法之一
+
+#### RoboAgent
+- **链接**: https://github.com/robopen/roboagent
+- **Star数**: 超过500
+- **核心功能**:
+  - 多模态机器人智能体
+  - 视觉、语言、触觉融合
+  - 大语言模型集成
+- **为什么推荐**: 展示了多模态感知的强大能力
+
+### 🎓 在线课程
+
+#### Deep Learning for Robot Perception (University of Michigan)
+- **平台**: Coursera
+- **链接**: https://www.coursera.org/learn/deep-learning-robot-perception
+- **讲师**: Chad Jenkins
+- **时长**: 约4周
+- **语言**: 英文
+- **核心内容**:
+  - 深度学习在机器人感知中的应用
+  - 视觉-语言模型
+  - 具身智能基础
+- **为什么推荐**: 系统介绍深度学习在机器人中的应用
+
+#### CS 287: Advanced Robotics (UC Berkeley)
+- **平台**: UC Berkeley官网
+- **链接**: https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/
+- **讲师**: Pieter Abbeel
+- **语言**: 英文
+- **核心内容**:
+  - 模仿学习
+  - 强化学习
+  - 深度学习在机器人中的应用
+- **为什么推荐**: 顶尖的机器人学习课程
+
+#### 【中文】具身智能前沿（清华大学）
+- **平台**: B站
+- **讲师**: 清华大学交叉信息研究院
+- **语言**: 中文
+- **核心内容**:
+  - 具身智能概述
+  - 大模型+机器人
+  - 前沿研究进展
+- **为什么推荐**: 中文前沿课程，紧跟最新研究
+
+### 🎬 视频教程
+
+#### Hugging Face LeRobot Tutorials
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/@HuggingFace
+- **语言**: 英文
+- **核心内容**:
+  - LeRobot入门
+  - 数据收集和训练
+  - 模型部署
+- **为什么推荐**: 官方教程，最权威
+
+#### 【中文】具身智能技术解析
+- **平台**: B站
+- **UP主**: 机器人大讲堂
+- **语言**: 中文
+- **核心内容**:
+  - RT-1、RT-2技术解析
+  - π0模型详解
+  - 具身智能应用案例
+- **为什么推荐**: 中文详细讲解，适合初学者
+
+#### Physical Intelligence π0 Demo
+- **平台**: YouTube
+- **链接**: https://www.physicalintelligence.company/
+- **语言**: 英文
+- **核心内容**:
+  - π0模型演示
+  - 技术讲解
+- **为什么推荐**: 官方演示，展示最新成果
+
+### 🏢 前沿研究实验室
+
+#### Google DeepMind Robotics
+- **链接**: https://deepmind.google/discover/blog/category/robotics/
+- **核心研究**: RT-1, RT-2, PaLM-E, SayCan
+- **为什么关注**: 具身智能领域的领导者
+
+#### Physical Intelligence
+- **链接**: https://www.physicalintelligence.company/
+- **核心研究**: π0机器人基础模型
+- **为什么关注**: 机器人基础模型的先驱
+
+#### UC Berkeley Robot Learning Lab
+- **链接**: https://rll.berkeley.edu/
+- **负责人**: Sergey Levine
+- **核心研究**: Octo, 强化学习, 模仿学习
+- **为什么关注**: 机器人学习领域的顶尖实验室
+
+#### Stanford Vision and Learning Lab (SVL)
+- **链接**: https://svl.stanford.edu/
+- **负责人**: Fei-Fei Li, Jiajun Wu
+- **核心研究**: Mobile ALOHA, 具身AI
+- **为什么关注**: 具身智能的重要研究基地
+
+#### MIT CSAIL Robotics
+- **链接**: https://www.csail.mit.edu/research/robotics
+- **核心研究**: OpenVLA, 机器人操作
+- **为什么关注**: MIT的机器人研究传统
+
+#### CMU Robotics Institute
+- **链接**: https://www.ri.cmu.edu/
+- **核心研究**: 机器人学习、操作、导航
+- **为什么关注**: 世界顶尖的机器人研究机构
+
+### 📊 数据集
+
+#### Open X-Embodiment Dataset
+- **链接**: https://robotics-transformer-x.github.io/
+- **规模**: 100万+机器人操作示范
+- **平台**: 22种不同机器人
+- **任务**: 527种不同任务
+- **为什么重要**: 机器人领域最大的开放数据集
+
+#### RoboNet
+- **链接**: https://www.robonet.wiki/
+- **规模**: 15M视频帧
+- **平台**: 7种机器人
+- **为什么重要**: 大规模机器人视频数据集
+
+#### MIME (Multi-modal Imitation from Embodiment)
+- **链接**: https://github.com/google-research/mime
+- **规模**: 8000+示范
+- **特点**: 多模态（视觉、触觉、本体感觉）
+- **为什么重要**: 多模态机器人学习数据
+
+### 🎤 顶级会议和期刊
+
+#### 会议
+
+**CoRL (Conference on Robot Learning)**
+- **链接**: https://www.robot-learning.org/
+- **频率**: 年度
+- **为什么重要**: 机器人学习领域最重要的会议
+
+**RSS (Robotics: Science and Systems)**
+- **链接**: https://roboticsconference.org/
+- **频率**: 年度
+- **为什么重要**: 机器人学顶级会议，理论与实践结合
+
+**ICRA (International Conference on Robotics and Automation)**
+- **链接**: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+- **频率**: 年度
+- **为什么重要**: IEEE机器人旗舰会议
+
+**IROS (International Conference on Intelligent Robots and Systems)**
+- **链接**: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/iros
+- **频率**: 年度
+- **为什么重要**: 智能机器人系统的重要会议
+
+#### 期刊
+
+**Science Robotics**
+- **链接**: https://www.science.org/journal/scirobotics
+- **影响因子**: 25+
+- **为什么重要**: 机器人领域顶级期刊
+
+**The International Journal of Robotics Research (IJRR)**
+- **链接**: https://journals.sagepub.com/home/ijr
+- **影响因子**: 10+
+- **为什么重要**: 机器人学术界最权威的期刊
+
+**IEEE Transactions on Robotics (T-RO)**
+- **链接**: https://www.ieee-ras.org/publications/t-ro
+- **影响因子**: 7+
+- **为什么重要**: IEEE机器人旗舰期刊
+
+### 📖 行业报告
+
+#### McKinsey: The Future of Robotics
+- **链接**: https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-future-of-robotics
+- **年份**: 2024
+- **核心内容**: 机器人市场分析、技术趋势、商业机会
+- **为什么推荐**: 权威的行业分析
+
+#### Goldman Sachs: Robotics and AI Report
+- **年份**: 2024
+- **核心内容**: 机器人和AI的投资机会、市场规模预测
+- **为什么推荐**: 金融视角的行业分析
+
+#### ARK Invest: Big Ideas 2024 - Robotics
+- **链接**: https://ark-invest.com/big-ideas-2024
+- **年份**: 2024
+- **核心内容**: 机器人技术趋势、投资机会
+- **为什么推荐**: 前瞻性的技术和投资分析
+
+### 🌏 中文资源
+
+#### 机器人大讲堂（公众号）
+- **平台**: 微信公众号
+- **核心内容**: 机器人前沿资讯、技术解析
+- **为什么推荐**: 及时的中文机器人资讯
+
+#### 知乎 - 具身智能话题
+- **链接**: https://www.zhihu.com/topic/21635352
+- **核心内容**: 具身智能讨论、技术分享
+- **为什么推荐**: 活跃的中文技术社区
+
+#### 【中文】具身智能综述
+- **作者**: 清华大学、北京大学等
+- **年份**: 2024
+- **核心内容**: 具身智能的定义、技术路线、应用前景
+- **为什么推荐**: 系统的中文综述文章
+
+### 💡 学习建议
+
+1. **从仿真开始**: 使用LeRobot等工具在仿真环境中学习，无需真实机器人
+2. **关注开源项目**: 参与Octo、OpenVLA等开源项目，学习最新技术
+3. **阅读论文**: 从RT-1、RT-2开始，逐步深入理解具身智能
+4. **动手实践**: 尝试复现论文中的实验，加深理解
+5. **关注前沿**: 订阅Google DeepMind、Physical Intelligence等实验室的博客
+
+### 🔗 相关章节
+
+- 第17章：人形机器人 - 了解具身智能在人形机器人中的应用
+- 第14章：机器学习与深度学习 - 学习具身智能的基础算法
+- 第15章：计算机视觉 - 理解机器人的"眼睛"
+
+---
+
+**版权说明**: 以上资源仅供个人学习使用。部分资源可能需要付费或注册。请尊重知识产权，支持正版。
+
+---
+
 **下一章预告**：第17章将对比当前最前沿的人形机器人技术路线——Tesla Bot、Figure 01、Unitree H1，分析它们的技术选择、商业策略和未来方向。

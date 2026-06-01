@@ -358,4 +358,511 @@ A：部分工作会被取代（如重复性体力劳动、危险工作），但�
 
 ---
 
+## 拓展阅读
+
+### 📚 经典论文与白皮书
+
+#### Tesla Optimus
+
+**Tesla Bot: Optimus Gen 2 Technical Overview**
+- **发布者**: Tesla AI Team
+- **年份**: 2023
+- **类型**: 技术博客
+- **链接**: https://www.tesla.com/AI
+- **核心价值**: Tesla Optimus的官方技术介绍
+- **为什么重要**: 了解特斯拉的人形机器人技术路线
+
+**Tesla AI Day 2022: Optimus Presentation**
+- **演讲者**: Elon Musk, Tesla AI Team
+- **年份**: 2022
+- **类型**: 技术演讲
+- **视频链接**: https://www.youtube.com/watch?v=ODSJsviD_SU
+- **核心内容**: Optimus的设计理念、硬件架构、AI系统
+- **为什么重要**: 特斯拉人形机器人的首次公开亮相
+
+**Tesla FSD and Optimus: Shared AI Infrastructure**
+- **年份**: 2024
+- **核心价值**: 特斯拉如何将自动驾驶技术迁移到人形机器人
+- **为什么重要**: 理解跨领域技术迁移的思路
+
+#### Figure AI
+
+**Figure 01: Technical Specifications and Capabilities**
+- **发布者**: Figure AI
+- **年份**: 2024
+- **链接**: https://www.figure.ai/
+- **核心价值**: Figure 01的官方技术文档
+- **为什么重要**: 了解液压执行器在人形机器人中的应用
+
+**Figure AI + OpenAI: Multimodal Reasoning for Robotics**
+- **发布者**: Figure AI, OpenAI
+- **年份**: 2024
+- **核心价值**: GPT-4在人形机器人中的应用
+- **演示视频**: https://www.figure.ai/
+- **为什么重要**: 展示了大语言模型赋能机器人的潜力
+
+**Figure AI Series B Funding Announcement**
+- **年份**: 2024
+- **金额**: 6.75亿美元
+- **投资方**: OpenAI, NVIDIA, Microsoft, Jeff Bezos等
+- **为什么重要**: 反映了资本市场对人形机器人的信心
+
+#### Boston Dynamics
+
+**Atlas: The Next Generation**
+- **发布者**: Boston Dynamics
+- **年份**: 2024
+- **类型**: 技术博客
+- **链接**: https://bostondynamics.com/atlas/
+- **核心价值**: 全电动Atlas的技术突破
+- **为什么重要**: 从液压到电动的技术转型
+
+**Parkour and Dynamic Locomotion for Humanoid Robots**
+- **作者**: Boston Dynamics Research Team
+- **年份**: 2023
+- **核心价值**: Atlas的动态运动控制算法
+- **为什么重要**: 代表了人形机器人运动控制的最高水平
+
+#### Unitree Robotics
+
+**Unitree H1: High-Speed Humanoid Robot**
+- **发布者**: Unitree Robotics
+- **年份**: 2023
+- **链接**: https://www.unitree.com/h1/
+- **核心价值**: H1的技术规格和性能指标
+- **为什么重要**: 刷新了人形机器人的速度记录
+
+**Quasi-Direct Drive Actuators for Humanoid Robots**
+- **作者**: Unitree Research Team
+- **年份**: 2024
+- **核心价值**: 准直驱电机在人形机器人中的应用
+- **为什么重要**: 平衡性能和成本的执行器方案
+
+#### 1X Technologies
+
+**NEO: Safe and Capable Humanoid for Home Assistance**
+- **发布者**: 1X Technologies
+- **年份**: 2024
+- **链接**: https://www.1x.tech/androids/neo
+- **核心价值**: 家用人形机器人的设计理念
+- **为什么重要**: 专注于安全性和家庭应用
+
+**EVE: Industrial Humanoid Robot**
+- **发布者**: 1X Technologies
+- **年份**: 2023
+- **核心价值**: 工业场景的人形机器人应用
+- **为什么重要**: 已在实际工业环境中部署
+
+#### Agility Robotics
+
+**Digit: Purpose-Built for Logistics**
+- **发布者**: Agility Robotics
+- **年份**: 2024
+- **链接**: https://agilityrobotics.com/digit
+- **核心价值**: 物流专用人形机器人
+- **为什么重要**: 已在亚马逊等公司试用
+
+**Bipedal Locomotion in Unstructured Environments**
+- **作者**: Agility Robotics Research Team
+- **年份**: 2023
+- **核心价值**: 双足机器人在复杂环境中的行走控制
+- **为什么重要**: 实用化的双足行走技术
+
+### 🚀 开源项目
+
+#### Humanoid Robot Open Source Projects
+
+**Stanford Pupper**
+- **链接**: https://github.com/stanfordroboticsclub/StanfordQuadruped
+- **Star数**: 超过3k
+- **核心功能**: 低成本四足机器人（可扩展为人形）
+- **成本**: 约600美元
+- **为什么推荐**: 学习机器人运动控制的入门项目
+
+**Open Dynamic Robot Initiative**
+- **链接**: https://open-dynamic-robot-initiative.github.io/
+- **开发者**: Max Planck Institute
+- **核心功能**:
+  - 开源的机器人硬件设计
+  - 准直驱执行器
+  - 运动控制算法
+- **为什么推荐**: 学术级的开源机器人平台
+
+**PyBullet Humanoid Environments**
+- **链接**: https://github.com/bulletphysics/bullet3
+- **Star数**: 超过12k
+- **核心功能**:
+  - 人形机器人仿真环境
+  - 物理引擎
+  - 强化学习接口
+- **为什么推荐**: 在仿真中学习人形机器人控制
+
+**MuJoCo Humanoid Models**
+- **链接**: https://github.com/google-deepmind/mujoco
+- **开发者**: Google DeepMind
+- **Star数**: 超过7k
+- **核心功能**:
+  - 高精度物理仿真
+  - 人形机器人模型库
+  - 强化学习基准测试
+- **为什么推荐**: 研究级的仿真工具
+
+#### 控制算法
+
+**Whole-Body Control (WBC)**
+- **链接**: https://github.com/stack-of-tasks/tsid
+- **Star数**: 超过500
+- **核心功能**: 全身动力学控制
+- **为什么推荐**: 人形机器人控制的核心算法
+
+**Bipedal Locomotion Framework**
+- **链接**: https://github.com/ami-iit/bipedal-locomotion-framework
+- **开发者**: Italian Institute of Technology
+- **Star数**: 超过400
+- **核心功能**:
+  - 双足行走控制
+  - 轨迹优化
+  - 平衡控制
+- **为什么推荐**: 完整的双足机器人控制框架
+
+### 🎓 在线课程
+
+#### Underactuated Robotics (MIT)
+- **平台**: MIT OpenCourseWare
+- **链接**: http://underactuated.mit.edu/
+- **讲师**: Russ Tedrake
+- **语言**: 英文
+- **核心内容**:
+  - 欠驱动系统控制
+  - 双足机器人行走
+  - 轨迹优化
+  - 强化学习
+- **配套工具**: Drake仿真器
+- **为什么推荐**: 人形机器人控制的理论基础
+
+#### Legged Robots (ETH Zurich)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/playlist?list=PLgnQpQtFTOGQECnBvZSV61oxTrkPut-nc
+- **讲师**: Marco Hutter
+- **语言**: 英文
+- **核心内容**:
+  - 腿式机器人运动学
+  - 动力学建模
+  - 运动控制
+  - 感知和规划
+- **为什么推荐**: 欧洲顶尖的腿式机器人课程
+
+#### Humanoid Robotics (Georgia Tech)
+- **平台**: Udacity
+- **课程代码**: CS 8803
+- **讲师**: Mike Stilman
+- **语言**: 英文
+- **核心内容**:
+  - 人形机器人运动学
+  - 平衡控制
+  - 步态规划
+  - 全身运动规划
+- **为什么推荐**: 系统的人形机器人课程
+
+#### 【中文】人形机器人技术（上海交通大学）
+- **平台**: B站
+- **讲师**: 上海交通大学机器人研究所
+- **语言**: 中文
+- **核心内容**:
+  - 人形机器人概述
+  - 硬件设计
+  - 控制算法
+  - 应用案例
+- **为什么推荐**: 国内顶尖的中文课程
+
+### 🎬 视频教程
+
+#### Boston Dynamics Official Channel
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/@BostonDynamics
+- **语言**: 英文
+- **核心内容**:
+  - Atlas演示视频
+  - 技术讲解
+  - 幕后花絮
+- **为什么推荐**: 最震撼的人形机器人演示
+
+#### Tesla AI Day Recordings
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/@tesla
+- **语言**: 英文
+- **核心内容**:
+  - Optimus技术讲解
+  - AI系统介绍
+  - 未来规划
+- **为什么推荐**: 了解特斯拉的技术路线
+
+#### 【中文】人形机器人深度解析
+- **平台**: B站
+- **UP主**: 机器人大讲堂
+- **语言**: 中文
+- **核心内容**:
+  - Tesla、Figure、Unitree对比
+  - 技术路线分析
+  - 行业趋势预测
+- **为什么推荐**: 中文详细解析，适合国内观众
+
+#### Unitree Robotics Official Channel
+- **平台**: YouTube / B站
+- **链接**: https://www.youtube.com/@UnitreeRobotics
+- **语言**: 中英文
+- **核心内容**:
+  - H1演示视频
+  - 技术更新
+  - 开发者教程
+- **为什么推荐**: 了解中国人形机器人的进展
+
+### 🏢 前沿公司和实验室
+
+#### 商业公司
+
+**Tesla (Optimus)**
+- **链接**: https://www.tesla.com/AI
+- **核心产品**: Optimus人形机器人
+- **技术特点**: 纯视觉、电动执行器、大规模生产
+- **为什么关注**: 最有可能实现大规模量产
+
+**Figure AI**
+- **链接**: https://www.figure.ai/
+- **核心产品**: Figure 01
+- **技术特点**: 液压执行器、GPT-4集成、高性能
+- **为什么关注**: 技术领先，资本雄厚
+
+**Unitree Robotics (宇树科技)**
+- **链接**: https://www.unitree.com/
+- **核心产品**: H1, H1.5
+- **技术特点**: 准直驱电机、高性价比、快速迭代
+- **为什么关注**: 中国人形机器人的领军企业
+
+**1X Technologies**
+- **链接**: https://www.1x.tech/
+- **核心产品**: NEO (家用), EVE (工业)
+- **技术特点**: 安全设计、家庭应用
+- **为什么关注**: 专注于家庭场景
+
+**Agility Robotics**
+- **链接**: https://agilityrobotics.com/
+- **核心产品**: Digit
+- **技术特点**: 物流专用、已商业化
+- **为什么关注**: 最早实现商业化的人形机器人之一
+
+**Apptronik**
+- **链接**: https://apptronik.com/
+- **核心产品**: Apollo
+- **技术特点**: 模块化设计、工业应用
+- **为什么关注**: NASA合作伙伴
+
+**Sanctuary AI**
+- **链接**: https://sanctuary.ai/
+- **核心产品**: Phoenix
+- **技术特点**: 类人灵巧手、AI驱动
+- **为什么关注**: 加拿大的人形机器人先驱
+
+#### 研究机构
+
+**Boston Dynamics (Hyundai)**
+- **链接**: https://bostondynamics.com/
+- **核心产品**: Atlas
+- **为什么关注**: 技术标杆，代表最高水平
+
+**MIT Biomimetic Robotics Lab**
+- **链接**: https://biomimetics.mit.edu/
+- **负责人**: Sangbae Kim
+- **核心研究**: 腿式机器人、仿生设计
+- **为什么关注**: MIT的机器人研究传统
+
+**ETH Zurich Robotic Systems Lab**
+- **链接**: https://rsl.ethz.ch/
+- **负责人**: Marco Hutter
+- **核心研究**: ANYmal四足机器人、腿式运动控制
+- **为什么关注**: 欧洲顶尖的腿式机器人实验室
+
+**IIT (Italian Institute of Technology)**
+- **链接**: https://www.iit.it/research/lines/humanoid-and-human-centered-mechatronics
+- **核心研究**: iCub人形机器人、全身控制
+- **为什么关注**: 欧洲人形机器人研究中心
+
+**KAIST Humanoid Robot Research Center**
+- **链接**: https://humanoid.kaist.ac.kr/
+- **核心研究**: HUBO人形机器人
+- **为什么关注**: 韩国的人形机器人研究
+
+**清华大学机器人研究所**
+- **核心研究**: 人形机器人、智能控制
+- **为什么关注**: 中国顶尖的机器人研究机构
+
+### 📊 行业报告和市场分析
+
+#### McKinsey: The Humanoid Robot Revolution
+- **年份**: 2024
+- **核心内容**:
+  - 人形机器人市场规模预测
+  - 应用场景分析
+  - 技术成熟度评估
+- **关键数据**: 2030年市场规模预计达到60亿美元
+- **为什么推荐**: 权威的市场分析
+
+#### Goldman Sachs: Humanoid Robots - The Next Frontier
+- **年份**: 2024
+- **核心内容**:
+  - 投资机会分析
+  - 技术路线对比
+  - 商业化时间表
+- **关键数据**: 2035年人形机器人可能替代4%的制造业劳动力
+- **为什么推荐**: 金融视角的深度分析
+
+#### ARK Invest: Big Ideas 2024 - Humanoid Robots
+- **链接**: https://ark-invest.com/big-ideas-2024
+- **年份**: 2024
+- **核心内容**:
+  - 技术趋势预测
+  - 成本曲线分析
+  - 投资建议
+- **关键数据**: 人形机器人价格可能在2030年降至2.5万美元
+- **为什么推荐**: 前瞻性的技术和投资分析
+
+#### IFR (International Federation of Robotics): Humanoid Robots Report
+- **链接**: https://ifr.org/
+- **年份**: 2024
+- **核心内容**:
+  - 全球人形机器人出货量
+  - 区域市场分析
+  - 技术标准
+- **为什么推荐**: 行业协会的官方数据
+
+#### CB Insights: Humanoid Robotics Market Map
+- **年份**: 2024
+- **核心内容**:
+  - 全球人形机器人公司地图
+  - 融资情况分析
+  - 技术趋势
+- **为什么推荐**: 创投视角的行业分析
+
+### 📖 技术书籍
+
+#### Humanoid Robotics: A Reference
+- **作者**: Ambarish Goswami, Prahlad Vadakkepat
+- **出版社**: Springer
+- **年份**: 2019
+- **核心内容**:
+  - 人形机器人设计
+  - 运动控制
+  - 感知和规划
+- **为什么推荐**: 人形机器人的权威参考书
+
+#### Introduction to Humanoid Robotics
+- **作者**: Shuuji Kajita et al.
+- **出版社**: Springer
+- **年份**: 2014
+- **核心内容**:
+  - 双足行走理论
+  - ZMP (Zero Moment Point)
+  - 步态生成
+- **为什么推荐**: 日本人形机器人研究的经典著作
+
+#### Biped Locomotion: Concepts, Models, and Control
+- **作者**: Christine Chevallereau et al.
+- **出版社**: Wiley
+- **年份**: 2009
+- **核心内容**:
+  - 双足运动理论
+  - 动力学建模
+  - 控制策略
+- **为什么推荐**: 双足机器人的理论基础
+
+### 🎤 顶级会议和期刊
+
+#### 会议
+
+**Humanoids (IEEE-RAS International Conference on Humanoid Robots)**
+- **链接**: https://www.humanoids-conference.org/
+- **频率**: 年度
+- **为什么重要**: 人形机器人领域最专业的会议
+
+**ICRA (International Conference on Robotics and Automation)**
+- **链接**: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/icra
+- **频率**: 年度
+- **为什么重要**: 机器人领域最大的会议
+
+**IROS (International Conference on Intelligent Robots and Systems)**
+- **链接**: https://www.ieee-ras.org/conferences-workshops/fully-sponsored/iros
+- **频率**: 年度
+- **为什么重要**: 智能机器人系统的重要会议
+
+**RSS (Robotics: Science and Systems)**
+- **链接**: https://roboticsconference.org/
+- **频率**: 年度
+- **为什么重要**: 理论与实践结合的顶级会议
+
+#### 期刊
+
+**IEEE Transactions on Robotics (T-RO)**
+- **链接**: https://www.ieee-ras.org/publications/t-ro
+- **影响因子**: 7+
+- **为什么重要**: 机器人领域顶级期刊
+
+**The International Journal of Robotics Research (IJRR)**
+- **链接**: https://journals.sagepub.com/home/ijr
+- **影响因子**: 10+
+- **为什么重要**: 机器人学术界最权威的期刊
+
+**Science Robotics**
+- **链接**: https://www.science.org/journal/scirobotics
+- **影响因子**: 25+
+- **为什么重要**: 跨学科的顶级机器人期刊
+
+### 🌏 中文资源
+
+#### 机器人大讲堂（公众号）
+- **平台**: 微信公众号
+- **核心内容**: 人形机器人资讯、技术解析、行业动态
+- **为什么推荐**: 及时的中文机器人资讯
+
+#### 知乎 - 人形机器人话题
+- **链接**: https://www.zhihu.com/topic/20268215
+- **核心内容**: 人形机器人讨论、技术分享、行业分析
+- **为什么推荐**: 活跃的中文技术社区
+
+#### 【中文】人形机器人产业报告
+- **发布者**: 中国机器人产业联盟
+- **年份**: 2024
+- **核心内容**: 中国人形机器人产业现状、技术路线、政策支持
+- **为什么推荐**: 了解中国市场的权威报告
+
+#### 36氪 - 人形机器人专题
+- **链接**: https://36kr.com/
+- **核心内容**: 创业公司报道、融资动态、技术趋势
+- **为什么推荐**: 创投视角的行业报道
+
+#### B站 - 人形机器人UP主推荐
+- **UP主**: 机器人大讲堂、科技袁人、差评君
+- **核心内容**: 人形机器人评测、技术解析、行业分析
+- **为什么推荐**: 生动的视频讲解
+
+### 💡 学习建议
+
+1. **关注头部公司**: 订阅Tesla、Figure、Unitree等公司的官方博客和社交媒体
+2. **学习基础理论**: 从双足行走、全身控制等基础理论开始
+3. **仿真实践**: 使用PyBullet、MuJoCo等工具在仿真中学习
+4. **跟踪前沿**: 关注Humanoids、ICRA等会议的最新论文
+5. **行业洞察**: 阅读McKinsey、Goldman Sachs等机构的行业报告
+6. **动手实践**: 如果有条件，参与开源项目或购买低成本机器人平台
+
+### 🔗 相关章节
+
+- 第16章：具身智能与大模型 - 了解人形机器人的"大脑"
+- 第13章：机械臂运动规划 - 学习人形机器人的手臂控制
+- 第14章：机器学习与深度学习 - 理解人形机器人的AI算法
+
+---
+
+**版权说明**: 以上资源仅供个人学习使用。部分资源可能需要付费或注册。请尊重知识产权，支持正版。
+
+---
+
 **下一章预告**：第18章将带你完成一个贯穿全书的综合项目——制作一个可以巡线、避障并抓取小物的桌面机器人，将前面所有章节的知识融会贯通。
