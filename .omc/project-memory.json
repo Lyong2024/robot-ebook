@@ -1,0 +1,200 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1780284807353,
+  "projectRoot": "C:\\dev\\robot_ebook",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vue",
+        "version": "3.4.0",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {
+      "docs:dev": "vitepress dev docs",
+      "docs:build": "vitepress build docs",
+      "docs:preview": "vitepress preview docs"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "appendix": {
+      "path": "appendix",
+      "purpose": null,
+      "fileCount": 6,
+      "lastAccessed": 1780284807320,
+      "keyFiles": [
+        "debugging_guide.md",
+        "faq.md",
+        "glossary.md",
+        "hall_of_fame.md",
+        "open_source_projects.md"
+      ]
+    },
+    "chapters": {
+      "path": "chapters",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1780284807320,
+      "keyFiles": [
+        "chapters_4-6_report.txt"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 7,
+      "lastAccessed": 1780284807340,
+      "keyFiles": [
+        "about.md",
+        "code_verification_report.md",
+        "index.md",
+        "intro.md",
+        "package-lock.json"
+      ]
+    },
+    "templates": {
+      "path": "templates",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1780284807340,
+      "keyFiles": [
+        "resource-template.md"
+      ]
+    },
+    "__pycache__": {
+      "path": "__pycache__",
+      "purpose": null,
+      "fileCount": 7,
+      "lastAccessed": 1780284807340,
+      "keyFiles": [
+        "temp_verify_ch9_hello_node.cpython-313.pyc",
+        "temp_verify_ch9_launch.cpython-313.pyc",
+        "temp_verify_ch9_motor.cpython-313.pyc",
+        "temp_verify_ch9_publisher.cpython-313.pyc",
+        "temp_verify_ch9_simulator.cpython-313.pyc"
+      ]
+    },
+    "chapters\\docs": {
+      "path": "chapters\\docs",
+      "purpose": "Documentation",
+      "fileCount": 0,
+      "lastAccessed": 1780284807341,
+      "keyFiles": []
+    },
+    "docs\\node_modules": {
+      "path": "docs\\node_modules",
+      "purpose": "Dependencies",
+      "fileCount": 1,
+      "lastAccessed": 1780284807341,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "chapters\\docs\\chapters\\chapter_06.md",
+      "accessCount": 5,
+      "lastAccessed": 1780289275204,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 2,
+      "lastAccessed": 1780288953772,
+      "type": "directory"
+    },
+    {
+      "path": "chapters\\docs\\chapters\\chapter_16.md",
+      "accessCount": 2,
+      "lastAccessed": 1780289288936,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 1,
+      "lastAccessed": 1780288757845,
+      "type": "file"
+    },
+    {
+      "path": "docs\\.vitepress\\config.mts",
+      "accessCount": 1,
+      "lastAccessed": 1780288957955,
+      "type": "file"
+    },
+    {
+      "path": "docs",
+      "accessCount": 1,
+      "lastAccessed": 1780288958819,
+      "type": "directory"
+    },
+    {
+      "path": "docs\\appendix\\contributors.md",
+      "accessCount": 1,
+      "lastAccessed": 1780289024938,
+      "type": "file"
+    },
+    {
+      "path": "docs\\appendix\\projects.md",
+      "accessCount": 1,
+      "lastAccessed": 1780289146113,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\chapters\\chapter_10.md",
+      "accessCount": 1,
+      "lastAccessed": 1780289151574,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\chapters\\chapter_11.md",
+      "accessCount": 1,
+      "lastAccessed": 1780289152204,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\chapters\\chapter_17.md",
+      "accessCount": 1,
+      "lastAccessed": 1780289282590,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\chapters\\chapter_08_history.md",
+      "accessCount": 1,
+      "lastAccessed": 1780289381396,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

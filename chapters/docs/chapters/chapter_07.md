@@ -13,6 +13,33 @@
 
 如果你之前只用过 Windows，可能会疑惑：为什么机器人开发要用 Linux？
 
+### Unix/Linux 的历史传承
+
+要理解为什么Linux如此强大，我们需要回到1969年。那一年，贝尔实验室的**Ken Thompson**和**Dennis Ritchie**创造了Unix操作系统。Unix的设计哲学深刻影响了整个计算机世界：
+
+**Unix哲学核心思想**（Doug McIlroy总结）：
+1. **做一件事，做好它**：每个程序只做一件事，但做到极致
+2. **程序协作**：通过管道（pipe）连接程序，让它们协同工作
+3. **文本流**：使用文本作为通用接口，便于处理和传输
+4. **快速原型**：优先构建原型，而不是过度设计
+
+这些思想在今天的机器人开发中依然适用。ROS 2的节点通信、Linux的管道机制、配置文件的文本格式，都是Unix哲学的体现。
+
+**Linux的诞生**：1991年，芬兰大学生**Linus Torvalds**在赫尔辛基大学宿舍里，出于对Unix的热爱和对Minix的不满，开始编写自己的操作系统内核。他在comp.os.minix新闻组发布了著名的公告：
+
+> "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu)..."
+
+这个"小爱好"最终成为了世界上最成功的开源项目之一。今天，Linux运行在超过90%的云服务器、所有的Android手机、大多数超级计算机，以及无数的机器人系统上。
+
+**关键里程碑**：
+- **1969**：Unix诞生于贝尔实验室
+- **1973**：Unix用C语言重写，实现跨平台移植
+- **1983**：Richard Stallman发起GNU项目，创建自由软件运动
+- **1991**：Linus Torvalds发布Linux 0.01版本
+- **2004**：Ubuntu发布，让Linux走向大众
+- **2007**：ROS（Robot Operating System）发布，基于Linux
+- **2017**：ROS 2发布，继续以Linux为主要平台
+
 ### Linux 在机器人领域的优势
 
 **开源免费**：Linux 是开源的，可以自由修改和分发，非常适合嵌入式系统。
@@ -612,6 +639,98 @@ robot-stop     # 停止机器人
 
 ## 推荐资源
 
+### 经典书籍
+
+**《Unix编程艺术》（The Art of Unix Programming）** - Eric S. Raymond
+- Unix哲学的权威阐述，讲解"做一件事并做好"的设计思想
+- 适合理解为什么Linux工具设计成现在这样
+- 中文版由姜宏、何源等翻译
+
+**《鸟哥的Linux私房菜：基础学习篇》** - 鸟哥（蔡德明）
+- 华语世界最受欢迎的Linux入门书
+- 从零开始，循序渐进，适合完全新手
+- 涵盖文件系统、Shell、权限、进程等核心概念
+
+**《Linux命令行与Shell脚本编程大全》** - Richard Blum & Christine Bresnahan
+- 全面覆盖命令行和Shell脚本
+- 大量实用示例，适合作为参考手册
+- 第4版已更新到最新Linux发行版
+
+**《UNIX/Linux系统管理技术手册》** - Evi Nemeth等
+- 系统管理员的圣经，深度和广度兼具
+- 适合进阶学习，了解系统底层运作
+- 第5版涵盖云计算和容器技术
+
+**《Linux内核设计与实现》** - Robert Love
+- 深入Linux内核源码，理解操作系统原理
+- 适合想要深入理解Linux的开发者
+- 对机器人实时性能优化有帮助
+
+### Unix/Linux重要人物
+
+**Ken Thompson**（1943-）
+- Unix之父，与Dennis Ritchie共同创造Unix
+- 发明了B语言（C语言前身）
+- 后来参与Go语言设计
+- 图灵奖得主（1983）
+
+**Dennis Ritchie**（1941-2011）
+- Unix共同创造者，C语言之父
+- 著有《C程序设计语言》（K&R C）
+- 图灵奖得主（1983）
+- 他的去世几乎与乔布斯同时，但媒体关注少得多
+
+**Linus Torvalds**（1969-）
+- Linux内核创始人和首席架构师
+- Git版本控制系统的创造者
+- 以直率的技术评论和"Talk is cheap, show me the code"著称
+- 千禧年技术奖得主（2012）
+
+**Richard Stallman**（1953-）
+- 自由软件运动发起人，GNU项目创始人
+- 创建了GPL许可证，影响整个开源世界
+- 编写了Emacs、GCC等重要工具
+- 坚定的软件自由倡导者
+
+**Brian Kernighan**（1942-）
+- Unix早期开发者，"K&R C"的K
+- 著有多本经典著作：《C程序设计语言》《Unix编程环境》
+- "Hello, World!"程序的创造者
+- 普林斯顿大学计算机科学教授
+
+**Doug McIlroy**（1932-）
+- Unix管道（pipe）的发明者
+- 总结了Unix哲学的核心思想
+- 贝尔实验室计算科学研究中心主任
+
+### Unix哲学在机器人开发中的应用
+
+**1. 模块化设计**
+```bash
+# Unix方式：小工具组合
+cat sensor_data.log | grep "error" | wc -l
+
+# ROS 2方式：节点组合
+ros2 run camera camera_node | ros2 run detector object_detector
+```
+
+**2. 文本作为通用接口**
+```yaml
+# ROS 2配置文件（YAML）
+robot_params:
+  max_speed: 1.0
+  sensor_rate: 30
+```
+
+**3. 一切皆文件**
+```bash
+# 读取传感器数据
+cat /dev/ttyUSB0
+
+# 控制GPIO
+echo "1" > /sys/class/gpio/gpio17/value
+```
+
 ### 在线教程
 
 **Linux Journey**：https://linuxjourney.com/
@@ -620,15 +739,69 @@ robot-stop     # 停止机器人
 **The Linux Command Line**：https://linuxcommand.org/
 - 免费电子书，深入讲解命令行
 
+**The Linux Documentation Project**：https://tldp.org/
+- 大量Linux文档、指南和HOWTO
+
+### 视频资源
+
+**YouTube频道推荐**：
+
+**LearnLinuxTV**
+- 系统的Linux教程系列
+- 涵盖Ubuntu、命令行、服务器管理
+- 适合视觉学习者
+
+**The Linux Foundation**
+- 官方培训视频
+- 专业级系统管理课程
+- 部分免费课程
+
+**NetworkChuck**
+- 生动有趣的Linux教程
+- 结合网络和安全知识
+- 适合初学者
+
+**中文视频资源**：
+
+**B站：韩顺平Linux教程**
+- 全面系统的中文教程
+- 从基础到高级，循序渐进
+
+**慕课网：Linux达人养成计划**
+- 实战导向的课程
+- 适合快速上手
+
 ### 速查表
 
 **Linux Command Cheat Sheet**：
 - 搜索"Linux command cheat sheet"，有很多 PDF 可以打印出来
 
+**tldr pages**：https://tldr.sh/
+- 简化版man手册，提供实用示例
+- 安装：`sudo apt install tldr`
+
+**explainshell**：https://explainshell.com/
+- 在线解释Shell命令
+- 输入命令，自动分解每个部分的含义
+
 ### 练习平台
 
 **OverTheWire**：https://overthewire.org/wargames/bandit/
 - 通过游戏学习 Linux 命令
+
+**Linux Survival**：https://linuxsurvival.com/
+- 互动式命令行教程
+
+### 社区资源
+
+**Stack Overflow**：https://stackoverflow.com/questions/tagged/linux
+- 最大的技术问答社区
+
+**r/linux**：https://reddit.com/r/linux
+- Reddit上的Linux社区
+
+**Linux Questions**：https://www.linuxquestions.org/
+- 老牌Linux论坛
 
 ## 本章小结
 

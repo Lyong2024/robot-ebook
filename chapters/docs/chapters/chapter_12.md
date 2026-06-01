@@ -9,6 +9,102 @@
 - 能够在 ROS 2 中集成视觉功能
 - 了解常见的视觉应用场景
 
+---
+
+## 学术发展史与经典文献
+
+### 计算机视觉的诞生（1960s-1970s）
+
+计算机视觉作为一门学科，起源于人工智能研究的早期探索。1966年，MIT的Seymour Papert启动了著名的"Summer Vision Project"，试图在一个暑假内"解决"计算机视觉问题——这个乐观的目标虽然未能实现，但标志着计算机视觉研究的正式开端。
+
+**奠基性工作**：
+- **Larry Roberts (1963)**：《Machine Perception of Three-Dimensional Solids》，首次提出从2D图像重建3D结构的方法，被认为是计算机视觉的开山之作
+- **David Marr (1982)**：《Vision: A Computational Investigation》，提出了视觉计算的三层理论（计算理论、表示与算法、硬件实现），至今仍是计算机视觉的理论基石
+
+**关键洞察**：Marr认为视觉是一个信息处理过程，从原始图像（primal sketch）到2.5D素描（surface representation），最终到3D模型表示。这种分层思想深刻影响了后续研究。
+
+### 特征检测时代（1980s-1990s）
+
+这一时期的研究聚焦于如何从图像中提取稳定的特征，用于物体识别和场景理解。
+
+**里程碑论文**：
+- **Canny (1986)**：《A Computational Approach to Edge Detection》，提出了至今仍广泛使用的Canny边缘检测算法，其设计原则（低错误率、精确定位、单一响应）成为特征检测的黄金标准
+- **Harris & Stephens (1988)**：《A Combined Corner and Edge Detector》，Harris角点检测器成为特征点检测的经典方法
+- **Lowe (1999)**：《Object Recognition from Local Scale-Invariant Features》，提出SIFT（尺度不变特征变换），首次实现了对旋转、缩放、光照变化鲁棒的特征匹配
+
+**技术演进**：从简单的边缘检测（Sobel, Prewitt）到角点检测（Harris, Shi-Tomasi），再到尺度不变特征（SIFT, SURF），研究者不断追求更鲁棒、更具判别性的特征表示。
+
+### 机器学习与传统视觉（2000s）
+
+进入21世纪，机器学习方法开始与计算机视觉深度融合，但仍依赖手工设计的特征。
+
+**重要突破**：
+- **Viola & Jones (2001)**：《Rapid Object Detection using a Boosted Cascade of Simple Features》，提出基于Haar特征和AdaBoost的人脸检测算法，首次实现实时人脸检测，至今仍是OpenCV的默认方法
+- **Dalal & Triggs (2005)**：《Histograms of Oriented Gradients for Human Detection》，HOG特征成为行人检测的标准方法
+- **Felzenszwalb et al. (2010)**：《Object Detection with Discriminatively Trained Part-Based Models》，可变形部件模型（DPM）在PASCAL VOC竞赛中取得突破
+
+**范式特点**：这一时期的方法遵循"特征提取 + 分类器"的两阶段范式，研究者需要精心设计特征（如SIFT、HOG、LBP），然后训练SVM或AdaBoost分类器。
+
+### 深度学习革命（2012-至今）
+
+2012年是计算机视觉的分水岭。Alex Krizhevsky、Ilya Sutskever和Geoffrey Hinton在ImageNet竞赛中使用深度卷积神经网络（AlexNet）取得压倒性胜利，错误率从26%降至15%，引发了深度学习革命。
+
+**划时代论文**：
+- **Krizhevsky et al. (2012)**：《ImageNet Classification with Deep Convolutional Neural Networks》（AlexNet），证明了深度CNN在大规模图像分类中的巨大潜力
+- **Simonyan & Zisserman (2014)**：《Very Deep Convolutional Networks for Large-Scale Image Recognition》（VGGNet），展示了网络深度的重要性
+- **He et al. (2015)**：《Deep Residual Learning for Image Recognition》（ResNet），通过残差连接解决了深度网络的退化问题，使训练152层网络成为可能
+- **Redmon et al. (2016)**：《You Only Look Once: Unified, Real-Time Object Detection》（YOLO），将目标检测重新定义为回归问题，实现了实时检测
+
+**目标检测的演进**：
+- **R-CNN系列**（2014-2017）：Ross Girshick等人提出的R-CNN、Fast R-CNN、Faster R-CNN，建立了基于区域提议的两阶段检测范式
+- **单阶段检测器**：YOLO（2016）、SSD（2016）、RetinaNet（2017），追求速度与精度的平衡
+- **Transformer时代**：DETR（2020）将Transformer引入目标检测，开启了新的研究方向
+
+**语义分割的突破**：
+- **Long et al. (2015)**：《Fully Convolutional Networks for Semantic Segmentation》（FCN），首次实现端到端的像素级分类
+- **Ronneberger et al. (2015)**：《U-Net: Convolutional Networks for Biomedical Image Segmentation》，U型结构成为分割任务的标准架构
+- **Chen et al. (2017)**：《DeepLab: Semantic Image Segmentation with Deep Convolutional Nets, Atrous Convolution, and Fully Connected CRFs》，空洞卷积和ASPP模块成为分割领域的重要技术
+
+### 视觉基础模型时代（2020-至今）
+
+受自然语言处理中预训练大模型成功的启发，计算机视觉也进入了基础模型（Foundation Models）时代。
+
+**最新进展**：
+- **Dosovitskiy et al. (2020)**：《An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale》（Vision Transformer, ViT），证明了纯Transformer架构在视觉任务中的有效性
+- **Radford et al. (2021)**：《Learning Transferable Visual Models From Natural Language Supervision》（CLIP），通过对比学习实现视觉-语言联合表示，开启了多模态时代
+- **Kirillov et al. (2023)**：《Segment Anything》（SAM），Meta发布的通用分割模型，能够分割任何物体，标志着视觉基础模型的成熟
+
+**范式转变**：从"针对特定任务训练专用模型"到"预训练通用模型 + 下游任务微调"，再到"零样本泛化"（zero-shot generalization），计算机视觉正在经历与NLP类似的革命。
+
+### 必读经典文献
+
+**教科书**：
+- **Richard Szeliski**：《Computer Vision: Algorithms and Applications》（2022年第2版），最全面的计算机视觉教材，涵盖从传统方法到深度学习
+- **David Forsyth & Jean Ponce**：《Computer Vision: A Modern Approach》（2011年第2版），理论严谨的经典教材
+
+**综述论文**：
+- **LeCun et al. (2015)**：《Deep Learning》，发表在Nature上的深度学习综述，必读
+- **Voulodimos et al. (2018)**：《Deep Learning for Computer Vision: A Brief Review》，深度学习在计算机视觉中的应用综述
+- **Zou et al. (2023)**：《Object Detection in 20 Years: A Survey》，目标检测领域20年发展的全面回顾
+
+**开源贡献**：
+- **OpenCV**（2000-至今）：Gary Bradski在Intel创建，现已成为计算机视觉的事实标准库
+- **ImageNet**（2009）：Fei-Fei Li领导的大规模视觉数据集项目，推动了深度学习在视觉领域的突破
+- **PyTorch & TensorFlow**：现代深度学习框架，使视觉模型的开发和部署变得前所未有的简单
+
+### 华人学者的重要贡献
+
+计算机视觉领域涌现了众多杰出的华人学者：
+- **李飞飞（Fei-Fei Li）**：ImageNet项目创始人，斯坦福AI实验室主任，被誉为"AI视觉教母"
+- **何恺明（Kaiming He）**：ResNet、Mask R-CNN、MAE等重要工作的第一作者，Facebook AI Research科学家
+- **颜水成（Shuicheng Yan）**：深度学习和计算机视觉领域的领军人物，Sea AI Lab负责人
+- **朱松纯（Song-Chun Zhu）**：视觉认知和场景理解专家，北京大学人工智能研究院院长
+- **汤晓鸥（Xiaoou Tang）**：商汤科技创始人，人脸识别和深度学习领域的先驱
+
+**关键洞察**：计算机视觉的发展历程体现了从"规则驱动"到"数据驱动"的范式转变。早期研究者试图通过精心设计的算法模拟人类视觉系统，而深度学习时代则让模型从海量数据中自动学习特征表示。这一转变不仅提升了性能，更重要的是改变了我们对视觉智能本质的理解。
+
+---
+
 ## 12.1 OpenCV 基础
 
 ### 安装
