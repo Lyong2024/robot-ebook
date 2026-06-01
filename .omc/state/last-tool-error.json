@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"git add chapters/docs/resources/chapter_0[36]_resources.md && git commit -m \\\"feat(iteration-7): 补充第3、6章视频和开源库资源\\n\\nRalph模式迭代7持续工作：\\n✅ 第3章：添加视频教程（MATLAB、深蓝学院）\\n✅ 第3章：添加开源库（PCL、OpenCV）\\n✅ 第...",
-  "error": "Exit code 1\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   .omc/project-memory.json\n\tmodified:   .omc/state/last-tool-error.json\n\tmodified:   .omc/state/sessions/5cae0b2e-e127-4380-992d-a8e4d31d9a56/ralph-state.json\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\t.omc/prd-update-v1.0.0.json\n\nno changes added to comm...",
-  "timestamp": "2026-06-01T05:25:40.958Z",
+  "tool_input_preview": "{\"command\":\"git commit -m \\\"feat(v2.0.0): 中文资源本地化深化\\n\\n完成v2.0.0迭代：增强中文资源覆盖\\n\\n增强的章节（7-17）：\\n- 第7章：Linux命令行\\n- 第8章：Python编程\\n- 第9章：ROS 2核心概念\\n- 第10章：传感器融合\\n- 第11章：SLAM基础\\n- 第12章：计算机视觉\\n- 第13章：机械臂控制\\n- ...",
+  "error": "Exit code 1\nOn branch master\nChanges not staged for commit:\n  (use \"git add/rm <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   .omc/project-memory.json\n\tdeleted:    .omc/state/agent-replay-5cae0b2e-e127-4380-992d-a8e4d31d9a56.jsonl\n\tmodified:   .omc/state/idle-notif-cooldown.json\n\tmodified:   .omc/state/last-tool-error.json\n\tmodified:   .omc/state/mission-state.json\n\tdeleted:    .omc/state/sessions/5cae0b2e-e127-43...",
+  "timestamp": "2026-06-01T08:00:36.247Z",
   "retry_count": 1
 }

@@ -1,7 +1,0 @@
-{
-  "tool_name": "PowerShell",
-  "tool_input_preview": "{\"command\":\"Move-Item -Path \\\"chapter_*.md\\\" -Destination \\\"docs\\\\chapters\\\\\\\" -Force; Move-Item -Path \\\"appendix\\\\*.md\\\" -Destination \\\"docs\\\\appendix\\\\\\\" -Force\",\"description\":\"移动章节和附录文件到docs目录\"}",
-  "error": "Exit code 1\nMove-Item : Cannot find path 'C:\\dev\\robot_ebook\\chapters\\appendix' because it does not exist.\r\nAt line:1 char:70\r\n+ ... s\\\" -Force; Move-Item -Path \"appendix\\*.md\" -Destination \"docs\\append ...\r\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\r\n    + CategoryInfo          : ObjectNotFound: (C:\\dev\\robot_ebook\\chapters\\appendix:String) [Move-Item], ItemNotFoundE \r\n   xception\r\n    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItem...",
-  "timestamp": "2026-05-31T02:25:07.813Z",
-  "retry_count": 1
-}
