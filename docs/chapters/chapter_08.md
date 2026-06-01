@@ -777,27 +777,354 @@ if __name__ == '__main__':
 3. 轨迹记录和可视化
 4. 多种运动模式测试
 
-## 推荐资源
+## 拓展阅读
 
-### 在线教程
+Python是机器人开发的核心语言。为了帮助你从入门到精通，我们整理了涵盖官方文档、经典书籍、在线课程、机器人专用库等多个维度的学习资源。
 
-**Python 官方教程**：https://docs.python.org/3/tutorial/
-- 最权威的 Python 教程
+### 📚 经典书籍
 
-**Real Python**：https://realpython.com/
-- 高质量的 Python 教程和文章
+#### 《Python Crash Course》（Python编程：从入门到实践）
+- **作者**: Eric Matthes
+- **出版年份**: 2023年第3版
+- **语言**: 英文（有中文译本）
+- **适合人群**: 完全零基础的初学者
+- **核心价值**: 这是最受欢迎的Python入门书籍之一，前半部分讲解Python基础，后半部分通过三个实战项目（游戏、数据可视化、Web应用）巩固知识。语言通俗易懂，代码示例丰富。
+- **推荐章节**:
+  - Part I: Basics（基础语法）
+  - Chapter 9: Classes（面向对象编程）
+  - Chapter 10: Files and Exceptions（文件和异常处理）
+- **为什么适合机器人开发**: 书中的面向对象编程章节对于设计机器人控制系统非常有帮助
 
-### 书籍
+#### 《Automate the Boring Stuff with Python》（Python编程快速上手）
+- **作者**: Al Sweigart
+- **出版年份**: 2019年第2版
+- **语言**: 英文（有中文译本）
+- **在线免费版**: https://automatetheboringstuff.com/
+- **适合人群**: 希望快速掌握Python实用技能的开发者
+- **核心价值**: 通过自动化日常任务学习Python，包括文件操作、网络爬虫、Excel处理等。对于机器人开发中的数据处理和自动化脚本编写非常实用。
+- **推荐章节**:
+  - Chapter 6: Manipulating Strings（字符串处理）
+  - Chapter 9: Reading and Writing Files（文件操作）
+  - Chapter 16: Working with CSV Files and JSON Data（数据格式处理）
 
-**《Python Crash Course》**：适合完全初学者
+#### 《Fluent Python》（流畅的Python）
+- **作者**: Luciano Ramalho
+- **出版年份**: 2022年第2版
+- **语言**: 英文（有中文译本）
+- **适合人群**: 有一定Python基础，希望深入理解Python的开发者
+- **核心价值**: 深入讲解Python的高级特性和最佳实践，帮助你写出更Pythonic的代码。对于大型机器人项目的代码质量提升很有帮助。
+- **推荐章节**:
+  - Chapter 2: An Array of Sequences（序列类型）
+  - Chapter 5: Data Class Builders（数据类）
+  - Chapter 17: Iterators, Generators, and Classic Coroutines（迭代器和生成器）
 
-**《Automate the Boring Stuff with Python》**：学习实用的自动化技巧
+#### 《Python for Data Analysis》（利用Python进行数据分析）
+- **作者**: Wes McKinney（pandas库的创始人）
+- **出版年份**: 2022年第3版
+- **语言**: 英文（有中文译本）
+- **适合人群**: 需要处理机器人传感器数据的开发者
+- **核心价值**: 深入讲解NumPy、pandas等数据处理库，对于处理机器人的传感器数据、日志分析非常有用。
+- **推荐章节**:
+  - Chapter 4: NumPy Basics（NumPy基础）
+  - Chapter 5: Getting Started with pandas（pandas入门）
+  - Chapter 8: Data Wrangling（数据整理）
 
-### NumPy 资源
+### 🎓 在线课程
 
-**NumPy 官方教程**：https://numpy.org/doc/stable/user/quickstart.html
+#### Python for Everybody Specialization (Coursera)
+- **讲师**: Dr. Charles Severance (University of Michigan)
+- **平台**: Coursera
+- **时长**: 约8个月（每周2-4小时）
+- **费用**: 免费旁听，证书需付费（约$49/月）
+- **语言**: 英文（有中文字幕）
+- **评分**: 4.8/5.0（超过40万学习者）
+- **核心内容**:
+  - Python基础语法
+  - 数据结构（列表、字典、元组）
+  - 网络编程和数据库
+  - 数据可视化
+- **为什么推荐**: 这是最受欢迎的Python在线课程之一，讲师风格幽默，讲解清晰，完全免费旁听
 
-**NumPy for MATLAB users**：如果你熟悉 MATLAB，这个对照表很有用
+#### Complete Python Bootcamp (Udemy)
+- **讲师**: Jose Portilla
+- **平台**: Udemy
+- **时长**: 约22小时视频
+- **费用**: 约¥79（经常打折）
+- **语言**: 英文
+- **评分**: 4.6/5.0（超过150万学习者）
+- **核心内容**:
+  - Python 3基础到高级
+  - 面向对象编程
+  - 装饰器和生成器
+  - 实战项目
+- **为什么推荐**: 内容全面，项目丰富，适合系统学习
+
+#### Scientific Computing with Python (freeCodeCamp)
+- **平台**: freeCodeCamp
+- **链接**: https://www.freecodecamp.org/learn/scientific-computing-with-python/
+- **时长**: 约300小时
+- **费用**: 完全免费
+- **语言**: 英文
+- **核心内容**:
+  - Python基础
+  - 数据结构和算法
+  - 5个认证项目
+- **为什么推荐**: 完全免费，有认证证书，适合自学
+
+#### Python for Robotics (The Construct)
+- **平台**: The Construct
+- **链接**: https://www.theconstructsim.com/robotigniteacademy_learnros/ros-courses-library/python-robotics/
+- **时长**: 约40小时
+- **费用**: 需订阅（有免费试用）
+- **语言**: 英文
+- **核心内容**:
+  - Python在ROS中的应用
+  - 机器人控制算法
+  - 传感器数据处理
+  - 实际机器人项目
+- **为什么推荐**: 专门针对机器人开发，有在线仿真环境
+
+### 🎬 视频教程
+
+#### Python Tutorial for Beginners (Programming with Mosh)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/watch?v=_uQrJ0TkZlc
+- **时长**: 6小时
+- **语言**: 英文
+- **观看次数**: 超过3000万次
+- **核心内容**: 从零开始的Python完整教程
+- **为什么推荐**: 讲解清晰，节奏适中，适合初学者
+
+#### Python Full Course (Bro Code)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/watch?v=XKHEtdqhLK8
+- **时长**: 12小时
+- **语言**: 英文
+- **观看次数**: 超过1000万次
+- **核心内容**: Python基础到高级的完整课程
+- **为什么推荐**: 内容全面，示例丰富
+
+#### 【中文】Python从入门到精通（黑马程序员）
+- **平台**: B站
+- **时长**: 约50小时
+- **语言**: 中文
+- **观看量**: 超过500万
+- **核心内容**:
+  - Python基础语法
+  - 面向对象编程
+  - 文件操作和异常处理
+  - 实战项目
+- **为什么推荐**: 中文讲解，内容系统，适合国内学习者
+
+#### 【中文】Python数据分析与机器学习实战（唐宇迪）
+- **平台**: B站 / 网易云课堂
+- **时长**: 约30小时
+- **语言**: 中文
+- **核心内容**:
+  - NumPy和pandas
+  - 数据可视化
+  - 机器学习基础
+- **为什么推荐**: 适合需要处理机器人数据的开发者
+
+### 📖 官方文档和教程
+
+#### Python官方教程
+- **链接**: https://docs.python.org/3/tutorial/
+- **语言**: 英文（有中文翻译）
+- **核心价值**: 最权威的Python学习资源，涵盖所有基础知识
+- **推荐章节**:
+  - 3. An Informal Introduction to Python
+  - 4. More Control Flow Tools
+  - 5. Data Structures
+  - 9. Classes
+
+#### Real Python
+- **链接**: https://realpython.com/
+- **类型**: 在线教程网站
+- **语言**: 英文
+- **核心价值**: 高质量的Python教程和文章，涵盖从基础到高级的各个主题
+- **推荐文章**:
+  - "Python Virtual Environments: A Primer"
+  - "Object-Oriented Programming (OOP) in Python 3"
+  - "Working With Files in Python"
+  - "Python Debugging With pdb"
+
+#### Python官方文档（中文）
+- **链接**: https://docs.python.org/zh-cn/3/
+- **语言**: 简体中文
+- **核心价值**: Python官方文档的中文翻译版本
+
+### 🔢 NumPy专项资源
+
+#### NumPy官方教程
+- **链接**: https://numpy.org/doc/stable/user/quickstart.html
+- **语言**: 英文
+- **核心价值**: NumPy的官方入门教程，必读
+- **推荐章节**:
+  - Quickstart tutorial
+  - NumPy basics
+  - Array creation
+  - Indexing and slicing
+
+#### NumPy for MATLAB Users
+- **链接**: https://numpy.org/doc/stable/user/numpy-for-matlab-users.html
+- **语言**: 英文
+- **核心价值**: 如果你熟悉MATLAB，这个对照表能帮你快速上手NumPy
+
+#### From Python to NumPy
+- **作者**: Nicolas P. Rougier
+- **链接**: https://www.labri.fr/perso/nrougier/from-python-to-numpy/
+- **类型**: 免费电子书
+- **语言**: 英文
+- **核心价值**: 深入讲解如何用NumPy优化Python代码，提升性能
+
+#### 100 NumPy Exercises
+- **链接**: https://github.com/rougier/numpy-100
+- **类型**: GitHub练习项目
+- **语言**: 英文
+- **Star数**: 超过11k
+- **核心价值**: 100个NumPy练习题，从简单到复杂，适合巩固知识
+
+### 🤖 机器人专用Python库
+
+#### robotics-toolbox-python
+- **链接**: https://github.com/petercorke/robotics-toolbox-python
+- **作者**: Peter Corke教授
+- **Star数**: 超过1.5k
+- **核心功能**:
+  - 机器人运动学和动力学
+  - 轨迹规划
+  - 机器人可视化
+- **文档**: https://petercorke.github.io/robotics-toolbox-python/
+- **为什么推荐**: Peter Corke是机器人学领域的权威，这个库是他MATLAB工具箱的Python版本
+
+#### PyRobot
+- **链接**: https://github.com/facebookresearch/pyrobot
+- **开发者**: Facebook AI Research
+- **Star数**: 超过2k
+- **核心功能**:
+  - 统一的机器人控制接口
+  - 支持多种机器人平台
+  - 集成深度学习
+- **为什么推荐**: 简化了机器人控制代码，适合快速原型开发
+
+#### Modern Robotics Python Library
+- **链接**: https://github.com/NxRLab/ModernRobotics
+- **配套书籍**: 《Modern Robotics: Mechanics, Planning, and Control》
+- **Star数**: 超过800
+- **核心功能**:
+  - 机器人运动学
+  - 动力学
+  - 轨迹规划
+  - 控制
+- **为什么推荐**: 基于经典教材，理论严谨，代码清晰
+
+### 🛠️ 实用工具和库
+
+#### IPython / Jupyter Notebook
+- **链接**: https://jupyter.org/
+- **核心价值**: 交互式Python开发环境，非常适合数据分析和算法调试
+- **安装**:
+  ```bash
+  pip install jupyter
+  jupyter notebook
+  ```
+
+#### Black (代码格式化工具)
+- **链接**: https://github.com/psf/black
+- **核心价值**: 自动格式化Python代码，保持代码风格一致
+- **安装**:
+  ```bash
+  pip install black
+  black your_script.py
+  ```
+
+#### pylint / flake8 (代码检查工具)
+- **链接**: https://pylint.org/ / https://flake8.pycqa.org/
+- **核心价值**: 检查代码质量，发现潜在问题
+- **安装**:
+  ```bash
+  pip install pylint flake8
+  pylint your_script.py
+  ```
+
+### 📊 数据可视化资源
+
+#### Matplotlib官方教程
+- **链接**: https://matplotlib.org/stable/tutorials/index.html
+- **语言**: 英文
+- **核心价值**: Python最常用的绘图库，机器人数据可视化必备
+
+#### Seaborn教程
+- **链接**: https://seaborn.pydata.org/tutorial.html
+- **语言**: 英文
+- **核心价值**: 基于Matplotlib的高级绘图库，适合统计图表
+
+#### Plotly
+- **链接**: https://plotly.com/python/
+- **语言**: 英文
+- **核心价值**: 交互式图表库，适合机器人轨迹可视化
+
+### 🌏 中文资源
+
+#### 《Python编程：从入门到实践》（中文版）
+- **译者**: 袁国忠
+- **出版社**: 人民邮电出版社
+- **核心价值**: Python Crash Course的中文译本，翻译质量高
+
+#### 廖雪峰的Python教程
+- **链接**: https://www.liaoxuefeng.com/wiki/1016959663602400
+- **类型**: 在线教程
+- **语言**: 中文
+- **核心价值**: 国内最受欢迎的Python中文教程之一，讲解清晰
+
+#### 菜鸟教程 - Python 3
+- **链接**: https://www.runoob.com/python3/python3-tutorial.html
+- **类型**: 在线教程
+- **语言**: 中文
+- **核心价值**: 适合快速查询Python语法和示例
+
+### 🎯 实战项目和练习
+
+#### Python练习册
+- **链接**: https://github.com/Yixiaohan/show-me-the-code
+- **类型**: GitHub项目
+- **语言**: 中文
+- **Star数**: 超过10k
+- **核心价值**: 100+个Python练习题，涵盖各个难度级别
+
+#### LeetCode Python题解
+- **链接**: https://leetcode.com/
+- **类型**: 在线编程平台
+- **语言**: 多语言
+- **核心价值**: 通过算法题提升Python编程能力
+
+#### Project Euler
+- **链接**: https://projecteuler.net/
+- **类型**: 数学编程挑战
+- **语言**: 英文
+- **核心价值**: 通过数学问题学习编程，适合提升算法思维
+
+### 💡 学习建议
+
+1. **先基础后高级**: 先掌握基础语法，再学习NumPy、面向对象等高级特性
+2. **多写代码**: Python只能通过实践掌握，建议每天至少写30分钟代码
+3. **阅读优秀代码**: 阅读开源项目的代码，学习最佳实践
+4. **使用虚拟环境**: 养成为每个项目创建虚拟环境的习惯
+5. **遵循PEP 8**: 学习并遵循Python代码风格指南
+6. **调试技能**: 学会使用pdb调试器和print调试
+7. **文档习惯**: 为函数和类编写docstring
+
+### 🔗 相关章节
+
+- 第7章：Linux命令行 - 学习在Linux环境下使用Python
+- 第9章：ROS 2核心概念 - 学习用Python编写ROS 2节点
+- 第10章：计算机视觉基础 - 学习用Python处理图像
+- 第11章：SLAM基础 - 学习用Python实现SLAM算法
+
+---
+
+**版权说明**: 以上资源仅供个人学习使用。部分资源可能需要付费或注册。请尊重知识产权，支持正版。
 
 ## 本章小结
 

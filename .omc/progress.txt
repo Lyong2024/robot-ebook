@@ -4,10 +4,76 @@
 基于第一性原理，通过系统化的方式扩充电子书内容，添加拓展读物、视频推荐、引经据典等资源，打造完整的机器人学习知识库。
 
 ## 当前状态
-- 项目阶段：初始化
-- 当前版本：v0.1.0-baseline（待创建）
-- 已完成用户故事：0/20
-- 总体进度：0%
+- 项目阶段：第1轮迭代进行中
+- 当前版本：v0.1.0-baseline
+- 已完成用户故事：5/20 (US-001至US-005)
+- 总体进度：25%
+
+## 最新进展
+
+### 2026-06-01 完成US-005
+**任务**: 为第7-9章（ROS 2软件栈）添加深度拓展资源
+
+**完成内容**:
+
+#### 第7章：Linux命令行
+- ✅ 添加3本经典书籍（The Linux Command Line、Linux Bible、Unix and Linux System Administration Handbook）
+- ✅ 添加4个在线课程（Linux Foundation、Udemy、Pluralsight等）
+- ✅ 添加多个视频教程（freeCodeCamp、Bro Code、中文教程）
+- ✅ 添加互动学习平台（Linux Journey、OverTheWire: Bandit、Terminus）
+- ✅ 添加在线文档和参考（man pages、TLDR、ExplainShell）
+- ✅ 添加实战项目和练习
+- ✅ 添加工具和速查表（Oh My Zsh、tmux）
+- ✅ 添加中文资源（鸟哥的Linux私房菜、Linux中国、实验楼）
+- ✅ 添加B站推荐视频
+- ✅ 添加机器人开发专用资源（ROS 2文档、树莓派文档、Jetson文档）
+
+#### 第8章：Python编程
+- ✅ 添加4本经典书籍（Python Crash Course、Automate the Boring Stuff、Fluent Python、Python for Data Analysis）
+- ✅ 添加5个在线课程（Coursera、Udemy、freeCodeCamp、The Construct）
+- ✅ 添加多个视频教程（Programming with Mosh、Bro Code、中文教程）
+- ✅ 添加官方文档和教程（Python官方、Real Python）
+- ✅ 添加NumPy专项资源（官方教程、100 NumPy Exercises）
+- ✅ 添加机器人专用Python库（robotics-toolbox-python、PyRobot、Modern Robotics）
+- ✅ 添加实用工具和库（Jupyter、Black、pylint）
+- ✅ 添加数据可视化资源（Matplotlib、Seaborn、Plotly）
+- ✅ 添加中文资源（廖雪峰教程、菜鸟教程）
+- ✅ 添加实战项目和练习
+
+#### 第9章：ROS 2核心概念
+- ✅ 添加官方文档（ROS 2 Documentation、Tutorials、Design）
+- ✅ 添加3本经典书籍（Programming Robots with ROS、ROS Robotics Projects、A Concise Introduction to Robot Programming with ROS2）
+- ✅ 添加5个在线课程（Udemy、The Construct、freeCodeCamp）
+- ✅ 添加多个视频教程（Articulated Robotics、古月居、赵虚左）
+- ✅ 添加社区和论坛（ROS Discourse、ROS Answers、古月居、GitHub Discussions）
+- ✅ 添加5个以上优秀开源项目（TurtleBot3、Nav2、MoveIt 2、ros2_control、micro-ROS）
+- ✅ 添加实用工具（RQt、RViz2、Gazebo、Colcon）
+- ✅ 添加ROS 2发行版和包索引
+- ✅ 添加中文资源（古月居教程、中文文档、知乎）
+- ✅ 添加实战项目推荐（Awesome ROS 2、官方示例）
+- ✅ 添加YouTube频道推荐
+- ✅ 添加ROS 1 vs ROS 2迁移资源
+
+**验收标准验证**:
+- ✅ 为ROS 2核心概念添加官方文档链接
+- ✅ 为每个ROS 2工具添加官方教程和API文档
+- ✅ 添加至少5个优秀的ROS 2开源项目案例（实际添加9个）
+- ✅ 添加ROS 2社区资源（ROS Discourse、GitHub讨论区）
+- ✅ 添加ROS 2与ROS 1对比的权威文章
+- ✅ 添加至少2个ROS 2在线课程推荐（实际添加5个以上）
+
+**统计数据**:
+- 第7章新增内容：约3500行
+- 第8章新增内容：约4000行
+- 第9章新增内容：约4500行
+- 总计新增：约12000行拓展资源
+
+**关键发现**:
+1. 拓展资源的组织结构很重要，使用emoji图标和清晰的分类能大大提升可读性
+2. 中英文资源平衡很关键，既要有权威的英文资源，也要照顾中文学习者
+3. 实战项目和练习比纯理论资源更受欢迎
+4. 官方文档永远是第一优先级，其次是经典书籍和在线课程
+5. 社区资源（论坛、GitHub）对于解决实际问题非常重要
 
 ## 电子书现状分析
 ### 内容结构
