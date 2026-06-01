@@ -130,6 +130,12 @@
       "type": "file"
     },
     {
+      "path": "chapters\\docs\\chapters\\chapter_01.md",
+      "accessCount": 4,
+      "lastAccessed": 1780290374828,
+      "type": "file"
+    },
+    {
       "path": "",
       "accessCount": 2,
       "lastAccessed": 1780288953772,
@@ -193,6 +199,12 @@
       "path": "chapters\\docs\\chapters\\chapter_08_history.md",
       "accessCount": 1,
       "lastAccessed": 1780289381396,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\resources\\chapter_01_resources.md",
+      "accessCount": 1,
+      "lastAccessed": 1780290346345,
       "type": "file"
     }
   ],
