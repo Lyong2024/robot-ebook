@@ -148,6 +148,24 @@
       "type": "file"
     },
     {
+      "path": "chapters\\docs\\resources\\chapter_04_resources.md",
+      "accessCount": 2,
+      "lastAccessed": 1780291294171,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\resources\\chapter_03_resources.md",
+      "accessCount": 2,
+      "lastAccessed": 1780291519249,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\resources\\chapter_06_resources.md",
+      "accessCount": 2,
+      "lastAccessed": 1780291523004,
+      "type": "file"
+    },
+    {
       "path": "package.json",
       "accessCount": 1,
       "lastAccessed": 1780288757845,
@@ -205,6 +223,24 @@
       "path": "chapters\\docs\\resources\\chapter_01_resources.md",
       "accessCount": 1,
       "lastAccessed": 1780290346345,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\resources\\chapter_02_resources.md",
+      "accessCount": 1,
+      "lastAccessed": 1780290492631,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\resources\\template.md",
+      "accessCount": 1,
+      "lastAccessed": 1780291061415,
+      "type": "file"
+    },
+    {
+      "path": "chapters\\docs\\resources\\chapter_05_resources.md",
+      "accessCount": 1,
+      "lastAccessed": 1780291228004,
       "type": "file"
     }
   ],

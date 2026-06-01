@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"git tag v0.5.0 -m \\\"版本v0.5.0: 基础内容补充完成\\\"\",\"description\":\"创建版本标签\"}",
-  "error": "Exit code 128\nfatal: tag 'v0.5.0' already exists",
-  "timestamp": "2026-06-01T05:03:50.555Z",
+  "tool_input_preview": "{\"command\":\"git add chapters/docs/resources/chapter_0[36]_resources.md && git commit -m \\\"feat(iteration-7): 补充第3、6章视频和开源库资源\\n\\nRalph模式迭代7持续工作：\\n✅ 第3章：添加视频教程（MATLAB、深蓝学院）\\n✅ 第3章：添加开源库（PCL、OpenCV）\\n✅ 第...",
+  "error": "Exit code 1\nOn branch master\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   .omc/project-memory.json\n\tmodified:   .omc/state/last-tool-error.json\n\tmodified:   .omc/state/sessions/5cae0b2e-e127-4380-992d-a8e4d31d9a56/ralph-state.json\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\t.omc/prd-update-v1.0.0.json\n\nno changes added to comm...",
+  "timestamp": "2026-06-01T05:25:40.958Z",
   "retry_count": 1
 }

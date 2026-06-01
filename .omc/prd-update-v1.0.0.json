@@ -1,0 +1,11 @@
+{
+  "updates": [
+    {"id": "US-005", "passes": true, "completedDate": "2024-06-01"},
+    {"id": "US-006", "passes": true, "completedDate": "2024-06-01"},
+    {"id": "US-007", "passes": true, "completedDate": "2024-06-01"},
+    {"id": "US-008", "passes": true, "completedDate": "2024-06-01"}
+  ],
+  "milestone": "v1.0.0",
+  "completionRate": "40%",
+  "chaptersCompleted": "17/17"
+}
