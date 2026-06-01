@@ -635,11 +635,418 @@ self.add_box_obstacle("table", table_pose.pose, [1.0, 1.0, 0.1])
 
 机械臂是机器人操作的核心，掌握机械臂控制将让你的机器人能够完成复杂的操作任务。
 
-## 推荐资源
+## 拓展阅读
 
-- **MoveIt 2 文档**：https://moveit.picknik.ai/
-- **Modern Robotics 课程**：https://modernrobotics.northwestern.edu/
-- **机器人学导论（Craig）**：经典教材
+机械臂控制与操作是机器人学的核心领域。为了帮助你深入理解运动学、轨迹规划、抓取策略，我们整理了经典论文、开源实现、在线课程等全方位的学习资源。
+
+### 📚 经典书籍
+
+#### 《机器人学导论》(Introduction to Robotics)
+- **作者**: John J. Craig
+- **出版年份**: 2005年第3版
+- **语言**: 英文（有中文译本）
+- **适合人群**: 机器人学初学者到中级开发者
+- **核心价值**: 机器人学的经典教材，系统讲解运动学、动力学、轨迹规划
+- **推荐章节**:
+  - Chapter 2: Spatial Descriptions and Transformations（空间描述与变换）
+  - Chapter 3: Manipulator Kinematics（机械臂运动学）
+  - Chapter 4: Inverse Kinematics（逆运动学）
+  - Chapter 7: Trajectory Generation（轨迹生成）
+- **为什么推荐**: 理论严谨，配有大量习题，是机器人学的入门必读
+
+#### 《Modern Robotics: Mechanics, Planning, and Control》
+- **作者**: Kevin M. Lynch, Frank C. Park
+- **出版年份**: 2017年
+- **语言**: 英文
+- **核心价值**: 现代机器人学的权威教材，使用旋量理论
+- **在线资源**: 
+  - 免费PDF: http://hades.mech.northwestern.edu/images/7/7f/MR.pdf
+  - 配套课程: https://modernrobotics.northwestern.edu/
+  - Python库: https://github.com/NxRLab/ModernRobotics
+- **推荐章节**:
+  - Chapter 4: Forward Kinematics（正运动学）
+  - Chapter 6: Inverse Kinematics（逆运动学）
+  - Chapter 9: Trajectory Generation（轨迹生成）
+  - Chapter 11: Robot Control（机器人控制）
+- **为什么推荐**: 数学严谨，配套代码和视频课程，完全免费
+
+#### 《Robotics: Modelling, Planning and Control》
+- **作者**: Bruno Siciliano, Lorenzo Sciavicco, Luigi Villani, Giuseppe Oriolo
+- **出版年份**: 2009年
+- **语言**: 英文
+- **核心价值**: 欧洲机器人学派的代表作，理论与实践结合
+- **推荐章节**:
+  - Chapter 2: Kinematics（运动学）
+  - Chapter 3: Differential Kinematics（微分运动学）
+  - Chapter 4: Trajectory Planning（轨迹规划）
+  - Chapter 9: Force Control（力控制）
+
+#### 《机器人操作的数学导论》
+- **作者**: Murray, Li, Sastry
+- **出版年份**: 1994年
+- **语言**: 英文
+- **核心价值**: 机器人操作的数学基础，李群和李代数
+- **在线阅读**: http://www.cds.caltech.edu/~murray/books/MLS/pdf/mls94-complete.pdf
+
+### 📝 经典论文
+
+#### MoveIt系列
+
+**MoveIt: A Perception-Aware Motion Planning Framework**
+- **作者**: Ioan A. Sucan, Sachin Chitta
+- **会议**: ICRA 2013
+- **核心价值**: ROS中最流行的机械臂控制框架
+- **论文链接**: https://ieeexplore.ieee.org/document/6696520
+- **开源代码**: https://github.com/ros-planning/moveit2
+- **Star数**: 超过1.6k
+- **为什么重要**: MoveIt是ROS生态中机械臂控制的事实标准
+
+**MoveIt 2: A Comprehensive Motion Planning Framework for ROS 2**
+- **作者**: Henning Kayser et al.
+- **年份**: 2023
+- **核心价值**: MoveIt在ROS 2中的重构和改进
+- **文档**: https://moveit.picknik.ai/
+
+#### 运动规划算法
+
+**Rapidly-Exploring Random Trees: A New Tool for Path Planning**
+- **作者**: Steven M. LaValle
+- **技术报告**: Iowa State University, 1998
+- **核心价值**: RRT算法的原始论文，采样式规划的基础
+- **论文链接**: http://lavalle.pl/papers/Lav98c.pdf
+- **为什么重要**: RRT是高维空间路径规划的突破性算法
+
+**Sampling-based Algorithms for Optimal Motion Planning**
+- **作者**: Sertac Karaman, Emilio Frazzoli
+- **期刊**: International Journal of Robotics Research, 2011
+- **核心价值**: RRT*算法，渐近最优的采样式规划
+- **论文链接**: https://arxiv.org/abs/1105.1186
+- **为什么重要**: 解决了RRT不保证最优性的问题
+
+**Informed RRT*: Optimal Sampling-based Path Planning Focused via Direct Sampling of an Admissible Ellipsoidal Heuristic**
+- **作者**: Jonathan D. Gammell et al.
+- **会议**: IROS 2014
+- **核心价值**: 使用启发式信息加速RRT*
+- **论文链接**: https://arxiv.org/abs/1404.2334
+
+#### 轨迹优化
+
+**CHOMP: Gradient Optimization Techniques for Efficient Motion Planning**
+- **作者**: Nathan Ratliff et al.
+- **会议**: ICRA 2009
+- **核心价值**: 基于梯度优化的轨迹规划
+- **论文链接**: https://www.ri.cmu.edu/pub_files/2009/5/icra09-chomp.pdf
+- **应用**: MoveIt中的CHOMP规划器
+
+**TrajOpt: Trajectory Optimization for Motion Planning**
+- **作者**: John Schulman et al.
+- **会议**: ICRA 2014
+- **核心价值**: 序列凸优化的轨迹规划
+- **论文链接**: https://rll.berkeley.edu/trajopt/doc/sphinx_build/html/
+- **开源代码**: https://github.com/joschu/trajopt
+
+**STOMP: Stochastic Trajectory Optimization for Motion Planning**
+- **作者**: Mrinal Kalakrishnan et al.
+- **会议**: ICRA 2011
+- **核心价值**: 随机优化的轨迹规划
+- **论文链接**: https://ieeexplore.ieee.org/document/5980280
+- **应用**: MoveIt中的STOMP规划器
+
+#### 抓取规划
+
+**Dex-Net 2.0: Deep Learning to Plan Robust Grasps with Synthetic Point Clouds and Analytic Grasp Metrics**
+- **作者**: Jeffrey Mahler et al.
+- **会议**: RSS 2017
+- **核心价值**: 使用深度学习进行抓取规划
+- **论文链接**: https://berkeleyautomation.github.io/dex-net/
+- **开源代码**: https://github.com/BerkeleyAutomation/dex-net
+
+**GraspIt!: A Versatile Simulator for Robotic Grasping**
+- **作者**: Andrew T. Miller, Peter K. Allen
+- **期刊**: IEEE Robotics & Automation Magazine, 2004
+- **核心价值**: 抓取仿真和规划工具
+- **开源代码**: https://github.com/graspit-simulator/graspit
+
+### 🚀 开源项目
+
+#### MoveIt 2 (ROS 2推荐)
+- **链接**: https://github.com/ros-planning/moveit2
+- **Star数**: 超过1.6k
+- **核心功能**:
+  - 运动规划（OMPL、CHOMP、STOMP、Pilz）
+  - 逆运动学求解
+  - 碰撞检测
+  - 轨迹执行
+  - 抓取规划
+- **文档**: https://moveit.picknik.ai/
+- **为什么推荐**: ROS 2官方推荐的机械臂控制框架，功能完整，社区活跃
+
+#### OMPL (Open Motion Planning Library)
+- **链接**: https://github.com/ompl/ompl
+- **Star数**: 超过1k
+- **核心功能**:
+  - RRT、RRT*、PRM等采样式规划算法
+  - 约束规划
+  - 多查询规划
+- **文档**: https://ompl.kavrakilab.org/
+- **为什么推荐**: 运动规划算法的标准库，MoveIt的核心依赖
+
+#### Drake
+- **链接**: https://github.com/RobotLocomotion/drake
+- **开发者**: MIT、Toyota Research Institute
+- **Star数**: 超过3k
+- **核心功能**:
+  - 多体动力学仿真
+  - 轨迹优化
+  - 最优控制
+  - 感知和规划
+- **文档**: https://drake.mit.edu/
+- **为什么推荐**: 工业级的机器人仿真和控制工具箱
+
+#### PyBullet
+- **链接**: https://github.com/bulletphysics/bullet3
+- **Star数**: 超过12k
+- **核心功能**:
+  - 物理仿真
+  - 机械臂控制
+  - 强化学习环境
+- **文档**: https://pybullet.org/
+- **为什么推荐**: 轻量级，易于使用，适合快速原型开发
+
+#### Pinocchio
+- **链接**: https://github.com/stack-of-tasks/pinocchio
+- **Star数**: 超过1.5k
+- **核心功能**:
+  - 快速正/逆运动学
+  - 动力学计算
+  - 雅可比矩阵
+- **文档**: https://stack-of-tasks.github.io/pinocchio/
+- **为什么推荐**: 高性能的刚体动力学库，支持Python和C++
+
+#### ROS 2 Control
+- **链接**: https://github.com/ros-controls/ros2_control
+- **Star数**: 超过400
+- **核心功能**:
+  - 统一的控制器接口
+  - 硬件抽象层
+  - 实时控制
+- **文档**: https://control.ros.org/
+- **为什么推荐**: ROS 2中机器人控制的标准框架
+
+#### Universal Robots ROS 2 Driver
+- **链接**: https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver
+- **Star数**: 超过300
+- **核心功能**:
+  - UR机械臂的ROS 2驱动
+  - 实时控制接口
+  - MoveIt 2集成
+- **为什么推荐**: UR机械臂是最流行的协作机器人，官方ROS 2支持
+
+### 🛠️ 工具和库
+
+#### IKFast (Inverse Kinematics Fast)
+- **链接**: http://openrave.org/docs/latest_stable/openravepy/ikfast/
+- **核心价值**: 自动生成解析逆运动学求解器
+- **应用**: MoveIt使用IKFast生成特定机械臂的IK求解器
+- **为什么重要**: 解析解比数值解快100倍以上
+
+#### TRAC-IK
+- **链接**: https://github.com/traclabs/trac_ik
+- **Star数**: 超过400
+- **核心价值**: 改进的数值逆运动学求解器
+- **性能**: 比KDL快速且成功率更高
+- **应用**: MoveIt的默认IK求解器之一
+
+#### FCL (Flexible Collision Library)
+- **链接**: https://github.com/flexible-collision-library/fcl
+- **Star数**: 超过1k
+- **核心价值**: 高效的碰撞检测库
+- **应用**: MoveIt使用FCL进行碰撞检测
+
+#### KDL (Kinematics and Dynamics Library)
+- **链接**: https://github.com/orocos/orocos_kinematics_dynamics
+- **核心价值**: 运动学和动力学计算库
+- **应用**: ROS中的标准运动学库
+
+### 🎓 在线课程
+
+#### Modern Robotics (Northwestern University)
+- **平台**: Coursera / YouTube
+- **链接**: https://www.coursera.org/specializations/modernrobotics
+- **讲师**: Kevin Lynch
+- **时长**: 约6个月（每周3-5小时）
+- **语言**: 英文（有中文字幕）
+- **核心内容**:
+  - 机器人运动学
+  - 动力学
+  - 轨迹规划
+  - 运动控制
+- **配套资源**:
+  - 免费教材PDF
+  - Python/MATLAB代码库
+  - Coursera证书
+- **为什么推荐**: 最系统的现代机器人学课程，理论与实践结合
+
+#### Robotic Manipulation (MIT)
+- **平台**: MIT OpenCourseWare
+- **链接**: https://manipulation.csail.mit.edu/
+- **讲师**: Russ Tedrake
+- **语言**: 英文
+- **核心内容**:
+  - 机械臂运动学
+  - 轨迹优化
+  - 抓取规划
+  - 接触力学
+- **配套工具**: Drake仿真器
+- **为什么推荐**: MIT的前沿课程，使用Drake进行实践
+
+#### Introduction to Robotics (Stanford)
+- **平台**: Stanford Online
+- **课程代码**: CS223A
+- **讲师**: Oussama Khatib
+- **语言**: 英文
+- **核心内容**:
+  - 机器人运动学和动力学
+  - 轨迹规划
+  - 控制
+- **为什么推荐**: 斯坦福经典课程，理论深入
+
+#### 【中文】机器人学（浙江大学）
+- **平台**: 中国大学MOOC
+- **讲师**: 熊蓉
+- **时长**: 约48学时
+- **语言**: 中文
+- **核心内容**:
+  - 机器人运动学
+  - 动力学
+  - 轨迹规划
+  - 控制系统
+- **为什么推荐**: 国内顶尖的中文机器人学课程
+
+#### 【中文】机械臂运动规划（古月居）
+- **平台**: B站
+- **链接**: https://space.bilibili.com/16933260
+- **语言**: 中文
+- **核心内容**:
+  - MoveIt使用教程
+  - 机械臂控制实践
+  - ROS 2机械臂开发
+- **为什么推荐**: 中文ROS教程，实践性强
+
+### 🎬 视频教程
+
+#### MoveIt Tutorials
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/c/PickNikRobotics
+- **开发者**: PickNik Robotics（MoveIt维护者）
+- **语言**: 英文
+- **核心内容**:
+  - MoveIt 2入门
+  - 配置和使用
+  - 高级功能
+- **为什么推荐**: 官方教程，权威且及时更新
+
+#### 【中文】MoveIt从入门到精通
+- **平台**: B站
+- **UP主**: 机器人工匠阿杰
+- **语言**: 中文
+- **核心内容**:
+  - MoveIt配置
+  - 运动规划
+  - 实际项目案例
+- **为什么推荐**: 中文详细教程，适合初学者
+
+### 📊 数据集和基准测试
+
+#### YCB Object and Model Set
+- **链接**: http://www.ycbbenchmarks.com/
+- **类型**: 抓取数据集
+- **内容**: 77个日常物体的3D模型和点云
+- **为什么推荐**: 抓取研究的标准数据集
+
+#### Columbia Grasp Database
+- **链接**: https://grasping.cs.columbia.edu/
+- **类型**: 抓取姿态数据库
+- **内容**: 数千个物体的抓取姿态
+- **为什么推荐**: 大规模抓取数据
+
+#### MoveIt Benchmarking
+- **链接**: https://github.com/ros-planning/moveit2/tree/main/moveit_ros/benchmarks
+- **类型**: 运动规划基准测试
+- **功能**: 比较不同规划算法的性能
+- **为什么推荐**: 评估规划算法的标准工具
+
+### 📖 在线资源
+
+#### MoveIt 2 Documentation
+- **链接**: https://moveit.picknik.ai/
+- **类型**: 官方文档
+- **核心内容**:
+  - 安装和配置
+  - 教程和示例
+  - API参考
+- **为什么推荐**: 最权威的MoveIt 2资源
+
+#### ROS 2 Control Documentation
+- **链接**: https://control.ros.org/
+- **类型**: 官方文档
+- **核心内容**:
+  - 控制器框架
+  - 硬件接口
+  - 实时控制
+- **为什么推荐**: ROS 2控制系统的标准文档
+
+#### Robotics Stack Exchange
+- **链接**: https://robotics.stackexchange.com/
+- **类型**: 问答社区
+- **核心价值**: 机器人学问题的专业解答
+- **为什么推荐**: 活跃的社区，高质量回答
+
+#### Awesome Robotic Tooling
+- **链接**: https://github.com/protontypes/awesome-robotic-tooling
+- **类型**: GitHub资源列表
+- **Star数**: 超过3k
+- **核心价值**: 精选的机器人开发工具和库
+
+### 🌏 中文资源
+
+#### 古月居
+- **链接**: https://www.guyuehome.com/
+- **类型**: ROS中文社区
+- **核心内容**: ROS教程、机械臂控制、项目案例
+- **为什么推荐**: 国内最大的ROS中文社区
+
+#### 知乎 - 机器人话题
+- **链接**: https://www.zhihu.com/topic/19550974/hot
+- **类型**: 问答社区
+- **核心价值**: 机器人学相关的问答和经验分享
+
+#### CSDN - 机械臂专栏
+- **类型**: 技术博客
+- **核心内容**: MoveIt教程、机械臂项目实战
+- **为什么推荐**: 大量中文技术文章
+
+### 💡 学习建议
+
+1. **数学基础很重要**: 先掌握线性代数（矩阵、变换）、微积分、最优化理论
+2. **从简单开始**: 先理解2自由度平面机械臂，再学习6自由度空间机械臂
+3. **理论与实践结合**: 边学运动学理论边用MoveIt实践
+4. **仿真先行**: 在Gazebo或PyBullet中测试，再部署到真实机械臂
+5. **阅读经典论文**: RRT、RRT*、CHOMP等算法的原始论文必读
+6. **源码阅读**: 深入研究MoveIt或OMPL的源码，理解工程实现
+7. **参与社区**: 在ROS Discourse、GitHub等社区提问和分享
+8. **安全第一**: 控制真实机械臂时，始终设置速度限制和急停按钮
+
+### 🔗 相关章节
+
+- 第10章：传感器集成 - 机械臂的视觉和力觉传感器
+- 第11章：导航与SLAM - 移动机械臂的导航
+- 第14章：计算机视觉 - 视觉引导的抓取
+- 第16章：具身智能 - 机械臂在具身智能中的应用
+
+---
+
+**版权说明**: 以上资源仅供个人学习使用。部分资源可能需要付费或注册。请尊重知识产权，支持正版。
 
 ## 动手练习
 
