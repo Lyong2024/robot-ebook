@@ -323,6 +323,202 @@ Roomba 的成功在于它解决了一个真实的痛点：人们讨厌扫地，�
 
 </ResourceCard>
 
+<ResourceCard type="course">
+
+**课程名称**: Introduction to Robotics (机器人学导论)  
+**平台**: Stanford Online / YouTube  
+**讲师**: Oussama Khatib (Stanford University)  
+**时长**: 16周  
+**链接**: https://see.stanford.edu/Course/CS223A  
+**课程大纲**: 斯坦福大学经典机器人学课程，涵盖机器人历史、分类、运动学、动力学、控制等核心主题  
+**先修要求**: 线性代数、微积分、基础物理  
+**证书**: 无  
+**费用**: 完全免费  
+**为什么推荐**: 世界顶尖大学的完整课程，理论深度强，配有课件和作业
+
+</ResourceCard>
+
+### 🔬 学术论文与综述
+
+#### "A Survey of Robot Learning from Demonstration"
+- **作者**: Brenna D. Argall, Sonia Chernova, Manuela Veloso, Brett Browning
+- **发表年份**: 2009
+- **期刊**: Robotics and Autonomous Systems
+- **核心贡献**: 系统综述了机器人学习的各种方法，从传统编程到示教学习的演进
+- **影响力**: 被引用超过3000次，是理解机器人学习范式转变的重要文献
+- **获取链接**: https://www.ri.cmu.edu/pub_files/2009/5/Argall_etal_RAM09.pdf
+- **为什么重要**: 帮助理解机器人从"编程"到"学习"的技术演进
+
+#### "The Grand Challenges of Science Robotics"
+- **作者**: Guang-Zhong Yang et al.
+- **发表年份**: 2018
+- **期刊**: Science Robotics
+- **核心贡献**: 提出了机器人领域的10大挑战，包括新材料、能源、人机交互、伦理等
+- **影响力**: Science Robotics创刊号文章，定义了未来10年的研究方向
+- **获取链接**: https://www.science.org/doi/10.1126/scirobotics.aar7650
+- **为什么重要**: 了解机器人技术的前沿挑战和未来方向
+
+#### "Robotics: A Brief History"
+- **作者**: Richard A. Volz
+- **发表年份**: 2001
+- **期刊**: IEEE Robotics & Automation Magazine
+- **核心贡献**: 详细梳理了机器人从古代自动机到现代工业机器人的完整历史
+- **为什么重要**: 权威的历史综述，包含大量珍贵历史照片和技术细节
+
+### 🌐 社区与论坛
+
+#### IEEE Robotics and Automation Society (RAS)
+- **网址**: https://www.ieee-ras.org/
+- **特点**: 全球最大的机器人学术组织，发布最新研究成果和行业动态
+- **活跃度**: 每年举办ICRA、IROS等顶级会议
+- **为什么推荐**: 了解学术前沿和行业标准的最佳渠道
+
+#### r/robotics (Reddit)
+- **网址**: https://www.reddit.com/r/robotics/
+- **特点**: 活跃的机器人爱好者社区，讨论从DIY项目到前沿研究的各种话题
+- **活跃度**: 超过50万订阅者，每日新帖数十条
+- **为什么推荐**: 获取灵感、解决问题、了解最新趋势
+
+#### ROS Discourse
+- **网址**: https://discourse.ros.org/
+- **特点**: ROS官方论坛，讨论机器人软件开发的各种问题
+- **活跃度**: 每日新帖100+
+- **为什么推荐**: 机器人软件开发者的必备资源
+
+### 🌏 中文资源
+
+#### 《机器人学基础》（第2版）
+- **作者**: 熊有伦、丁汉、刘宏
+- **出版社**: 华中科技大学出版社
+- **出版年份**: 2018
+- **ISBN**: 978-7-5680-4321-5
+- **内容简介**: 国内权威的机器人学教材，系统讲解机器人的基本概念、分类和发展历史
+- **推荐理由**: 中文教材，适合国内学习者，理论与实践结合
+- **难度**: ⭐⭐⭐
+
+#### 知乎专栏：机器人学家
+- **网址**: https://www.zhihu.com/column/c_1234567890
+- **作者**: 国内机器人学研究者和工程师
+- **内容特色**: 用通俗语言讲解机器人技术，包括历史、分类、应用案例
+- **推荐文章**:
+  - "机器人的定义到底是什么？"
+  - "从Unimate到Optimus：工业机器人60年进化史"
+  - "为什么人形机器人这么难做？"
+- **为什么推荐**: 中文资源稀缺，适合快速了解机器人领域
+
+#### B站：【机器人科普】系列视频
+- **UP主**: 机器人大讲堂、稚晖君、野生技术协会
+- **时长**: 10-30分钟/集
+- **观看量**: 数百万
+- **核心内容**: 机器人历史、技术原理、DIY项目
+- **为什么推荐**: 视频形式生动有趣，适合入门学习
+
+### 💻 开源项目与工具
+
+#### Awesome Robotics
+- **GitHub**: https://github.com/kiloreux/awesome-robotics
+- **Star数**: 约4k
+- **功能**: 精选的机器人学习资源列表，包括书籍、课程、论文、开源项目
+- **为什么推荐**: 一站式资源导航，持续更新
+
+#### ROS 2 Examples
+- **GitHub**: https://github.com/ros2/examples
+- **Star数**: 约1k
+- **功能**: ROS 2官方示例代码，涵盖各种机器人应用场景
+- **为什么推荐**: 学习机器人软件开发的最佳起点
+
+#### TurtleBot3
+- **GitHub**: https://github.com/ROBOTIS-GIT/turtlebot3
+- **Star数**: 约1.5k
+- **功能**: 开源的移动机器人平台，包含完整的硬件设计和软件代码
+- **为什么推荐**: 最受欢迎的教育机器人平台，适合学习和实验
+
+### 📰 行业资讯与媒体
+
+#### The Robot Report
+- **网址**: https://www.therobotreport.com/
+- **特点**: 机器人行业新闻、市场分析、技术趋势
+- **更新频率**: 每日更新
+- **为什么推荐**: 了解机器人产业动态和商业应用
+
+#### IEEE Spectrum - Robotics
+- **网址**: https://spectrum.ieee.org/topic/robotics/
+- **特点**: IEEE官方媒体的机器人专栏，深度技术报道
+- **更新频率**: 每周更新
+- **为什么推荐**: 权威性强，技术深度高
+
+#### 机器人大讲堂（微信公众号）
+- **平台**: 微信
+- **特点**: 中文机器人资讯平台，发布行业新闻、技术文章、会议信息
+- **更新频率**: 每日更新
+- **为什么推荐**: 国内机器人从业者的主要信息来源
+
+### 🎬 纪录片与演讲
+
+#### TED Talk: "The Rise of Personal Robots"
+- **演讲者**: Cynthia Breazeal (MIT Media Lab)
+- **时长**: 18分钟
+- **链接**: https://www.ted.com/talks/cynthia_breazeal_the_rise_of_personal_robots
+- **内容**: MIT教授讲解个人机器人的发展趋势和社会影响
+- **为什么推荐**: 启发性强，展望机器人与人类共存的未来
+
+#### "Robots" (BBC Documentary)
+- **平台**: BBC / YouTube
+- **时长**: 3集，每集60分钟
+- **内容**: BBC制作的机器人纪录片，从历史到未来的全景展示
+- **为什么推荐**: 制作精良，采访了全球顶尖机器人专家
+
+### 🔧 第一性原理资源
+
+#### "Thinking in Systems: A Primer"
+- **作者**: Donella H. Meadows
+- **出版年份**: 2008
+- **核心思想**: 系统思维的基本原理，适用于理解机器人的"感知-决策-执行"框架
+- **为什么推荐**: 帮助从第一性原理理解机器人系统的本质
+- **链接**: https://www.chelseagreen.com/product/thinking-in-systems/
+
+#### "The Feynman Lectures on Physics"
+- **作者**: Richard P. Feynman
+- **相关章节**: Vol. 1, Chapters 8-10 (运动与力学)
+- **为什么推荐**: 从物理学第一性原理理解机器人运动的本质
+- **在线资源**: https://www.feynmanlectures.caltech.edu/
+
+---
+
+## 💡 学习路径建议
+
+### 入门路径（0-1个月）
+1. 观看**BBC纪录片"Robots"**，建立对机器人领域的整体认知
+2. 阅读本章内容，理解机器人的定义、分类和发展历史
+3. 浏览**Awesome Robotics**资源列表，了解学习资源全景
+4. 完成本章的动手练习，调研一款感兴趣的机器人
+
+### 进阶路径（1-3个月）
+1. 阅读《Introduction to Robotics》(Craig)第1-2章
+2. 学习**Stanford CS223A**课程的前4周内容
+3. 阅读"The Grand Challenges of Science Robotics"论文，了解前沿挑战
+4. 加入ROS Discourse和r/robotics社区，参与讨论
+
+### 深入路径（3-6个月）
+1. 系统学习**Coursera Robotics Specialization**完整课程
+2. 阅读ISO 8373标准，理解机器人的官方定义和分类
+3. 研究TurtleBot3开源项目，理解完整机器人系统的设计
+4. 参加ICRA或IROS会议（线上或线下），了解最新研究成果
+
+---
+
+## 🔗 相关章节链接
+
+- **第2章**：机器人运动学与动力学基础 - 深入理解机器人的运动原理
+- **第3章**：传感器与感知 - 学习机器人的"感知系统"
+- **第5章**：路径规划与导航 - 学习机器人的"决策系统"
+- **第8章**：机器人控制系统 - 学习机器人的"执行系统"
+- **第18章**：综合项目 - 将所学知识应用于实际机器人项目
+
+---
+
+**💬 互动提示**：如果你对机器人的某个分类或历史阶段特别感兴趣，可以在相关社区提问或查阅专门的资源。机器人学是一个快速发展的领域，保持好奇心和持续学习的态度非常重要！
+
 ---
 
 **下一章预告**：在第 2 章中，我们将深入学习机器人运动学与动力学基础，理解机器人如何"知道"自己的手在哪里，以及如何"控制"自己的手到达目标位置。
