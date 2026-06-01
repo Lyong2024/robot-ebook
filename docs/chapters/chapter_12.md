@@ -620,11 +620,355 @@ def detect_with_pytorch(image):
 
 计算机视觉是机器人感知的重要组成部分，掌握视觉技术将大大扩展机器人的能力。
 
-## 推荐资源
+## 拓展阅读
 
-- **OpenCV 文档**：https://docs.opencv.org/
-- **PyImageSearch**：https://pyimagesearch.com/
-- **YOLO**：https://pjreddie.com/darknet/yolo/
+计算机视觉是机器人感知的核心技术。为了帮助你从基础到高级全面掌握计算机视觉，我们整理了OpenCV教程、YOLO论文、经典课程、开源项目等丰富的学习资源。
+
+### 📚 经典书籍
+
+#### 《Learning OpenCV 4》
+- **作者**: Adrian Kaehler, Gary Bradski
+- **出版年份**: 2020年
+- **语言**: 英文
+- **适合人群**: OpenCV初学者到中级开发者
+- **核心价值**: OpenCV官方推荐教材，由OpenCV创始人之一Gary Bradski编写
+- **推荐章节**:
+  - Chapter 10: Image Filtering（图像滤波）
+  - Chapter 11: General Image Transforms（图像变换）
+  - Chapter 15: Feature Detection and Description（特征检测）
+  - Chapter 19: Object Tracking（目标跟踪）
+
+#### 《Computer Vision: Algorithms and Applications》
+- **作者**: Richard Szeliski (Microsoft Research)
+- **出版年份**: 2022年第2版
+- **语言**: 英文
+- **在线免费版**: http://szeliski.org/Book/
+- **核心价值**: 计算机视觉领域的权威教材，理论与应用并重
+- **推荐章节**:
+  - Chapter 4: Feature Detection and Matching
+  - Chapter 7: Structure from Motion
+  - Chapter 11: Recognition
+
+#### 《Multiple View Geometry in Computer Vision》
+- **作者**: Richard Hartley, Andrew Zisserman
+- **出版年份**: 2004年第2版
+- **语言**: 英文
+- **核心价值**: 多视图几何的圣经，视觉里程计和SLAM的数学基础
+- **推荐章节**:
+  - Chapter 9: Epipolar Geometry（对极几何）
+  - Chapter 11: Computation of the Fundamental Matrix
+  - Chapter 18: N-View Computational Methods
+
+### 📝 YOLO系列论文
+
+#### YOLOv1
+- **标题**: "You Only Look Once: Unified, Real-Time Object Detection"
+- **作者**: Joseph Redmon et al.
+- **会议**: CVPR 2016
+- **核心价值**: 开创性的单阶段目标检测算法
+- **论文链接**: https://arxiv.org/abs/1506.02640
+- **代码**: https://pjreddie.com/darknet/yolo/
+
+#### YOLOv3
+- **标题**: "YOLOv3: An Incremental Improvement"
+- **作者**: Joseph Redmon, Ali Farhadi
+- **年份**: 2018
+- **核心改进**: 多尺度预测、更好的小目标检测
+- **论文链接**: https://arxiv.org/abs/1804.02767
+
+#### YOLOv5
+- **开发者**: Ultralytics
+- **年份**: 2020
+- **核心价值**: 工程化最好的YOLO版本，易于部署
+- **代码**: https://github.com/ultralytics/yolov5
+- **Star数**: 超过50k
+- **文档**: https://docs.ultralytics.com/
+
+#### YOLOv8
+- **开发者**: Ultralytics
+- **年份**: 2023
+- **核心价值**: 最新的YOLO版本，性能更强
+- **代码**: https://github.com/ultralytics/ultralytics
+- **Star数**: 超过30k
+- **特点**: 支持检测、分割、分类、姿态估计
+
+#### YOLO版本对比
+| 版本 | 年份 | 速度 | 精度 | 易用性 | 推荐场景 |
+|------|------|------|------|--------|----------|
+| YOLOv3 | 2018 | 快 | 中 | 中 | 学习原理 |
+| YOLOv5 | 2020 | 很快 | 高 | 很好 | 工程部署 |
+| YOLOv8 | 2023 | 很快 | 很高 | 很好 | 最新项目 |
+
+### 🎓 在线课程
+
+#### CS231n: Convolutional Neural Networks for Visual Recognition (Stanford)
+- **平台**: YouTube / Stanford官网
+- **链接**: http://cs231n.stanford.edu/
+- **讲师**: Fei-Fei Li, Justin Johnson, Serena Yeung
+- **时长**: 约40小时
+- **语言**: 英文
+- **核心内容**:
+  - 卷积神经网络基础
+  - 目标检测和分割
+  - 视觉识别
+  - 生成模型
+- **为什么推荐**: 斯坦福大学的经典课程，计算机视觉入门必看
+- **课程视频**: https://www.youtube.com/playlist?list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv
+
+#### First Principles of Computer Vision (Columbia University)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/channel/UCf0WB91t8Ky6AuYcQV0CcLw
+- **讲师**: Shree Nayar
+- **语言**: 英文
+- **核心内容**:
+  - 图像形成
+  - 相机模型
+  - 特征检测
+  - 立体视觉
+- **为什么推荐**: 从第一性原理讲解计算机视觉，理论扎实
+
+#### 【中文】OpenCV实战（B站）
+- **UP主**: 霹雳吧啦Wz
+- **时长**: 约20小时
+- **语言**: 中文
+- **核心内容**:
+  - OpenCV基础
+  - 图像处理
+  - 特征检测
+  - 目标跟踪
+  - 实战项目
+- **为什么推荐**: 中文讲解，实战导向
+
+### 📖 OpenCV官方资源
+
+#### OpenCV Documentation
+- **链接**: https://docs.opencv.org/4.x/
+- **语言**: 英文
+- **核心价值**: 最权威的OpenCV文档
+- **推荐教程**:
+  - Core Operations（核心操作）
+  - Image Processing（图像处理）
+  - Feature Detection（特征检测）
+  - Object Detection（目标检测）
+  - Video Analysis（视频分析）
+
+#### OpenCV Python Tutorials
+- **链接**: https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html
+- **语言**: 英文
+- **核心价值**: 官方Python教程，从零开始
+- **推荐章节**:
+  - Gui Features（GUI功能）
+  - Core Operations（核心操作）
+  - Image Processing（图像处理）
+  - Feature Detection and Description（特征检测）
+
+#### OpenCV Courses
+- **链接**: https://opencv.org/courses/
+- **类型**: 官方付费课程
+- **语言**: 英文
+- **核心内容**: 从入门到高级的完整课程体系
+
+### 🌐 在线学习平台
+
+#### PyImageSearch
+- **链接**: https://pyimagesearch.com/
+- **作者**: Adrian Rosebrock
+- **类型**: 博客 + 课程
+- **语言**: 英文
+- **核心价值**: 最受欢迎的计算机视觉博客，有大量实战教程
+- **推荐文章**:
+  - "OpenCV Tutorial: A Guide to Learn OpenCV"
+  - "YOLO Object Detection with OpenCV"
+  - "Face Recognition with OpenCV"
+- **付费课程**: PyImageSearch University（月费制）
+
+#### LearnOpenCV
+- **链接**: https://learnopencv.com/
+- **类型**: 博客 + 课程
+- **语言**: 英文
+- **核心价值**: 高质量的OpenCV教程和计算机视觉文章
+- **推荐文章**:
+  - "Getting Started with OpenCV"
+  - "Image Classification using Convolutional Neural Networks"
+  - "Object Tracking using OpenCV"
+
+### 🚀 开源项目
+
+#### opencv-python
+- **链接**: https://github.com/opencv/opencv-python
+- **Star数**: 超过4k
+- **核心价值**: OpenCV的Python绑定，最常用的安装方式
+- **安装**: `pip install opencv-python`
+
+#### YOLOv5
+- **链接**: https://github.com/ultralytics/yolov5
+- **Star数**: 超过50k
+- **核心功能**:
+  - 目标检测
+  - 实例分割
+  - 分类
+  - 易于训练和部署
+- **文档**: https://docs.ultralytics.com/yolov5/
+
+#### Detectron2
+- **链接**: https://github.com/facebookresearch/detectron2
+- **开发者**: Facebook AI Research
+- **Star数**: 超过30k
+- **核心功能**:
+  - 目标检测
+  - 实例分割
+  - 全景分割
+  - 关键点检测
+- **文档**: https://detectron2.readthedocs.io/
+
+#### MMDetection
+- **链接**: https://github.com/open-mmlab/mmdetection
+- **开发者**: OpenMMLab
+- **Star数**: 超过30k
+- **核心价值**: 目标检测工具箱，包含大量SOTA算法
+- **支持算法**: Faster R-CNN, Mask R-CNN, YOLO系列, DETR等
+- **文档**: https://mmdetection.readthedocs.io/
+
+#### vision_opencv (ROS 2)
+- **链接**: https://github.com/ros-perception/vision_opencv
+- **类型**: ROS 2包
+- **核心功能**:
+  - cv_bridge: ROS图像消息与OpenCV图像转换
+  - image_geometry: 相机模型和投影
+- **文档**: http://wiki.ros.org/cv_bridge
+
+### 🎬 视频教程
+
+#### OpenCV Course - Full Tutorial with Python (freeCodeCamp)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/watch?v=oXlwWbU8l2o
+- **时长**: 4小时
+- **语言**: 英文
+- **观看量**: 超过500万
+- **核心内容**: OpenCV完整入门教程
+- **为什么推荐**: 完全免费，适合快速入门
+
+#### 【中文】OpenCV+深度学习实战（B站）
+- **UP主**: 同济子豪兄
+- **时长**: 约30小时
+- **语言**: 中文
+- **核心内容**:
+  - OpenCV基础
+  - 深度学习模型部署
+  - YOLO实战
+  - 人脸识别
+- **为什么推荐**: 中文讲解，项目丰富
+
+### 📊 数据集
+
+#### COCO (Common Objects in Context)
+- **链接**: https://cocodataset.org/
+- **类型**: 目标检测和分割数据集
+- **规模**: 330K图像，80个类别
+- **为什么推荐**: 最常用的目标检测数据集，YOLO等模型都在COCO上训练
+
+#### ImageNet
+- **链接**: https://www.image-net.org/
+- **类型**: 图像分类数据集
+- **规模**: 1400万图像，1000个类别
+- **为什么推荐**: 深度学习的基准数据集
+
+#### Pascal VOC
+- **链接**: http://host.robots.ox.ac.uk/pascal/VOC/
+- **类型**: 目标检测数据集
+- **规模**: 20个类别
+- **为什么推荐**: 经典的目标检测数据集，适合学习
+
+### 🔬 特征检测算法论文
+
+#### SIFT
+- **标题**: "Distinctive Image Features from Scale-Invariant Keypoints"
+- **作者**: David G. Lowe
+- **期刊**: IJCV 2004
+- **核心价值**: 尺度不变特征变换，经典的特征检测算法
+- **论文链接**: https://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf
+
+#### SURF
+- **标题**: "SURF: Speeded Up Robust Features"
+- **作者**: Herbert Bay et al.
+- **会议**: ECCV 2006
+- **核心价值**: SIFT的加速版本
+- **论文链接**: https://www.vision.ee.ethz.ch/~surf/eccv06.pdf
+
+#### ORB
+- **标题**: "ORB: An efficient alternative to SIFT or SURF"
+- **作者**: Ethan Rublee et al.
+- **会议**: ICCV 2011
+- **核心价值**: 快速的二进制特征，ORB-SLAM使用的特征
+- **论文链接**: https://www.willowgarage.com/sites/default/files/orb_final.pdf
+
+### 🛠️ 实用工具
+
+#### Roboflow
+- **链接**: https://roboflow.com/
+- **类型**: 数据标注和模型训练平台
+- **核心功能**:
+  - 图像标注
+  - 数据增强
+  - 模型训练
+  - 模型部署
+- **为什么推荐**: 简化计算机视觉项目的工作流程
+
+#### LabelImg
+- **链接**: https://github.com/heartexlabs/labelImg
+- **Star数**: 超过22k
+- **核心功能**: 图像标注工具，支持YOLO格式
+- **为什么推荐**: 开源免费，易于使用
+
+#### CVAT (Computer Vision Annotation Tool)
+- **链接**: https://github.com/opencv/cvat
+- **开发者**: Intel
+- **Star数**: 超过12k
+- **核心功能**:
+  - 图像和视频标注
+  - 多种标注格式
+  - 团队协作
+- **为什么推荐**: 功能强大，支持多种任务
+
+### 🌏 中文资源
+
+#### OpenCV中文官方文档
+- **链接**: https://opencv.apachecn.org/
+- **类型**: 社区翻译
+- **语言**: 中文
+- **核心价值**: OpenCV官方文档的中文版
+
+#### 【书籍】《OpenCV轻松入门：面向Python》
+- **作者**: 李立宗
+- **出版社**: 电子工业出版社
+- **语言**: 中文
+- **核心价值**: 国内优秀的OpenCV中文教材
+
+#### 知乎 - 计算机视觉话题
+- **链接**: https://www.zhihu.com/topic/19588469/hot
+- **类型**: 问答社区
+- **核心价值**: 大量计算机视觉相关的问答和经验分享
+
+### 💡 学习建议
+
+1. **先掌握OpenCV基础**: 图像读取、显示、基本操作
+2. **理解颜色空间**: RGB、HSV、灰度等不同颜色空间的应用
+3. **特征检测是关键**: SIFT、ORB等特征检测算法是视觉SLAM的基础
+4. **实践项目驱动**: 通过实际项目（人脸识别、目标跟踪）学习
+5. **深度学习结合**: 现代计算机视觉离不开深度学习，学习YOLO等模型
+6. **性能优化**: 学习如何优化OpenCV代码，提高实时性
+7. **ROS集成**: 学习cv_bridge，将OpenCV与ROS 2集成
+
+### 🔗 相关章节
+
+- 第10章：传感器集成 - 相机传感器的使用
+- 第11章：SLAM基础 - 视觉SLAM的应用
+- 第13章：路径规划 - 视觉导航
+- 第16章：具身智能 - 视觉在具身智能中的应用
+
+---
+
+**版权说明**: 以上资源仅供个人学习使用。部分资源可能需要付费或注册。请尊重知识产权，支持正版。
 
 ## 动手练习
 

@@ -837,11 +837,333 @@ A: **常见导航失败原因及解决方法**：
 - 添加PoseArray显示查看AMCL粒子分布（粒子集中表示定位置信度高）
 - 观察机器人在地图上的位置是否与实际一致
 
-## 推荐资源
+## 拓展阅读
 
-- **Navigation2 文档**：https://navigation.ros.org/
-- **SLAM Toolbox**：https://github.com/SteveMacenski/slam_toolbox
-- **路径规划算法可视化**：https://qiao.github.io/PathFinding.js/visual/
+SLAM（同时定位与建图）是移动机器人的核心技术。为了帮助你深入理解SLAM算法、掌握实际应用，我们整理了经典论文、开源实现、数据集、在线课程等全方位的学习资源。
+
+### 📚 经典书籍
+
+#### 《视觉SLAM十四讲》
+- **作者**: 高翔、张涛等
+- **出版年份**: 2017年第1版，2019年第2版
+- **语言**: 中文
+- **适合人群**: SLAM初学者到中级开发者
+- **核心价值**: 国内最受欢迎的SLAM入门书籍，从零开始讲解视觉SLAM的理论和实践。配套开源代码，每一讲都有可运行的示例。
+- **推荐章节**:
+  - 第3讲：三维空间刚体运动
+  - 第7讲：视觉里程计
+  - 第10讲：后端优化
+  - 第13讲：建图
+- **配套代码**: https://github.com/gaoxiang12/slambook2
+- **在线阅读**: 部分章节可在GitHub免费阅读
+
+#### 《Probabilistic Robotics》
+- **作者**: Sebastian Thrun, Wolfram Burgard, Dieter Fox
+- **出版年份**: 2005年
+- **语言**: 英文（有中文译本）
+- **核心价值**: SLAM理论的权威教材
+- **推荐章节**:
+  - Chapter 9: Occupancy Grid Mapping（占据栅格地图）
+  - Chapter 10: SLAM（同时定位与建图）
+  - Chapter 13: The GraphSLAM Algorithm（图优化SLAM）
+
+#### 《Multiple View Geometry in Computer Vision》
+- **作者**: Richard Hartley, Andrew Zisserman
+- **出版年份**: 2004年第2版
+- **语言**: 英文
+- **核心价值**: 计算机视觉的圣经，视觉SLAM的数学基础
+- **推荐章节**:
+  - Chapter 9: Epipolar Geometry（对极几何）
+  - Chapter 10: 3D Reconstruction（三维重建）
+
+### 📝 经典SLAM论文
+
+#### ORB-SLAM系列
+
+**ORB-SLAM: A Versatile and Accurate Monocular SLAM System**
+- **作者**: Raúl Mur-Artal, J. M. M. Montiel, Juan D. Tardós
+- **期刊**: IEEE Transactions on Robotics, 2015
+- **核心价值**: 最著名的视觉SLAM系统之一，基于特征点法
+- **论文链接**: https://ieeexplore.ieee.org/document/7219438
+- **开源代码**: https://github.com/raulmur/ORB_SLAM2
+- **Star数**: 超过9k
+
+**ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM**
+- **作者**: Carlos Campos et al.
+- **期刊**: IEEE Transactions on Robotics, 2021
+- **核心价值**: ORB-SLAM的最新版本，支持单目、双目、RGB-D、IMU融合
+- **论文链接**: https://arxiv.org/abs/2007.11898
+- **开源代码**: https://github.com/UZ-SLAMLab/ORB_SLAM3
+- **Star数**: 超过6k
+
+#### Cartographer
+
+**Real-Time Loop Closure in 2D LIDAR SLAM**
+- **作者**: Wolfgang Hess et al. (Google)
+- **会议**: ICRA 2016
+- **核心价值**: Google开源的2D/3D激光SLAM系统
+- **论文链接**: https://research.google/pubs/pub45466/
+- **开源代码**: https://github.com/cartographer-project/cartographer
+- **Star数**: 超过7k
+- **ROS集成**: https://github.com/cartographer-project/cartographer_ros
+
+#### LSD-SLAM
+
+**LSD-SLAM: Large-Scale Direct Monocular SLAM**
+- **作者**: Jakob Engel, Thomas Schöps, Daniel Cremers
+- **会议**: ECCV 2014
+- **核心价值**: 直接法SLAM的代表作，不需要特征提取
+- **论文链接**: https://vision.in.tum.de/research/vslam/lsdslam
+- **开源代码**: https://github.com/tum-vision/lsd_slam
+
+#### RTAB-Map
+
+**RTAB-Map as an Open-Source Lidar and Visual SLAM Library for Large-Scale and Long-Term Online Operation**
+- **作者**: Mathieu Labbé, François Michaud
+- **期刊**: Journal of Field Robotics, 2019
+- **核心价值**: 支持多种传感器的实时SLAM系统
+- **论文链接**: http://introlab.github.io/rtabmap/
+- **开源代码**: https://github.com/introlab/rtabmap
+- **ROS 2支持**: 完整支持
+
+### 🚀 开源SLAM项目
+
+#### SLAM Toolbox (ROS 2推荐)
+- **链接**: https://github.com/SteveMacenski/slam_toolbox
+- **开发者**: Steve Macenski (Navigation2核心开发者)
+- **Star数**: 超过1.6k
+- **核心功能**:
+  - 2D激光SLAM
+  - 在线和离线建图
+  - 地图保存和加载
+  - 闭环检测
+- **文档**: https://github.com/SteveMacenski/slam_toolbox/blob/ros2/README.md
+- **为什么推荐**: ROS 2官方推荐的SLAM方案，与Navigation2深度集成
+
+#### Cartographer ROS
+- **链接**: https://github.com/cartographer-project/cartographer_ros
+- **Star数**: 超过1.6k
+- **核心功能**:
+  - 2D和3D SLAM
+  - 多机器人SLAM
+  - 纯定位模式
+- **文档**: https://google-cartographer-ros.readthedocs.io/
+
+#### RTAB-Map
+- **链接**: https://github.com/introlab/rtabmap_ros
+- **Star数**: 超过2.5k
+- **核心功能**:
+  - RGB-D SLAM
+  - 立体视觉SLAM
+  - 激光SLAM
+  - 多传感器融合
+- **文档**: http://wiki.ros.org/rtabmap_ros
+
+#### VINS-Fusion
+- **链接**: https://github.com/HKUST-Aerial-Robotics/VINS-Fusion
+- **开发者**: 香港科技大学
+- **Star数**: 超过3k
+- **核心功能**:
+  - 视觉-惯性SLAM
+  - 支持单目、双目、双目+IMU
+  - 闭环检测
+- **论文**: VINS-Mono (TRO 2018)
+
+#### LOAM系列
+
+**LOAM (Lidar Odometry and Mapping)**
+- **链接**: https://github.com/laboshinl/loam_velodyne
+- **核心价值**: 经典的3D激光SLAM算法
+- **论文**: "Low-drift and real-time lidar odometry and mapping" (Autonomous Robots 2016)
+
+**LeGO-LOAM**
+- **链接**: https://github.com/RobustFieldAutonomyLab/LeGO-LOAM
+- **Star数**: 超过2k
+- **核心价值**: 轻量级的地面优化LOAM，适合地面机器人
+
+**LIO-SAM**
+- **链接**: https://github.com/TixiaoShan/LIO-SAM
+- **Star数**: 超过3k
+- **核心价值**: 激光-惯性里程计，紧耦合IMU和激光雷达
+- **论文**: IROS 2020
+
+### 📊 SLAM数据集
+
+#### KITTI Dataset
+- **链接**: http://www.cvlibs.net/datasets/kitti/
+- **类型**: 自动驾驶数据集
+- **传感器**:
+  - 立体相机
+  - Velodyne 64线激光雷达
+  - GPS/IMU
+- **场景**: 城市、乡村、高速公路
+- **为什么推荐**: 最著名的SLAM数据集，有真值轨迹，适合算法评估
+
+#### TUM RGB-D Dataset
+- **链接**: https://vision.in.tum.de/data/datasets/rgbd-dataset
+- **类型**: RGB-D SLAM数据集
+- **传感器**: Kinect
+- **场景**: 室内环境
+- **为什么推荐**: 专门用于RGB-D SLAM评估，有精确的真值
+
+#### EuRoC MAV Dataset
+- **链接**: https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets
+- **类型**: 无人机数据集
+- **传感器**:
+  - 立体相机
+  - IMU
+- **场景**: 室内工业环境
+- **为什么推荐**: 视觉-惯性SLAM的标准数据集
+
+#### NCLT Dataset
+- **链接**: http://robots.engin.umich.edu/nclt/
+- **类型**: 长期SLAM数据集
+- **传感器**:
+  - Velodyne激光雷达
+  - 相机
+  - GPS/IMU
+- **特点**: 同一环境不同季节、天气的数据
+- **为什么推荐**: 适合研究长期SLAM和地图更新
+
+### 🎓 在线课程
+
+#### SLAM Course (Cyrill Stachniss)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_
+- **时长**: 约20小时
+- **语言**: 英文
+- **核心内容**:
+  - SLAM基础理论
+  - 卡尔曼滤波和粒子滤波
+  - 图优化
+  - 闭环检测
+- **为什么推荐**: Cyrill Stachniss是SLAM领域的顶级专家，讲解深入浅出
+
+#### Visual SLAM (TUM)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/playlist?list=PLTBdjV_4f-EJn6udZ34tht9EVIW7lbeo4
+- **讲师**: Daniel Cremers (LSD-SLAM作者)
+- **语言**: 英文
+- **核心内容**:
+  - 视觉SLAM理论
+  - 直接法和特征法
+  - 后端优化
+- **为什么推荐**: 来自视觉SLAM研究的顶尖团队
+
+#### 【中文】视觉SLAM从理论到实践（深蓝学院）
+- **平台**: 深蓝学院
+- **讲师**: 高翔（《视觉SLAM十四讲》作者）
+- **时长**: 约40小时
+- **语言**: 中文
+- **核心内容**:
+  - 视觉SLAM完整流程
+  - ORB-SLAM源码解析
+  - 实战项目
+- **为什么推荐**: 中文课程，配套《视觉SLAM十四讲》
+
+### 🛠️ SLAM工具和库
+
+#### g2o (General Graph Optimization)
+- **链接**: https://github.com/RainerKuemmerle/g2o
+- **Star数**: 超过3k
+- **核心价值**: 图优化库，SLAM后端优化的标准工具
+- **应用**: ORB-SLAM、Cartographer等都使用g2o
+
+#### Ceres Solver
+- **链接**: http://ceres-solver.org/
+- **开发者**: Google
+- **核心价值**: 非线性最小二乘优化库
+- **应用**: Cartographer、VINS等使用Ceres
+
+#### GTSAM (Georgia Tech Smoothing and Mapping)
+- **链接**: https://gtsam.org/
+- **Star数**: 超过2.5k
+- **核心价值**: 因子图优化库，支持增量式优化
+- **文档**: https://gtsam.org/tutorials/intro.html
+
+#### DBoW2 (Bag of Words)
+- **链接**: https://github.com/dorian3d/DBoW2
+- **核心价值**: 视觉词袋库，用于闭环检测
+- **应用**: ORB-SLAM使用DBoW2进行闭环检测
+
+### 🎬 视频教程
+
+#### SLAM Tutorial (Cyrill Stachniss)
+- **平台**: YouTube
+- **观看量**: 超过100万
+- **语言**: 英文
+- **为什么推荐**: 最受欢迎的SLAM教程
+
+#### 【中文】SLAM算法解析（B站）
+- **UP主**: 计算机视觉life
+- **时长**: 约30小时
+- **语言**: 中文
+- **核心内容**:
+  - ORB-SLAM源码解析
+  - Cartographer源码解析
+  - SLAM数学基础
+- **为什么推荐**: 深入源码级别的讲解
+
+### 📖 在线资源
+
+#### SLAM相关论文列表
+- **链接**: https://github.com/YiChenCityU/Recent_SLAM_Research
+- **类型**: GitHub资源列表
+- **Star数**: 超过5k
+- **核心价值**: 收集了SLAM领域的重要论文，按年份和类别分类
+
+#### Awesome SLAM
+- **链接**: https://github.com/kanster/awesome-slam
+- **类型**: GitHub资源列表
+- **Star数**: 超过2k
+- **核心价值**: 精选的SLAM资源、论文、代码、数据集
+
+#### SLAM Benchmarking Tools
+- **链接**: https://github.com/MichaelGrupp/evo
+- **类型**: SLAM评估工具
+- **Star数**: 超过3k
+- **核心功能**:
+  - 轨迹对比
+  - 误差计算（APE、RPE）
+  - 可视化
+
+### 🌏 中文资源
+
+#### 泡泡机器人SLAM
+- **链接**: https://space.bilibili.com/38737757
+- **类型**: B站UP主
+- **核心内容**: SLAM论文解读、代码实现
+
+#### 计算机视觉life
+- **链接**: https://space.bilibili.com/437802486
+- **类型**: B站UP主
+- **核心内容**: SLAM源码解析、算法讲解
+
+#### 知乎 - SLAM话题
+- **链接**: https://www.zhihu.com/topic/19981062/hot
+- **类型**: 问答社区
+- **核心价值**: 大量SLAM相关的问答和经验分享
+
+### 💡 学习建议
+
+1. **数学基础很重要**: 先掌握线性代数、概率论、最优化理论
+2. **从2D开始**: 先理解2D激光SLAM，再学习3D和视觉SLAM
+3. **理论与实践结合**: 边学理论边跑代码，使用公开数据集测试
+4. **阅读经典论文**: ORB-SLAM、Cartographer等经典论文必读
+5. **源码阅读**: 选择一个开源SLAM系统深入研究源码
+6. **参与社区**: 在GitHub、ROS Discourse等社区提问和分享
+7. **实际部署**: 在真实机器人上测试SLAM算法，理解工程问题
+
+### 🔗 相关章节
+
+- 第10章：传感器集成 - SLAM的传感器基础
+- 第12章：视觉里程计 - 视觉SLAM的前端
+- 第13章：路径规划 - 使用SLAM地图进行导航
+- 第16章：具身智能 - SLAM在具身智能中的应用
+
+---
+
+**版权说明**: 以上资源仅供个人学习使用。部分资源可能需要付费或注册。请尊重知识产权，支持正版。
 
 ## 动手练习
 

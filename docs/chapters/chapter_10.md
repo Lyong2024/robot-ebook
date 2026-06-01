@@ -777,11 +777,270 @@ ros2 run robot_localization ekf_node --ros-args --params-file ekf.yaml
 
 传感器是机器人感知世界的窗口，正确集成和处理传感器数据是机器人开发的关键。
 
-## 推荐资源
+## 拓展阅读
 
-- **robot_localization 文档**：http://docs.ros.org/en/humble/p/robot_localization/
-- **tf2 教程**：https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Tf2-Main.html
-- **OpenCV 教程**：https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html
+传感器集成是机器人系统的基础。为了帮助你深入掌握传感器技术、数据处理和多传感器融合，我们整理了涵盖官方文档、经典论文、开源项目、实用工具等多个维度的学习资源。
+
+### 📚 传感器基础资源
+
+#### 《Probabilistic Robotics》（概率机器人学）
+- **作者**: Sebastian Thrun, Wolfram Burgard, Dieter Fox
+- **出版年份**: 2005年
+- **语言**: 英文（有中文译本）
+- **适合人群**: 研究生和高级开发者
+- **核心价值**: 机器人学领域的圣经级著作，深入讲解传感器模型、贝叶斯滤波、卡尔曼滤波、粒子滤波等核心算法。第6章专门讲解传感器模型，第3章讲解高斯滤波器。
+- **推荐章节**:
+  - Chapter 3: Gaussian Filters（高斯滤波器 - 卡尔曼滤波）
+  - Chapter 6: Robot Perception（机器人感知 - 传感器模型）
+  - Chapter 7: Mobile Robot Localization（移动机器人定位）
+- **在线资源**: http://www.probabilistic-robotics.org/
+
+#### 《Modern Robotics: Mechanics, Planning, and Control》
+- **作者**: Kevin M. Lynch, Frank C. Park
+- **出版年份**: 2017年
+- **语言**: 英文
+- **在线免费版**: http://hades.mech.northwestern.edu/index.php/Modern_Robotics
+- **核心价值**: 现代机器人学教材，第11章讲解机器人控制，涉及传感器反馈
+- **配套资源**: 有Python和MATLAB代码库
+
+### 🎓 在线课程
+
+#### Sensor Fusion and Non-linear Filtering for Automotive Systems (Coursera)
+- **机构**: Chalmers University of Technology
+- **平台**: Coursera
+- **时长**: 约5周
+- **费用**: 免费旁听
+- **语言**: 英文
+- **核心内容**:
+  - 卡尔曼滤波和扩展卡尔曼滤波
+  - 粒子滤波
+  - 多传感器融合
+  - 汽车应用案例
+- **为什么推荐**: 专门针对传感器融合，有大量实际案例
+
+#### State Estimation and Localization for Self-Driving Cars (Coursera)
+- **机构**: University of Toronto
+- **平台**: Coursera
+- **时长**: 约4周
+- **费用**: 免费旁听
+- **语言**: 英文
+- **核心内容**:
+  - 状态估计基础
+  - 线性和非线性卡尔曼滤波
+  - GNSS/INS融合
+  - LiDAR定位
+- **为什么推荐**: 自动驾驶背景，实用性强
+
+### 📖 官方文档和教程
+
+#### robot_localization (ROS 2)
+- **链接**: http://docs.ros.org/en/humble/p/robot_localization/
+- **类型**: ROS 2官方包
+- **核心价值**: ROS 2中最常用的传感器融合包，实现了EKF和UKF
+- **推荐阅读**:
+  - Preparing Your Data（数据准备）
+  - Configuring robot_localization（配置指南）
+  - Migrating from robot_pose_ekf（从ROS 1迁移）
+
+#### tf2 Tutorials
+- **链接**: https://docs.ros.org/en/humble/Tutorials/Intermediate/Tf2/Tf2-Main.html
+- **类型**: ROS 2官方教程
+- **核心价值**: 学习坐标变换，这是传感器融合的基础
+- **推荐教程**:
+  - Introduction to tf2
+  - Writing a tf2 broadcaster
+  - Writing a tf2 listener
+  - Adding a frame
+
+### 🔬 IMU专项资源
+
+#### IMU Data Fusing: Complementary, Kalman, and Mahony Filter
+- **链接**: http://www.olliw.eu/2013/imu-data-fusing/
+- **类型**: 技术博客
+- **语言**: 英文
+- **核心价值**: 详细对比三种IMU融合算法，有代码实现
+
+#### Madgwick Filter论文
+- **标题**: "An efficient orientation filter for inertial and inertial/magnetic sensor arrays"
+- **作者**: Sebastian O.H. Madgwick
+- **年份**: 2010年
+- **链接**: https://x-io.co.uk/open-source-imu-and-ahrs-algorithms/
+- **核心价值**: 提出了计算高效的姿态估计算法，广泛应用于无人机和机器人
+- **开源实现**: https://github.com/xioTechnologies/Fusion
+
+#### 【中文】IMU姿态解算详解
+- **链接**: https://zhuanlan.zhihu.com/p/20082486
+- **类型**: 知乎专栏
+- **语言**: 中文
+- **核心价值**: 详细讲解四元数、欧拉角、旋转矩阵，以及互补滤波和卡尔曼滤波
+
+### 🛰️ 激光雷达资源
+
+#### LiDAR数据处理教程
+- **链接**: https://github.com/UniBwTAS/lidar_processing
+- **类型**: GitHub教程
+- **Star数**: 超过200
+- **核心内容**:
+  - 点云滤波
+  - 地面分割
+  - 聚类和目标检测
+  - ROS集成
+
+#### PCL (Point Cloud Library)
+- **链接**: https://pointclouds.org/
+- **类型**: 开源库
+- **核心价值**: 点云处理的标准库，包含滤波、分割、配准等算法
+- **教程**: https://pcl.readthedocs.io/projects/tutorials/en/latest/
+
+#### pcl_ros
+- **链接**: https://github.com/ros-perception/perception_pcl
+- **类型**: ROS 2包
+- **核心价值**: PCL与ROS 2的集成，提供点云处理节点
+
+### 📷 相机标定资源
+
+#### Camera Calibration Toolbox for MATLAB
+- **链接**: http://www.vision.caltech.edu/bouguetj/calib_doc/
+- **作者**: Jean-Yves Bouguet (Caltech)
+- **核心价值**: 经典的相机标定工具箱，详细讲解标定原理
+
+#### OpenCV Camera Calibration
+- **链接**: https://docs.opencv.org/4.x/dc/dbb/tutorial_py_calibration.html
+- **类型**: 官方教程
+- **语言**: 英文
+- **核心内容**:
+  - 相机内参标定
+  - 畸变校正
+  - 立体视觉标定
+
+#### Kalibr (多传感器标定工具)
+- **链接**: https://github.com/ethz-asl/kalibr
+- **开发者**: ETH Zurich
+- **Star数**: 超过4k
+- **核心功能**:
+  - 相机内参标定
+  - 相机-IMU外参标定
+  - 多相机标定
+- **文档**: https://github.com/ethz-asl/kalibr/wiki
+
+### 🔧 开源项目和工具
+
+#### imu_tools
+- **链接**: https://github.com/CCNYRoboticsLab/imu_tools
+- **类型**: ROS 2包
+- **核心功能**:
+  - IMU数据滤波
+  - 互补滤波器
+  - Madgwick滤波器
+  - 可视化工具
+
+#### laser_filters
+- **链接**: https://github.com/ros-perception/laser_filters
+- **类型**: ROS 2包
+- **核心功能**:
+  - 激光雷达数据滤波
+  - 范围滤波
+  - 角度滤波
+  - 阴影滤波
+
+#### urg_node
+- **链接**: https://github.com/ros-drivers/urg_node
+- **类型**: ROS 2驱动
+- **核心价值**: Hokuyo激光雷达的ROS 2驱动，可作为其他激光雷达驱动的参考
+
+#### rplidar_ros
+- **链接**: https://github.com/Slamtec/rplidar_ros
+- **类型**: ROS 2驱动
+- **核心价值**: RPLIDAR系列激光雷达的官方ROS 2驱动
+
+### 📊 数据集
+
+#### KITTI Dataset
+- **链接**: http://www.cvlibs.net/datasets/kitti/
+- **类型**: 自动驾驶数据集
+- **核心内容**:
+  - 立体相机
+  - 激光雷达
+  - GPS/IMU
+  - 真值数据
+- **为什么推荐**: 最著名的自动驾驶数据集，适合测试传感器融合算法
+
+#### EuRoC MAV Dataset
+- **链接**: https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets
+- **类型**: 无人机数据集
+- **核心内容**:
+  - 立体相机
+  - IMU
+  - 真值轨迹
+- **为什么推荐**: 专门用于视觉-惯性里程计研究
+
+### 🎬 视频教程
+
+#### Sensor Fusion Tutorial (Cyrill Stachniss)
+- **平台**: YouTube
+- **链接**: https://www.youtube.com/playlist?list=PLgnQpQtFTOGQrZ4O5QzbIHgl3b1JHimN_
+- **语言**: 英文
+- **核心内容**: 移动机器人学课程，包含传感器融合章节
+- **为什么推荐**: Cyrill Stachniss是SLAM领域的权威专家
+
+#### 【中文】卡尔曼滤波详解（B站）
+- **UP主**: DR_CAN
+- **时长**: 约5小时
+- **语言**: 中文
+- **核心内容**:
+  - 卡尔曼滤波原理
+  - 扩展卡尔曼滤波
+  - 无迹卡尔曼滤波
+  - Python实现
+- **为什么推荐**: 中文讲解，通俗易懂
+
+### 📝 经典论文
+
+#### "A Tutorial on Particle Filters for Online Nonlinear/Non-Gaussian Bayesian Tracking"
+- **作者**: M. Sanjeev Arulampalam et al.
+- **期刊**: IEEE Transactions on Signal Processing, 2002
+- **核心价值**: 粒子滤波的经典教程论文
+- **链接**: https://ieeexplore.ieee.org/document/978374
+
+#### "Quaternion kinematics for the error-state Kalman filter"
+- **作者**: Joan Solà
+- **年份**: 2017年
+- **核心价值**: 详细讲解基于四元数的误差状态卡尔曼滤波，是IMU融合的重要参考
+- **链接**: https://arxiv.org/abs/1711.02508
+
+### 🌏 中文资源
+
+#### 《卡尔曼滤波原理及应用》
+- **作者**: 黄小平、王岩
+- **出版社**: 电子工业出版社
+- **语言**: 中文
+- **核心价值**: 中文卡尔曼滤波教材，理论与实践结合
+
+#### 古月居 - 传感器融合教程
+- **链接**: https://www.guyuehome.com/
+- **类型**: 在线教程
+- **语言**: 中文
+- **核心内容**: ROS中的传感器融合实践
+
+### 💡 学习建议
+
+1. **先理论后实践**: 先理解卡尔曼滤波的数学原理，再动手实现
+2. **从简单开始**: 先实现1D卡尔曼滤波，再扩展到多维
+3. **可视化调试**: 使用RViz2和rqt_plot可视化传感器数据和融合结果
+4. **参数调优**: 传感器融合的关键在于参数调优，需要大量实验
+5. **阅读源码**: 阅读robot_localization的源码，学习工程实践
+6. **标定很重要**: 传感器标定是数据准确性的基础，不要跳过
+
+### 🔗 相关章节
+
+- 第9章：ROS 2核心概念 - 学习ROS 2的话题和tf2
+- 第11章：SLAM基础 - 传感器融合在SLAM中的应用
+- 第12章：视觉里程计 - 视觉传感器的应用
+- 第14章：机械臂控制 - 力传感器和关节传感器
+
+---
+
+**版权说明**: 以上资源仅供个人学习使用。部分资源可能需要付费或注册。请尊重知识产权，支持正版。
 
 ## 动手练习
 

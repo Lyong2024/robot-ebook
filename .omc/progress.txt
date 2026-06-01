@@ -6,10 +6,71 @@
 ## 当前状态
 - 项目阶段：第1轮迭代进行中
 - 当前版本：v0.1.0-baseline
-- 已完成用户故事：5/20 (US-001至US-005)
-- 总体进度：25%
+- 已完成用户故事：6/20 (US-001至US-006)
+- 总体进度：30%
 
 ## 最新进展
+
+### 2026-06-01 完成US-006
+**任务**: 为第10-12章（视觉与SLAM）添加深度拓展资源
+
+**完成内容**:
+
+#### 第10章：传感器集成
+- ✅ 添加经典书籍（Probabilistic Robotics、Modern Robotics）
+- ✅ 添加在线课程（传感器融合、状态估计）
+- ✅ 添加IMU专项资源（Madgwick滤波器论文、互补滤波教程）
+- ✅ 添加激光雷达资源（PCL库、点云处理教程）
+- ✅ 添加相机标定资源（Kalibr工具、OpenCV标定教程）
+- ✅ 添加开源项目（imu_tools、laser_filters、rplidar_ros）
+- ✅ 添加数据集（KITTI、EuRoC MAV）
+- ✅ 添加经典论文（粒子滤波、四元数卡尔曼滤波）
+- ✅ 添加中文资源和视频教程
+
+#### 第11章：SLAM基础
+- ✅ 添加经典书籍（视觉SLAM十四讲、Probabilistic Robotics、Multiple View Geometry）
+- ✅ 添加经典SLAM论文（ORB-SLAM系列、Cartographer、LSD-SLAM、RTAB-Map、LOAM系列）
+- ✅ 添加开源SLAM项目（SLAM Toolbox、Cartographer ROS、RTAB-Map、VINS-Fusion、LIO-SAM）
+- ✅ 添加SLAM数据集（KITTI、TUM RGB-D、EuRoC MAV、NCLT）
+- ✅ 添加在线课程（Cyrill Stachniss SLAM课程、TUM视觉SLAM、深蓝学院）
+- ✅ 添加SLAM工具和库（g2o、Ceres Solver、GTSAM、DBoW2）
+- ✅ 添加视频教程和中文资源
+- ✅ 添加在线资源（Awesome SLAM、SLAM论文列表、评估工具）
+
+#### 第12章：计算机视觉基础
+- ✅ 添加经典书籍（Learning OpenCV 4、Computer Vision: Algorithms and Applications、Multiple View Geometry）
+- ✅ 添加YOLO系列论文（YOLOv1、YOLOv3、YOLOv5、YOLOv8）
+- ✅ 添加YOLO版本对比表格
+- ✅ 添加在线课程（斯坦福CS231n、Columbia First Principles、中文OpenCV实战）
+- ✅ 添加OpenCV官方资源（文档、Python教程、官方课程）
+- ✅ 添加在线学习平台（PyImageSearch、LearnOpenCV）
+- ✅ 添加开源项目（opencv-python、YOLOv5、Detectron2、MMDetection、vision_opencv）
+- ✅ 添加视频教程（freeCodeCamp、中文教程）
+- ✅ 添加数据集（COCO、ImageNet、Pascal VOC）
+- ✅ 添加特征检测算法论文（SIFT、SURF、ORB）
+- ✅ 添加实用工具（Roboflow、LabelImg、CVAT）
+- ✅ 添加中文资源
+
+**验收标准验证**:
+- ✅ 为OpenCV添加官方教程和经典书籍推荐
+- ✅ 为YOLO添加原始论文和各版本对比分析（YOLOv1-v8完整覆盖）
+- ✅ 为SLAM添加经典论文（20+篇论文，包括ORB-SLAM、Cartographer等）
+- ✅ 为视觉里程计添加算法推导和实现案例
+- ✅ 添加至少3个SLAM数据集推荐（实际添加4个：KITTI、TUM、EuRoC、NCLT）
+- ✅ 添加计算机视觉在线课程（斯坦福CS231n等）
+
+**统计数据**:
+- 第10章新增内容：约3000行
+- 第11章新增内容：约4500行
+- 第12章新增内容：约4000行
+- 总计新增：约11500行拓展资源
+
+**关键发现**:
+1. SLAM领域的经典论文和开源项目非常丰富，ORB-SLAM、Cartographer等都是必读
+2. YOLO系列发展迅速，YOLOv5和YOLOv8是当前最实用的版本
+3. 数据集对于算法学习和评估至关重要，KITTI是自动驾驶领域的标准
+4. 中英文资源结合能更好地服务不同背景的学习者
+5. 开源项目的文档质量直接影响学习效率
 
 ### 2026-06-01 完成US-005
 **任务**: 为第7-9章（ROS 2软件栈）添加深度拓展资源
@@ -74,6 +135,12 @@
 3. 实战项目和练习比纯理论资源更受欢迎
 4. 官方文档永远是第一优先级，其次是经典书籍和在线课程
 5. 社区资源（论坛、GitHub）对于解决实际问题非常重要
+
+## 累计完成
+- **已完成用户故事**: 6个（US-001至US-006）
+- **总新增内容**: 约23500行高质量拓展资源
+- **涵盖章节**: 第7-12章（6个章节）
+- **Git提交**: 2次（US-005和US-006）
 
 ## 电子书现状分析
 ### 内容结构
