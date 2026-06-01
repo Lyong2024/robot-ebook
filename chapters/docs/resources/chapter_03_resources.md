@@ -82,4 +82,28 @@
 
 ---
 
+## 🎥 3.5 视频教程推荐
+
+### "Sensor Fusion and Tracking" - MATLAB
+**平台：** YouTube  
+**简介：** MATLAB官方传感器融合教程系列。
+
+### "LiDAR SLAM从理论到实践" - 深蓝学院
+**平台：** B站  
+**简介：** 中文激光SLAM完整课程。
+
+---
+
+## 💻 3.6 开源库推荐
+
+### PCL (Point Cloud Library)
+**GitHub：** https://github.com/PointCloudLibrary/pcl  
+**简介：** 点云处理标准库。
+
+### OpenCV
+**官网：** https://opencv.org/  
+**简介：** 计算机视觉库，包含相机标定等功能。
+
+---
+
 **最后更新：** 2024年6月
