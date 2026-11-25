@@ -402,7 +402,7 @@
 - [ ] 补充中文教程资源
 - [ ] 补充视频教程链接
 
-### 第10章：仿真环境
+### 仿真环境（书中提到 Gazebo，没有单独的第 10 章仿真教程；第 10 章是传感器）
 - [x] 更新Gazebo相关链接（Classic → 新版）
 - [x] 更新gazebo_ros_pkgs链接
 - [ ] 补充Webots、MuJoCo链接
@@ -411,11 +411,11 @@
 - [ ] 补充PyImageSearch链接
 - [ ] 补充Roboflow链接
 
-### 第13章：SLAM
+### 导航与 SLAM（现行在第 11 章，不是第 13 章）
 - [x] 更新Cartographer链接（→ SLAM Toolbox）
 - [ ] 补充SLAM算法对比
 
-### 第14章：导航系统
+### 导航系统（现行在第 11 章；第 14 章是人机交互）
 - [x] 更新Navigation2文档链接
 - [ ] 补充Nav2教程资源
 

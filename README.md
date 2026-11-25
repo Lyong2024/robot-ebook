@@ -1,214 +1,120 @@
 # 机器人开发：从零基础到动手创造
 
-欢迎来到机器人开发的世界！本电子书将带你从零开始，系统学习机器人开发的核心知识和实践技能——涵盖硬件、软件、算法和最新的前沿技术。
+交互式中文电子书。用 [VitePress](https://vitepress.dev/) 把 Markdown 章节渲染成可搜索、带侧边栏和本地全文检索的站点。
 
-## 📚 内容概览
+仓库：<https://github.com/Lyong2024/robot-ebook>
 
-本书共 17 章，涵盖从基础到高级的完整知识体系：
+## 项目是什么
 
-### 基础篇（第1-5章）
-- **第1章**：[机器人的定义、分类与发展史](chapters/chapter_01.md)
-- **第2章**：[机器人运动学与动力学基础](chapters/chapter_02.md)
-- **第3章**：[机器人硬件基础：从零开始选择组件](chapters/chapter_03.md)
-- **第4章**：[Arduino 与 ESP32：你的第一块开发板](chapters/chapter_04.md)
-- **第5章**：[电机驱动：让机器人动起来](chapters/chapter_05.md)
+书名是《机器人开发：从零基础到动手创造》。站点标题、描述和语言写在 `docs/.vitepress/config.mts`：`lang` 为 `zh-CN`，本地搜索已打开，代码块显示行号，公式由 VitePress 内置数学支持渲染。
 
-### 进阶篇（第6-10章）
-- **第6章**：[电源管理：让机器人持久运行](chapters/chapter_06.md)
-- **第7章**：[Linux 命令行：机器人开发者的必备技能](chapters/chapter_07.md)
-- **第8章**：[Python 编程：机器人的通用语言](chapters/chapter_08.md)
-- **第9章**：[ROS 2 核心概念：构建机器人软件系统](chapters/chapter_09.md)
-- **第10章**：[传感器集成与数据处理](chapters/chapter_10.md)
+正文在 `docs/`，由 VitePress 作为站点根目录。根目录 `package.json` 的 `docs:dev` 会执行 `vitepress dev docs`。`docs/package.json` 里还有一套只在 `docs/` 目录内使用的脚本，版本锁在 VitePress `^1.6.4`。实际安装版本是 **VitePress 1.6.4**、**Vue 3**。
 
-### 高级篇（第11-15章）
-- **第11章**：[导航与路径规划](chapters/chapter_11.md)
-- **第12章**：[计算机视觉基础](chapters/chapter_12.md)
-- **第13章**：[机械臂与操作](chapters/chapter_13.md)
-- **第14章**：[人机交互与语音控制](chapters/chapter_14.md)
-- **第15章**：[项目实战：智能服务机器人](chapters/chapter_15.md)
+| 路径 | 作用 |
+| --- | --- |
+| `docs/index.md` | 首页（`layout: home`） |
+| `docs/intro.md` | 前言与学习方法 |
+| `docs/about.md` | 关于本书 |
+| `docs/chapters/chapter_01.md` … `chapter_18.md` | 正文。第 9 章在 `chapter_09/` 目录 |
+| `docs/appendix/` | 术语表、FAQ、调试、开源项目、贡献者等 |
+| `docs/.vitepress/config.mts` | 导航、侧边栏、搜索、页脚 |
+| `docs/.vitepress/theme/` | 自定义主题（橙铜色、亮色/暗色切换） |
+| `docs/resources/` | 拓展资源索引 |
+| `robot_ebook_complete.md` | 合并稿 |
+| `split_chapters.py` | 按 `### 第N章` 把合并稿拆进 `docs/chapters/` |
+| `VERSION.md` | 内容版本记录（v1.0.0-alpha、v2.0.0） |
+| `LICENSE.md` | 正文许可说明 |
 
-### 前沿篇（第16-17章）
-- **第16章**：[具身智能与大模型：机器人的"大脑"升级](chapters/chapter_16.md)
-- **第17章**：[人形机器人：技术路线对比](chapters/chapter_17.md)
+正文许可是 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)，见 `LICENSE.md`。`package.json` 使用 SPDX 标识 `CC-BY-NC-SA-4.0`。
 
-## 🎯 学习路径
+读者看到的正文在 `docs/`。仓库根的 `appendix/` 是一份平行副本，站点不渲染它。改给读者看的附录时，改 `docs/appendix/`。
 
-### 初学者路径
-1. 按顺序学习第1-5章，掌握 ROS 2 基础
-2. 完成每章的动手练习
-3. 搭建简单的机器人原型
+## 内容结构
 
-### 进阶开发者路径
-1. 快速浏览第1-5章
-2. 重点学习第6-10章的导航和建图
-3. 根据项目需求选择第11-14章的专题
+侧边栏标题与各章 Markdown 的一级标题一致。第 9 章在目录 `docs/chapters/chapter_09/`，从全景页链到 9.1–9.8。
 
-### 研究者路径
-1. 复习基础概念（第1-5章）
-2. 深入学习第11-13章的视觉和操作
-3. 探索第16-17章的前沿技术
+| 分组 | 侧边栏 | 文件与一级标题 |
+| --- | --- | --- |
+| 前言 | 开启你的机器人开发之旅 | [`docs/intro.md`](docs/intro.md) |
+| 基础 | 第1章 定义、分类与发展史 | [`chapter_01.md`](docs/chapters/chapter_01.md) |
+| 基础 | 第2章 运动学与动力学 | [`chapter_02.md`](docs/chapters/chapter_02.md) |
+| 硬件 | 第3章 机器人硬件基础 | [`chapter_03.md`](docs/chapters/chapter_03.md) 从零开始选择组件 |
+| 硬件 | 第4章 Arduino 与 ESP32 | [`chapter_04.md`](docs/chapters/chapter_04.md) 你的第一块开发板 |
+| 硬件 | 第5章 电机与驱动 | [`chapter_05.md`](docs/chapters/chapter_05.md) |
+| 硬件 | 第6章 电源管理与电路安全 | [`chapter_06.md`](docs/chapters/chapter_06.md) |
+| 软件栈 | 第7章 Linux 命令行 | [`chapter_07.md`](docs/chapters/chapter_07.md) Linux 命令行：机器人开发者的必备技能 |
+| 软件栈 | 第8章 Python 编程 | [`chapter_08.md`](docs/chapters/chapter_08.md) Python 编程：机器人的通用语言 |
+| 软件栈 | 第9章 ROS 2 核心概念 | [`chapter_09/`](docs/chapters/chapter_09/index.md) 9.0–9.8：工作空间、话题与 QoS、服务与动作、参数与 Launch、tf 与 rosbag、执行器、命令行、DDS 与真机话题 |
+| 传感器与导航 | 第10章 传感器集成 | [`chapter_10.md`](docs/chapters/chapter_10.md) 传感器集成与数据处理 |
+| 传感器与导航 | 第11章 导航与路径规划 | [`chapter_11.md`](docs/chapters/chapter_11.md) 导航与路径规划 |
+| 传感器与导航 | 第12章 计算机视觉 | [`chapter_12.md`](docs/chapters/chapter_12.md) 计算机视觉基础 |
+| 应用 | 第13章 机械臂与操作 | [`chapter_13.md`](docs/chapters/chapter_13.md) 机械臂与操作 |
+| 应用 | 第14章 人机交互与语音 | [`chapter_14.md`](docs/chapters/chapter_14.md) 人机交互与语音控制 |
+| 应用 | 第15章 智能服务机器人 | [`chapter_15.md`](docs/chapters/chapter_15.md) 项目实战：智能服务机器人 |
+| 前沿趋势 | 第16–17章 | 具身智能与大模型；人形机器人技术路线 |
+| 综合项目 | 第18章 | [`chapter_18.md`](docs/chapters/chapter_18.md) 制作你自己的桌面机器人（巡线、避障、抓取） |
 
-## 🛠️ 开发环境
+学习顺序：基础（1–2）→ 硬件（3–6）→ 软件栈（7–9）→ 传感器、导航与视觉（10–12）→ 机械臂、交互与项目（13–15）→ 前沿（16–17）→ 综合项目（18）。预计 150–300 小时。
 
-### 推荐配置
-- **操作系统**：Ubuntu 22.04 LTS
-- **ROS 版本**：ROS 2 Humble
-- **Python**：3.10+
-- **硬件**：4GB+ RAM，建议 8GB
+附录在侧边栏中挂了三项：
 
-### 可选硬件
-- TurtleBot3 或其他移动机器人平台
-- RPLIDAR 激光雷达
-- Intel RealSense 深度相机
-- USB 摄像头和麦克风
+- [高成就者名录](docs/appendix/contributors.md)
+- [开源项目索引](docs/appendix/projects.md)
+- [术语表](docs/appendix/glossary.md)
 
-## 📖 如何使用本书
+同目录还有 `faq.md`、`debugging_guide.md`、`hall_of_fame.md`、`open_source_projects.md`、`resource_updates.md`，没有全部放进侧边栏。
 
-### 理论学习
-每章都包含：
-- 核心概念讲解
-- 代码示例和注释
-- 实用技巧和最佳实践
+主题在默认 VitePress 主题上加了导航栏主题切换，样式在 `docs/.vitepress/theme/`（`color-palette.css`、`custom-theme.css`、`theme-enhancements.css`）。主色是橙铜 `#CC6633`，背景偏暖米白。
 
-### 实践练习
-- 每章末尾都有动手练习
-- 建议在真实硬件或仿真环境中实践
-- 可以在 GitHub 上分享你的项目
+## 环境要求
 
-### 代码示例
-所有代码示例都经过测试，可以直接运行。建议：
-1. 先理解代码逻辑
-2. 手动输入代码（而不是复制粘贴）
-3. 尝试修改和扩展功能
+阅读站点只需要：
 
-## 🌟 特色内容
+- Node.js 18+（本次验证为 Node.js v24.22.3、npm 11.21.1）
+- 已安装的依赖（仓库根目录已有 `node_modules` 和 `pnpm-lock.yaml`）
 
-### 1. 系统性
-从基础到高级，循序渐进，构建完整的知识体系。
+书中的 Arduino、ROS 2、Gazebo、OpenCV 示例是章节里的练习，启动本站点不需要安装它们。ROS 2 章节以 Humble 为参照，见 `LICENSE.md` 的免责声明。
 
-### 2. 实用性
-所有示例都来自实际项目，可以直接应用到你的机器人开发中。
+## 启动
 
-### 3. 前沿性
-第16-17章介绍了具身智能、大模型、人形机器人等最新技术。
+在仓库根目录 `C:\dev\robot_ebook`：
 
-### 4. 中文友好
-全中文讲解，代码注释详细，降低学习门槛。
-
-## 🔗 推荐资源
-
-### 官方文档
-- [ROS 2 官方文档](https://docs.ros.org/)
-- [ROS 2 教程](https://docs.ros.org/en/humble/Tutorials.html)
-
-### 社区
-- [ROS Discourse](https://discourse.ros.org/)
-- [ROS Answers](https://answers.ros.org/)
-- [GitHub ROS 2](https://github.com/ros2)
-
-### 硬件平台
-- [TurtleBot3](https://emanual.robotis.com/docs/en/platform/turtlebot3/)
-- [ROBOTIS e-Manual](https://emanual.robotis.com/)
-
-### 仿真工具
-- [Gazebo](https://gazebosim.org/)
-- [Webots](https://cyberbotics.com/)
-
-## 💡 学习建议
-
-### 1. 动手实践
-机器人开发是实践性很强的领域，光看不练是学不会的。每学完一章，一定要动手写代码、跑程序。
-
-### 2. 循序渐进
-不要跳章学习，基础概念（特别是第2-7章）非常重要，会影响后续的理解。
-
-### 3. 调试能力
-机器人开发中会遇到各种问题，学会使用调试工具（如 `ros2 topic`、`rviz2`、日志）非常重要。
-
-### 4. 参与社区
-遇到问题时，善用搜索引擎和 ROS 社区。同时也可以分享你的经验，帮助其他学习者。
-
-### 5. 项目驱动
-设定一个具体的项目目标（如"做一个送餐机器人"），带着目标学习会更有动力。
-
-## 🚀 快速开始
-
-### 第一步：安装 ROS 2
 ```bash
-# Ubuntu 22.04
-sudo apt update
-sudo apt install ros-humble-desktop
+npm install
+npm run docs:dev
 ```
 
-### 第二步：创建工作空间
+默认地址是 `http://localhost:5173/`。
+
+指定地址和端口时，把参数交给 VitePress，避免 npm 把 `--host` 当成自己的配置：
+
 ```bash
-mkdir -p ~/robot_ws/src
-cd ~/robot_ws
-colcon build
-source install/setup.bash
+npx vitepress dev docs --host 127.0.0.1 --port 5175
 ```
 
-### 第三步：运行第一个示例
-```bash
-# 终端1：运行 talker
-ros2 run demo_nodes_cpp talker
+Windows 上如果 `5173` 只在 IPv6（`[::1]`）能打开、IPv4 返回空响应，先换一个空闲端口。可用下面的命令看谁占用了端口：
 
-# 终端2：运行 listener
-ros2 run demo_nodes_cpp listener
+```powershell
+Get-NetTCPConnection -LocalPort 5173 -State Listen
 ```
 
-看到消息传递成功？恭喜你，ROS 2 环境搭建完成！现在可以开始学习[第1章](chapters/chapter_01.md)了。
+构建静态站点并预览：
 
-## 📝 章节详情
+```bash
+npm run docs:build
+npm run docs:preview
+```
 
-### 基础篇
-从机器人的基本概念开始，学习硬件选择、微控制器编程、电机驱动等基础知识，能够搭建简单的机器人原型。
+产物在 `docs/.vitepress/dist`。
 
-### 进阶篇
-掌握 Linux、Python、ROS 2 等软件工具，学习传感器集成和数据处理，为开发智能机器人打下坚实基础。
+只在 `docs/` 目录里开发时，用那里的脚本：
 
-### 高级篇
-深入导航、计算机视觉、机械臂控制、人机交互等高级主题，能够开发具有自主能力的复杂机器人系统。
+```bash
+cd docs
+npm install
+npm run dev
+```
 
-### 前沿篇
-了解具身智能、大模型在机器人中的应用，以及人形机器人的最新进展，把握技术发展趋势。
+## 英文说明
 
-## 🎓 适合人群
-
-- **学生**：计算机、自动化、机械等专业的本科生和研究生
-- **工程师**：想要转型机器人开发的软件工程师
-- **爱好者**：对机器人感兴趣的创客和 DIY 爱好者
-- **研究者**：需要使用 ROS 2 进行机器人研究的科研人员
-
-## 📊 学习时间估算
-
-- **快速入门**（第1-5章）：1-2周
-- **进阶开发**（第6-10章）：2-3周
-- **高级应用**（第11-15章）：3-4周
-- **前沿探索**（第16-17章）：1-2周
-
-**总计**：约 2-3 个月可以完成全部内容的学习和实践。
-
-## 🤝 贡献与反馈
-
-如果你发现了错误或有改进建议，欢迎：
-- 提交 Issue
-- 发起 Pull Request
-- 分享你的学习心得和项目
-
-## 📄 许可证
-
-本电子书采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可证。
-
-- ✅ 可以自由分享和修改
-- ✅ 必须注明原作者
-- ✅ 非商业用途
-- ✅ 相同方式共享
-
-## 🎉 开始学习
-
-准备好了吗？让我们从[第1章：ROS 2 简介与环境搭建](chapters/chapter_01.md)开始你的机器人开发之旅吧！
-
----
-
-**祝学习愉快！Happy Coding! 🤖**
+English project overview and the same start commands: [README.en.md](README.en.md).

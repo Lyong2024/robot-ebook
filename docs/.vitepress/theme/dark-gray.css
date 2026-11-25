@@ -1,0 +1,32 @@
+/**
+ * 暗色灰阶必须最后加载。
+ * VitePress 默认主题的 vars.css 在自定义 CSS 之后注入，会把 .dark 背景盖回近黑。
+ */
+.dark {
+  color-scheme: dark;
+
+  --vp-c-bg: #3a3a3a;
+  --vp-c-bg-alt: #323232;
+  --vp-c-bg-elv: #4a4a4a;
+  --vp-c-bg-soft: #454545;
+
+  --vp-c-border: #6a6a6a;
+  --vp-c-divider: #555555;
+  --vp-c-gutter: #2c2c2c;
+
+  --vp-c-text-1: #f3f3f3;
+  --vp-c-text-2: #c6c6c6;
+  --vp-c-text-3: #9c9c9c;
+
+  --vp-code-block-bg: #2f2f2f;
+  --vp-code-block-divider-color: #555555;
+  --vp-sidebar-bg-color: #323232;
+  --vp-nav-bg-color: #454545;
+  --vp-local-nav-bg-color: #3a3a3a;
+
+  --vp-c-bg-elv-mute: #454545;
+  --vp-input-bg-color: #323232;
+  --vp-local-search-bg: #3a3a3a;
+  --vp-local-search-result-bg: #454545;
+  --vp-local-search-result-selected-bg: #525252;
+}

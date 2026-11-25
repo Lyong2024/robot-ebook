@@ -5,6 +5,7 @@ import ThemeToggle from './ThemeToggle.vue'
 import './color-palette.css'
 import './custom-theme.css'
 import './theme-enhancements.css'
+import './dark-gray.css'
 
 export default {
   extends: DefaultTheme,

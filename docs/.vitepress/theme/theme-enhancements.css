@@ -321,15 +321,9 @@ a:empty {
   content-visibility: auto;
 }
 
-/* ==================== 暗色模式特定优化 ==================== */
-.dark {
-  /* 减少暗色模式下的眼睛疲劳 */
-  color-scheme: dark;
-}
-
-/* 暗色模式下的图片优化 */
+/* 灰底上图片保持原亮度，不再压暗 */
 .dark img {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .dark img:hover {

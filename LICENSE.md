@@ -164,4 +164,4 @@
 
 **最后更新**：2026年1月  
 **许可协议**：CC BY-NC-SA 4.0  
-**GitHub**：[待补充]
+**GitHub**：https://github.com/Lyong2024/robot-ebook

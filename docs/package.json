@@ -10,7 +10,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "CC-BY-NC-SA-4.0",
   "type": "commonjs",
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
