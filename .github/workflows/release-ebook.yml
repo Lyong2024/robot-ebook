@@ -16,17 +16,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 12.23.0
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
+          cache: pnpm
 
       - name: Install site dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build static HTML
-        run: npm run docs:build
+        run: pnpm run docs:build
         env:
           DOCS_BASE: ./
 

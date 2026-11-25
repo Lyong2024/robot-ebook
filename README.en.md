@@ -72,26 +72,28 @@ The theme extends the VitePress default theme with a nav-bar theme toggle. Style
 
 To read the site:
 
-- Node.js 18+ (verified here with Node.js v24.22.3 and npm 11.21.1)
-- Installed dependencies (this checkout already has root `node_modules` and `pnpm-lock.yaml`)
+- Node.js 18+
+- pnpm 12 (verified with pnpm 12.23.0. With Corepack: `corepack enable`, then `corepack prepare pnpm@12.23.0 --activate`)
 
 Arduino, ROS 2, Gazebo, and OpenCV examples are exercises inside chapters. Starting this site does not require them. ROS 2 samples target Humble; see the disclaimer in `LICENSE.md`.
 
 ## Start
 
-From the repo root `C:\dev\robot_ebook`:
+From the repo root:
 
 ```bash
-npm install
-npm run docs:dev
+pnpm install
+pnpm run docs:dev
 ```
+
+Do not use `npm install`. The old `package-lock.json` resolved dependencies to `registry.npmmirror.com` tarball URLs, and current npm refuses those remote packages with `EALLOWREMOTE`, so `vitepress` never gets installed.
 
 The default URL is `http://localhost:5173/`.
 
-To set host and port, pass the flags to VitePress so npm does not treat `--host` as its own config:
+To set host and port, pass the flags to VitePress:
 
 ```bash
-npx vitepress dev docs --host 127.0.0.1 --port 5175
+pnpm exec vitepress dev docs --host 127.0.0.1 --port 5175
 ```
 
 On Windows, if port `5173` answers only on IPv6 (`[::1]`) and IPv4 returns an empty reply, pick another free port. See who is listening:
@@ -103,8 +105,8 @@ Get-NetTCPConnection -LocalPort 5173 -State Listen
 Build and preview the static site:
 
 ```bash
-npm run docs:build
-npm run docs:preview
+pnpm run docs:build
+pnpm run docs:preview
 ```
 
 Output goes to `docs/.vitepress/dist`.
@@ -124,13 +126,7 @@ git push origin v1.0.0
 
 The same workflow can be started by hand from the Actions tab. A manual run publishes the tag `build-<run number>`.
 
-To work only inside `docs/`:
-
-```bash
-cd docs
-npm install
-npm run dev
-```
+Install dependencies only at the repo root. `pnpm run docs:dev` starts VitePress against `docs/`.
 
 ## 中文说明
 

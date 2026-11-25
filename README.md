@@ -70,26 +70,28 @@
 
 阅读站点只需要：
 
-- Node.js 18+（本次验证为 Node.js v24.22.3、npm 11.21.1）
-- 已安装的依赖（仓库根目录已有 `node_modules` 和 `pnpm-lock.yaml`）
+- Node.js 18+
+- pnpm 12（本次用 pnpm 12.23.0 完成安装并启动站点。可用 Corepack：`corepack enable`，再 `corepack prepare pnpm@12.23.0 --activate`）
 
 书中的 Arduino、ROS 2、Gazebo、OpenCV 示例是章节里的练习，启动本站点不需要安装它们。ROS 2 章节以 Humble 为参照，见 `LICENSE.md` 的免责声明。
 
 ## 启动
 
-在仓库根目录 `C:\dev\robot_ebook`：
+在仓库根目录：
 
 ```bash
-npm install
-npm run docs:dev
+pnpm install
+pnpm run docs:dev
 ```
+
+不要用 `npm install`。根目录的 `package-lock.json` 里依赖被解析成 `registry.npmmirror.com` 的压缩包地址，当前 npm 会以 `EALLOWREMOTE` 拒绝这些 remote 包，`vitepress` 也就不会装上。
 
 默认地址是 `http://localhost:5173/`。
 
-指定地址和端口时，把参数交给 VitePress，避免 npm 把 `--host` 当成自己的配置：
+指定地址和端口时，把参数交给 VitePress：
 
 ```bash
-npx vitepress dev docs --host 127.0.0.1 --port 5175
+pnpm exec vitepress dev docs --host 127.0.0.1 --port 5175
 ```
 
 Windows 上如果 `5173` 只在 IPv6（`[::1]`）能打开、IPv4 返回空响应，先换一个空闲端口。可用下面的命令看谁占用了端口：
@@ -101,8 +103,8 @@ Get-NetTCPConnection -LocalPort 5173 -State Listen
 构建静态站点并预览：
 
 ```bash
-npm run docs:build
-npm run docs:preview
+pnpm run docs:build
+pnpm run docs:preview
 ```
 
 产物在 `docs/.vitepress/dist`。
@@ -122,13 +124,7 @@ git push origin v1.0.0
 
 也可以在 GitHub 的 Actions 页手动运行 “Release ebook”。手动运行会生成标签 `build-<运行号>`。
 
-只在 `docs/` 目录里开发时，用那里的脚本：
-
-```bash
-cd docs
-npm install
-npm run dev
-```
+依赖只在仓库根目录安装。`pnpm run docs:dev` 会在 `docs/` 里启动 VitePress。
 
 ## 英文说明
 

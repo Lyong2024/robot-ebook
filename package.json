@@ -3,11 +3,6 @@
   "version": "1.0.0",
   "description": "机器人开发：从零基础到动手创造 - 交互式电子书",
   "type": "module",
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
   "keywords": [
     "robotics",
     "robot",
@@ -19,6 +14,16 @@
   ],
   "author": "Robot Ebook Team",
   "license": "CC-BY-NC-SA-4.0",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "preinstall": "node ./scripts/ensure-pnpm.mjs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
   "devDependencies": {
     "vitepress": "^1.0.0",
     "vue": "^3.4.0"
