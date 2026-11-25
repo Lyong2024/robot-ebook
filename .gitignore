@@ -34,5 +34,11 @@ build/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 
+# Generated ebook sources and release artifacts
+dist-ebook/
+robot-ebook-html.zip
+robot-ebook.epub
+robot-ebook.pdf
+
 # Local agent state
 .omc/

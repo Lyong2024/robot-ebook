@@ -5,6 +5,8 @@ export default defineConfig({
   title: "机器人开发：从零基础到动手创造",
   description: "软件、硬件与前沿趋势的完整实践指南",
   lang: 'zh-CN',
+  // 发布压缩包时设 DOCS_BASE=./，解压后用浏览器直接打开。本地开发保持 /。
+  base: process.env.DOCS_BASE || '/',
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config

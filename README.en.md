@@ -109,6 +109,21 @@ npm run docs:preview
 
 Output goes to `docs/.vitepress/dist`.
 
+## Release HTML, EPUB, and PDF
+
+Pushing a tag that starts with `v` runs [`.github/workflows/release-ebook.yml`](.github/workflows/release-ebook.yml). The workflow attaches three files to the GitHub Release:
+
+- `robot-ebook-html.zip`, an offline VitePress site
+- `robot-ebook.epub`
+- `robot-ebook.pdf`
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+The same workflow can be started by hand from the Actions tab. A manual run publishes the tag `build-<run number>`.
+
 To work only inside `docs/`:
 
 ```bash

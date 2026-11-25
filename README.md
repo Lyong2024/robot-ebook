@@ -107,6 +107,21 @@ npm run docs:preview
 
 产物在 `docs/.vitepress/dist`。
 
+## 发布 HTML、EPUB 和 PDF
+
+推送 `v` 开头的标签后，[`.github/workflows/release-ebook.yml`](.github/workflows/release-ebook.yml) 会构建并上传到 GitHub Release：
+
+- `robot-ebook-html.zip`：可离线打开的 VitePress 站点
+- `robot-ebook.epub`
+- `robot-ebook.pdf`
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+也可以在 GitHub 的 Actions 页手动运行 “Release ebook”。手动运行会生成标签 `build-<运行号>`。
+
 只在 `docs/` 目录里开发时，用那里的脚本：
 
 ```bash

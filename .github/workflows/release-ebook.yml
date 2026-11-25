@@ -1,0 +1,78 @@
+name: Release ebook
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install site dependencies
+        run: npm ci
+
+      - name: Build static HTML
+        run: npm run docs:build
+        env:
+          DOCS_BASE: ./
+
+      - name: Zip HTML site
+        run: |
+          cd docs/.vitepress/dist
+          zip -r "$GITHUB_WORKSPACE/robot-ebook-html.zip" .
+
+      - name: Merge Markdown for EPUB and PDF
+        run: node scripts/build-ebook.mjs
+
+      - name: Install Pandoc, XeLaTeX, and a CJK font
+        run: sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex texlive-lang-chinese fonts-noto-cjk
+
+      - name: Build EPUB
+        run: >
+          pandoc dist-ebook/book.md
+          --from markdown+pipe_tables+fenced_code_blocks+backtick_code_blocks
+          --to epub3
+          --toc --toc-depth=2
+          --metadata title="机器人开发：从零基础到动手创造"
+          --metadata lang=zh-CN
+          --metadata creator="Robot Ebook"
+          --metadata rights="CC BY-NC-SA 4.0"
+          -o robot-ebook.epub
+
+      - name: Build PDF
+        run: >
+          pandoc dist-ebook/book.md
+          --from markdown+pipe_tables+fenced_code_blocks+backtick_code_blocks
+          --pdf-engine=xelatex
+          -V documentclass=ctexart
+          -V CJKmainfont="Noto Sans CJK SC"
+          -V geometry:margin=2.2cm
+          --toc --toc-depth=2
+          --metadata title="机器人开发：从零基础到动手创造"
+          --metadata lang=zh-CN
+          -o robot-ebook.pdf
+
+      - name: Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_type == 'tag' && github.ref_name || format('build-{0}', github.run_number) }}
+          name: ${{ github.ref_type == 'tag' && github.ref_name || format('手动构建 {0}', github.run_number) }}
+          generate_release_notes: true
+          files: |
+            robot-ebook-html.zip
+            robot-ebook.epub
+            robot-ebook.pdf
